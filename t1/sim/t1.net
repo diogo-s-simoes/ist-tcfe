@@ -1,0 +1,25 @@
+.options savecurrents
+
+*Resistors
+R1 A B 1.04140403815k
+R2 B C 2.06425750627k
+R3 B E 3.01346586287k
+R4 D E 4.09638762559k
+R5 E F 3.04195770117k
+R6 D G1 2.04936997612k 
+R7 G2 H 1.01919058582k
+
+*Voltage Sources
+Vaux G1 G2 DC 0
+Va A D DC 5.1361224873
+Hc E H Vaux 8.19579707039
+
+*Current Sources
+Id H F DC 1.03201034448m
+Gb F C B E 7.16043663039m
+
+.control
+
+op
+
+print all
