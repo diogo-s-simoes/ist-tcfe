@@ -1,0 +1,52 @@
+close all
+clear all
+
+%%EXAMPLE SYMBOLIC COMPUTATIONS
+
+pkg load symbolic
+
+R1 = 1.04140403815e3
+R2 = 2.06425750627e3 
+R3 = 3.01346586287e3
+R4 = 4.09638762559e3 
+R5 = 3.04195770117e3 
+R6 = 2.04936997612e3 
+R7 = 1.01919058582e3 
+Va = 5.1361224873 
+Id = 1.03201034448e-3 
+Kb = 7.16043663039e-3 
+Kc = 8.19579707039e3
+
+G1=1/R1
+G2=1/R2
+G3=1/R3
+G4=1/R4
+G5=1/R5
+G6=1/R6
+G7=1/R7
+
+VA
+VB
+VC
+VD
+VE
+VF
+VG
+VH
+
+O = vpa(1.0)
+Z = vpa(0.0)
+
+A = [-G1,G1+G2+G3,-G2,Z,-G3,Z,Z,Z;
+    Z,-G2-Kb,G2,Z,Kb,Z,Z,Z;
+    Z,Kb,Z,Z,-G5-Kb,G5,Z,Z;
+    Z,Z,Z,-G6,Z,Z,G6+G7,-G7;
+    O,Z,Z,-O,Z,Z,Z,Z;
+    Z,Z,Z,Z,Z,Z,Z,O;
+    Z,Z,Z,-Kc*G6,O,Z,Kc*G6,-O;
+    O,Z,Z,Z,Z,Z,Z,Z]
+    
+B=[Z,Z,Id,Z,Va,Z,Z,Z]
+
+
+
