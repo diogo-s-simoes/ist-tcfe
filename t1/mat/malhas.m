@@ -1,21 +1,22 @@
 pkg load symbolic
+Va = 5.1361224873
 
-syms Va
-syms IB
-syms Vc
-syms VD
-syms R1
-syms R2
-syms R3
-syms R4
-syms R5
-syms R6
-syms R7
-Z = vpa(0.0)
+Kb = 7.16043663039e-3
+Kc = 8.19579707039e3
+Id = 1.03201034448e-3
 
-A = [R1+R3+R4, Z, Z, R3+R4; Z,1,0,0; R4,Z,R4+R6+R7,Z;Z, Z, Z,1]
-B = [Va; IB; Vc; ID]
+R1 = 1.04140403815 
+R2 = 2.06425750627 
+R3 = 3.01346586287 
+R4 = 4.09638762559 
+R5 = 3.04195770117 
+R6 = 2.04936997612 
+R7 = 1.01919058582 
+
+A = [R1+R3+R4, -R3, -R4, 0; 
+    Kb*R3, -Kb*R3-1,0,0; 
+    -R4,0,R4+R6+R7+Kc,0;
+    0, 0, 0,1]
+B = [Va; 0; 0; Id]
 
 A\B
-
-print(A\B)
