@@ -1,21 +1,16 @@
 
 Circuit: .options savecurrents
 
-Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
-
-
-
-No. of Data Rows : 1
-a = 1.927666e+00
-b = -9.32923e-02
-c = -4.29388e+00
-d = -3.20846e+00
-e = 1.908964e-01
-f = 9.520354e+00
-g1 = -9.32084e-01
-g2 = -9.32084e-01
-h = 2.000000e-01
-hc#branch = 2.142778e-03
-va#branch = -1.94061e-03
-vaux#branch = -1.11077e-03
-Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+.op: no such command available in ngspice
+false = 0.000000e+00
+true = 1.000000e+00
+boltz = 1.380620e-23
+c = 2.997925e+08
+e = 2.718282e+00
+echarge = 1.602190e-19
+i = 0.000000e+00,1.000000e+00
+kelvin = -2.73150e+02
+no = 0.000000e+00
+pi = 3.141593e+00
+planck = 6.626200e-34
+yes = 1.000000e+00

@@ -20,6 +20,10 @@ Gb F C B E 7.16043663039m
 
 .control
 
-op
+.op
 
 print all
+
+quit
+.endc
+.end
