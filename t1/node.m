@@ -25,28 +25,23 @@ G5=1/R5
 G6=1/R6
 G7=1/R7
 
-VA
-VB
-VC
-VD
-VE
-VF
-VG
-VH
+
 
 O = vpa(1.0)
 Z = vpa(0.0)
 
-A = [-G1,G1+G2+G3,-G2,Z,-G3,Z,Z,Z;
-    Z,-G2-Kb,G2,Z,Kb,Z,Z,Z;
-    Z,Kb,Z,Z,-G5-Kb,G5,Z,Z;
-    Z,Z,Z,-G6,Z,Z,G6+G7,-G7;
-    O,Z,Z,-O,Z,Z,Z,Z;
-    Z,Z,Z,Z,Z,Z,Z,O;
-    Z,Z,Z,-Kc*G6,O,Z,Kc*G6,-O;
-    O,Z,Z,Z,Z,Z,Z,Z]
+A = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
+    0,-G2-Kb,G2,0,Kb,0,0,0;
+    0,Kb,0,0,-G5-Kb,G5,0,0;
+    0,0,0,-G6,0,0,G6+G7,-G7;
+    1,0,0,-1,0,0,0,0;
+    0,0,0,0,0,0,0,1;
+    0,0,0,-Kc*G6,0,Z,Kc*G6,-1;
+    0,-G3,0,-G4,G4+G3+G8,-G8,-G7,G7]
     
-B=[Z,Z,Id,Z,Va,Z,Z,Z]
+B=[0,0,Id,0,Va,0,0,-Id]
 
+ans = A\B
 
+print(ans)
 
