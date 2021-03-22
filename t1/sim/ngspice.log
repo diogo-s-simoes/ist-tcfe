@@ -1,16 +1,19 @@
 
 Circuit: .options savecurrents
 
-.op: no such command available in ngspice
-false = 0.000000e+00
-true = 1.000000e+00
-boltz = 1.380620e-23
-c = 2.997925e+08
-e = 2.718282e+00
-echarge = 1.602190e-19
-i = 0.000000e+00,1.000000e+00
-kelvin = -2.73150e+02
-no = 0.000000e+00
-pi = 3.141593e+00
-planck = 6.626200e-34
-yes = 1.000000e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+
+No. of Data Rows : 1
+a = 8.080661e+00
+b = 7.829186e+00
+c = 7.306490e+00
+d = 2.944539e+00
+e = 7.864549e+00
+f = 1.177414e+01
+g1 = 9.779981e-01
+g2 = 9.779981e-01
+hc#branch = 7.242723e-05
+va#branch = -2.41477e-04
+vaux#branch = 9.595831e-04
