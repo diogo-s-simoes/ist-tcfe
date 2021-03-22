@@ -24,6 +24,10 @@ op
 
 print all
 
+echo  "op_TAB"
+print all
+echo  "op_END"
+
 *.print im(A,B) im(B,C) im(B,E) im(D,E) im(E,F) im(D,G) im(G,H) im(D,A) im(H,F) im(H,E) im(F,C)
 
 quit
