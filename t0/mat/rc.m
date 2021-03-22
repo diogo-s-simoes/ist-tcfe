@@ -47,6 +47,8 @@ solve(ans, wn)
 
 %%EXAMPLE NUMERIC COMPUTATIONS
 
+printf("AAAAA")
+
 R=1e3 %Ohm
 C=100e-9 %F
 

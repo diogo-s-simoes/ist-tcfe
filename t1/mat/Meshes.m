@@ -51,7 +51,7 @@ VD
 VE
 VF
 VG
-VH=0
+VH=0.0
 
 I1=D(1)
 I2=D(2)

@@ -24,6 +24,8 @@ op
 
 print all
 
+*.print im(A,B) im(B,C) im(B,E) im(D,E) im(E,F) im(D,G) im(G,H) im(D,A) im(H,F) im(H,E) im(F,C)
+
 quit
 .endc
 .end
