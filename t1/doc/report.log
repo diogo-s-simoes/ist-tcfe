@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 20:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -906,7 +906,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count277
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-No file report.aux.
+(./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -924,7 +924,7 @@ LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 81.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1014,317 +1014,110 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 81.
 LaTeX Info: Redefining \pageref on input line 81.
 LaTeX Info: Redefining \nameref on input line 81.
+
+(./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-
-(./frontcover.tex
+ (./frontcover.tex
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex drive
 r on input line 15.
-<../../figlib/IST_A_CMYK_POS.pdf, id=4, 845.0471pt x 597.51233pt>
+<../../figlib/IST_A_CMYK_POS.pdf, id=52, 845.0471pt x 597.51233pt>
 File: ../../figlib/IST_A_CMYK_POS.pdf Graphic file (type pdf)
 <use ../../figlib/IST_A_CMYK_POS.pdf>
 Package pdftex.def Info: ../../figlib/IST_A_CMYK_POS.pdf  used on input line 15
 .
 (pdftex.def)             Requested size: -78.38533pt x -90.76195pt.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 ))
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 120.
+ (./report.toc
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 7.
+)
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
 
-(./intro.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 6.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 7.
-
-
-LaTeX Warning: Reference `fig:rc' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Reference `sec:simulation' on page 1 undefined on input line 12.
-
-
-
-LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 14.
-
-
-LaTeX Warning: Reference `sec:conclusion' on page 1 undefined on input line 15.
-
-
-
-LaTeX Warning: File `rc.pdf' not found on input line 18.
-
-
-! Package pdftex.def Error: File `rc.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 \includegraphics[width=0.4\linewidth]{rc.pdf}
-                                                  
-? 
-! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
-l.18 \includegraphics[width=0.4\linewidth]{rc.pdf}
-                                                  
-? 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./analysis.tex
-
-LaTeX Warning: Reference `fig:rc' on page 1 undefined on input line 4.
-
-[1
+(./intro.tex [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../figlib/IST_A_CMYK_PO
 S.pdf>]
-
-LaTeX Warning: Reference `eq:kvl' on page 2 undefined on input line 25.
-
-
-LaTeX Warning: Reference `eq:kvl2' on page 2 undefined on input line 31.
-
-
-LaTeX Warning: Reference `eq:vo_for' on page 2 undefined on input line 46.
-
+<t1.pdf, id=98, 722.67157pt x 541.99657pt>
+File: t1.pdf Graphic file (type pdf)
+<use t1.pdf>
+Package pdftex.def Info: t1.pdf  used on input line 18.
+(pdftex.def)             Requested size: 182.09486pt x 136.56566pt.
+) (./analysis.tex
 
 LaTeX Warning: Reference `fig:forced' on page 2 undefined on input line 47.
 
-
-LaTeX Warning: File `forced.eps' not found on input line 58.
-
-Package epstopdf Info: Source file: <forced.eps>
-(epstopdf)             Output file: <forced-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=forced-eps-converted-to.pd
-f forced.eps>
-(epstopdf)             \includegraphics on input line 58.
-Package epstopdf Info: Output file is already uptodate.
-
-! Package pdftex.def Error: File `forced-eps-converted-to.pdf' not found: using
- draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 ...egraphics[width=0.8\linewidth]{forced.eps}
-                                                  
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? ^^X
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? 
-! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
-l.58 ...egraphics[width=0.8\linewidth]{forced.eps}
-                                                  
-? 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2]) (./simulation.tex
+[2 <./t1.pdf>]) (./simulation.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
-
-
-LaTeX Warning: Reference `tab:op' on page 3 undefined on input line 6.
-
-
-! LaTeX Error: File `../sim/op_tab.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
+ (../sim/op_tab.tex)
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 19.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3]
+ [3]
 
 LaTeX Warning: Reference `fig:trans' on page 4 undefined on input line 28.
 
 
-LaTeX Warning: File `trans.pdf' not found on input line 33.
+LaTeX Warning: Reference `fig:acm' on page 4 undefined on input line 41.
 
 
-! Package pdftex.def Error: File `trans.pdf' not found: using draft setting.
+LaTeX Warning: Reference `fig:acp' on page 4 undefined on input line 49.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 ...degraphics[width=0.6\linewidth]{trans.pdf}
-                                                  
-? 
 [4]
 
-LaTeX Warning: Reference `fig:acm' on page 5 undefined on input line 46.
+LaTeX Warning: Reference `fig:zim' on page 5 undefined on input line 58.
 
-
-LaTeX Warning: File `acm.pdf' not found on input line 51.
-
-
-! Package pdftex.def Error: File `acm.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 ...ludegraphics[width=0.6\linewidth]{acm.pdf}
-                                                  
-? 
-
-LaTeX Warning: Reference `fig:acp' on page 5 undefined on input line 60.
-
-
-LaTeX Warning: File `acp.pdf' not found on input line 65.
-
-
-! Package pdftex.def Error: File `acp.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65 ...ludegraphics[width=0.6\linewidth]{acp.pdf}
-                                                  
-? 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5]
-
-LaTeX Warning: Reference `fig:zim' on page 6 undefined on input line 74.
-
-
-LaTeX Warning: File `zim.pdf' not found on input line 79.
-
-
-! Package pdftex.def Error: File `zim.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 ...ludegraphics[width=0.6\linewidth]{zim.pdf}
-                                                  
-? 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./conclusion.tex
-Underfull \vbox (badness 3312) has occurred while \output is active []
-
- [6])
+) (./conclusion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
-
-[7]
+ [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 7342BE30AC7108BF88681F5F914161ED;778.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  7342BE30AC7108BF88681F5F914161ED;778.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 18740 strings out of 492982
- 330231 string characters out of 6134897
- 513851 words of memory out of 5000000
- 22088 multiletter control sequences out of 15000+600000
- 551925 words of font info for 50 fonts, out of 8000000 for 9000
+ 18751 strings out of 492982
+ 330456 string characters out of 6134897
+ 515628 words of memory out of 5000000
+ 22104 multiletter control sequences out of 15000+600000
+ 551757 words of font info for 49 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,8n,39p,10395b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,8n,39p,10395b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on report.pdf (7 pages, 275804 bytes).
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
+vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on report.pdf (5 pages, 303441 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 34 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
