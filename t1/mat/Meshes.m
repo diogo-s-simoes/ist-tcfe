@@ -27,17 +27,40 @@ B = [Va; 0; 0; -Id]
 D = A\B 
 
 V7 = R7* D(3)
-N1 = -V7
+VG = -V7
 V6 = R6* D(3)
-N2= N1- V6
+VD= VG- V6
 
-N3= N2+ Va
+VA= VD+ Va
 V1= R1* D(1)
-N4= N3- V1
+VB= VA- V1
 V2= R2* D(2)
-N5= N4- V2
+VC= VB- V2
 
-N7= -Kc* D(3)
+VE= -Kc* D(3)
 
 V5= R5*(D(4)-D(2))
-N6= N7-V5
+VF= VE-V5
+
+printf("\n\n***********************************\n\n")
+
+VA
+VB
+VC
+VD
+VE
+VF
+VG
+VH=0
+
+I1=D(1)
+I2=D(2)
+I3=D(1)-D(2)
+I4=D(3)-D(1)
+I5=D(4)-D(2)
+I6=-D(3)
+I7=I6
+IA=D(1)
+ID=-D(4)
+IC=-D(3)+D(4)
+IB=-D(2)

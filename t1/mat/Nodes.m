@@ -34,15 +34,26 @@ A = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
     
 B=[0;0;Id;0;Va;0;0;-Id]
 
-ans = A\B
+V = A\B
 
-I1=(ans(1)-ans(2))*G1
-I2=(ans(2)-ans(3))*G2
-I3=(ans(2)-ans(5))*G3
-I4=(ans(4)-ans(5))*G4
-I5=(ans(5)-ans(6))*G5
-I6=(ans(4)-ans(7))*G6
-I7=(ans(7)-ans(8))*G7
+printf("\n\n***********************************\n\n")
+
+VA=V(1)
+VB=V(2)
+VC=V(3)
+VD=V(4)
+VE=V(5)
+VF=V(6)
+VG=V(7)
+VH=V(8)
+
+I1=(V(1)-V(2))*G1
+I2=(V(2)-V(3))*G2
+I3=(V(2)-V(5))*G3
+I4=(V(4)-V(5))*G4
+I5=(V(5)-V(6))*G5
+I6=(V(4)-V(7))*G6
+I7=(V(7)-V(8))*G7
 IA=I1
 ID=Id
 IC=I7-ID
