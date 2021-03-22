@@ -4,9 +4,4 @@
 \contentsline {section}{\numberline {3}Mesh analysis}{1}{section.3}
 \contentsline {section}{\numberline {4}Simulation Analysis}{3}{section.4}
 \contentsline {subsection}{\numberline {4.1}Operating Point Analysis}{3}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Transient Analysis}{3}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Frequency Analysis}{4}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Magnitude Response}{4}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Phase Response}{4}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Input Impedance}{4}{subsubsection.4.3.3}
-\contentsline {section}{\numberline {5}Conclusion}{5}{section.5}
+\contentsline {section}{\numberline {5}Conclusion}{3}{section.5}
