@@ -1,6 +1,8 @@
 close all
 clear all
 
+output_precision(12)
+
 R1 = 1.04140403815e3
 R2 = 2.06425750627e3 
 R3 = 3.01346586287e3

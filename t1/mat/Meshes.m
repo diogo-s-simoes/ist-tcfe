@@ -1,4 +1,8 @@
-pkg load symbolic
+close all
+clear all
+
+output_precision(12)
+
 Va = 5.1361224873
 
 Kb = 7.16043663039e-3
