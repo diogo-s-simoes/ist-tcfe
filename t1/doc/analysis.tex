@@ -22,13 +22,13 @@ Applying Ohm's Law:
 We get the following equations:
 \begin{equation}
     
-    V_a = (R_1+R_2+R_3)I_MA - R_3*I_MB - R_4*I_MC\\
+     V_a = (R_1+R_2+R_3)I_{MA} - R_3I_{MB} - R_4I_{MC}\\
   
-    -K_b*R_3*I_MA + I_b(K_b*R_3-1)=0\\
+    -K_bR_3I_{MA} + I_b(K_bR_3-1)=0\\
   
-    -I_MA*R_4 + I_MC(R_4-K_c+R_6+R_7)=0\\
+    -I_{MA}R_4 + I_{MC}(R_4-K_c+R_6+R_7)=0\\
    
-    I_MD= -I_d
+    I_{MD}= -I_d
 
   \label{eq:malhas}
 \end{equation}
@@ -44,25 +44,116 @@ R_1+R_2+R_3 & -R_3 & -R_4 & 0 \\
 
 0 & 0 & 0 & 1 \\
 \end{bmatrix}
+\cdot
 
+\\
 
-    \cdot
-    \begin{bmatrix}
-      I_MA \\
-      I_MB \\
-      I_MC \\
-      I_MD \\
+\cdot
+\begin{bmatrix}
+I_MA \\
+I_MB \\
+I_MC \\
+I_MD \\
     \end{bmatrix}
-    =
+=
     \begin{bmatrix}
-      V_a \\
-      0 \\
-      0 \\
-      -I_d\\
+V_a \\
+0 \\
+0 \\
+-I_d\\
     \end{bmatrix}
   \end{equation}
 
 
 
+\section{Node analysis}
+The Kirchhoff Current Law (KCL) states that,for each node, the current from every branch conected must sum to 0:
+
+\begin{equation}
+  \sum I_i = 0
+  \label{eq:KCL}
+\end{equation}
+
+
+Using KCL and Ohm's law (\ref{eq:OhmLaw}) we can obtain an equation for each node that isn't connected to a voltage source.
+
+\begin{equation}
+    
+  (V_B-V_A)G_1+(V_B-V_C)G_2+(V_B-V_E)G_3=0\\
+  
+  (V_C-V_B)G_2+(V_E-V_B)K_b-I_d=0//
+  
+  (V_F-V_E)G_5+(V_B-V_E)K_b=0//
+  
+  (V_G-V_D)G_6+(V_G-V_H)G_6=0//
+
+  \label{eq:nodos}
+\end{equation}
+
+
+In nodes that are conected directly to voltage sources we cannot obtain equations as the ondes above, however, by using supernodes, we can obtain pairs of equations for each pair of nodes connected to a source.
+\par
+The supernodes we'll be using are couplings of two nodes conected by a voltage source. The first two equations come from the fact that we know the voltage of each source, so we obtain
+
+ \begin{equation}
+    
+  V_B-V_E=V_a\\
+  
+  V_E-V_H=K_c(V_D-V_G)G_6//
+ 
+  \label{eq:supenodosV}
+\end{equation}
+
+We can obtain another equation by fixing one node as groung.
+
+ \begin{equation}
+    
+  V_H = 0V\\
+   
+  \label{eq:supenodosGND}
+\end{equation}
+
+We also know that equation (\ref{eq:KCL}) aplies to supernodes, and from this we can derive the last linearly independent equation
+
+
+
+ \begin{equation}
+    
+  I_d+(V_H-V_G)G_7+(V_E-V_F)G_5+(V_E-V_B)G_3+(V_E-V_D)G_4=0\\
+   
+  \label{eq:supenodosI}
+\end{equation}
+
+All the previous equations can be compounded into a matrix
+  \begin{equation}\label{eq:matrixeqn2}
+\begin{bmatrix}
+    -G_1 & G_1+G_2+G_3 & -G_2 & 0 & -G_3 & 0 & 0 & 0//
+    0 & -G_2-K_b & G_2 & 0 & K_b & 0 & 0 & 0//
+    0 & K_b & 0 & 0 & -G_5-K_b & G_5 & 0 & 0//
+    0 & 0 & 0 & -G_6 & 0 & 0 & G_6+G_7 & -G_7//
+    1 & 0 & 0 & -1 & 0 & 0 & 0 & 0//
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 1//
+    0 & 0 & 0 & -K_c*G_6 & 1 & 0 & K_c*G_6 & -1//
+    0 & -G_3 & 0 & -G_4 & G_4+G_3+G_5 & -G_5 & -G_7 & G_7//
+\end{bmatrix}
+\cdot
+
+\\
+
+\cdot
+\begin{bmatrix}
+I_MA \\
+I_MB \\
+I_MC \\
+I_MD \\
+    \end{bmatrix}
+=
+    \begin{bmatrix}
+V_a \\
+0 \\
+0 \\
+-I_d\\
+    \end{bmatrix}
+  \end{equation}
 
 
