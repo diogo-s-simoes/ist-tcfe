@@ -33,3 +33,15 @@ A = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
 B=[0;0;Id;0;Va;0;0;-Id]
 
 ans = A\B
+
+I1=(ans(1)-ans(2))*G1
+I2=(ans(2)-ans(3))*G2
+I3=(ans(2)-ans(5))*G3
+I4=(ans(4)-ans(5))*G4
+I5=(ans(5)-ans(6))*G5
+I6=(ans(4)-ans(7))*G6
+I7=(ans(7)-ans(8))*G7
+IA=I1
+ID=Id
+IC=I7-ID
+IB=Kb*R3*I3
