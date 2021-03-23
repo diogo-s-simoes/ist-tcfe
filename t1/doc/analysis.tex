@@ -81,11 +81,11 @@ Using KCL and Ohm's law (\ref{eq:OhmLaw}) we can obtain an equation for each nod
     
   (V_B-V_A)G_1+(V_B-V_C)G_2+(V_B-V_E)G_3=0\\
   
-  (V_C-V_B)G_2+(V_E-V_B)K_b-I_d=0//
+  (V_C-V_B)G_2+(V_E-V_B)K_b-I_d=0\\
   
-  (V_F-V_E)G_5+(V_B-V_E)K_b=0//
+  (V_F-V_E)G_5+(V_B-V_E)K_b=0\\
   
-  (V_G-V_D)G_6+(V_G-V_H)G_6=0//
+  (V_G-V_D)G_6+(V_G-V_H)G_6=0\\
 
   \label{eq:nodos}
 \end{equation}
@@ -99,7 +99,7 @@ The supernodes we'll be using are couplings of two nodes conected by a voltage s
     
   V_B-V_E=V_a\\
   
-  V_E-V_H=K_c(V_D-V_G)G_6//
+  V_E-V_H=K_c(V_D-V_G)G_6\\
  
   \label{eq:supenodosV}
 \end{equation}
@@ -127,14 +127,14 @@ We also know that equation (\ref{eq:KCL}) aplies to supernodes, and from this we
 All the previous equations can be compounded into a matrix
   \begin{equation}\label{eq:matrixeqn2}
 \begin{bmatrix}
-    -G_1 & G_1+G_2+G_3 & -G_2 & 0 & -G_3 & 0 & 0 & 0//
-    0 & -G_2-K_b & G_2 & 0 & K_b & 0 & 0 & 0//
-    0 & K_b & 0 & 0 & -G_5-K_b & G_5 & 0 & 0//
-    0 & 0 & 0 & -G_6 & 0 & 0 & G_6+G_7 & -G_7//
-    1 & 0 & 0 & -1 & 0 & 0 & 0 & 0//
-    0 & 0 & 0 & 0 & 0 & 0 & 0 & 1//
-    0 & 0 & 0 & -K_c*G_6 & 1 & 0 & K_c*G_6 & -1//
-    0 & -G_3 & 0 & -G_4 & G_4+G_3+G_5 & -G_5 & -G_7 & G_7//
+    -G_1 & G_1+G_2+G_3 & -G_2 & 0 & -G_3 & 0 & 0 & 0\\
+    0 & -G_2-K_b & G_2 & 0 & K_b & 0 & 0 & 0\\
+    0 & K_b & 0 & 0 & -G_5-K_b & G_5 & 0 & 0\\
+    0 & 0 & 0 & -G_6 & 0 & 0 & G_6+G_7 & -G_7\\
+    1 & 0 & 0 & -1 & 0 & 0 & 0 & 0\\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
+    0 & 0 & 0 & -K_c*G_6 & 1 & 0 & K_c*G_6 & -1\\
+    0 & -G_3 & 0 & -G_4 & G_4+G_3+G_5 & -G_5 & -G_7 & G_7\\
 \end{bmatrix}
 \cdot
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1113,7 +1113,7 @@ LaTeX Info: Redefining \nameref on input line 83.
  (./frontcover.tex
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex drive
 r on input line 15.
-<../../figlib/IST_A_CMYK_POS.pdf, id=28, 845.0471pt x 597.51233pt>
+<../../figlib/IST_A_CMYK_POS.pdf, id=32, 845.0471pt x 597.51233pt>
 File: ../../figlib/IST_A_CMYK_POS.pdf Graphic file (type pdf)
 <use ../../figlib/IST_A_CMYK_POS.pdf>
 Package pdftex.def Info: ../../figlib/IST_A_CMYK_POS.pdf  used on input line 15
@@ -1135,7 +1135,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 
 
 (./intro.tex
-<t1.pdf, id=40, 722.67157pt x 541.99657pt>
+<t1.pdf, id=45, 722.67157pt x 541.99657pt>
 File: t1.pdf Graphic file (type pdf)
 <use t1.pdf>
 Package pdftex.def Info: t1.pdf  used on input line 17.
@@ -1325,7 +1325,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 <inserted text> 
                 $
 l.84   (V_
-          C-V_B)G_2+(V_E-V_B)K_b-I_d=0//
+          C-V_B)G_2+(V_E-V_B)K_b-I_d=0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -1333,11 +1333,16 @@ l.84   (V_
 l.85 
      
 ? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.86   (V_
-          F-V_E)G_5+(V_B-V_E)K_b=0//
+          F-V_E)G_5+(V_B-V_E)K_b=0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -1345,11 +1350,16 @@ l.86   (V_
 l.87 
      
 ? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.88   (V_
-          G-V_D)G_6+(V_G-V_H)G_6=0//
+          G-V_D)G_6+(V_G-V_H)G_6=0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -1357,6 +1367,11 @@ l.88   (V_
 l.89 
      
 ? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -1418,7 +1433,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 <inserted text> 
                 $
 l.102   V_
-          E-V_H=K_c(V_D-V_G)G_6//
+          E-V_H=K_c(V_D-V_G)G_6\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -1426,6 +1441,11 @@ l.102   V_
 l.103 
       
 ? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -1511,9 +1531,7 @@ l.114 \end{equation}
 l.114 \end{equation}
                     
 ? 
-
-LaTeX Warning: Reference `eq:KCL' on page 3 undefined on input line 116.
-
+[3]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1559,7 +1577,6 @@ l.125 \end{equation}
 l.125 \end{equation}
                     
 ? 
-[3]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1571,36 +1588,6 @@ l.125 \end{equation}
                    \endgroup 
 l.125 \end{equation}
                     
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.131     0 & -G_2-K_b & G_2 &
-                               0 & K_b & 0 & 0 & 0//
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.132     0 & K_b & 0 & 0 & -G_5-K_b & G_5 &
-                                             0 & 0//
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.134     1 & 0 &
-                  0 & -1 & 0 & 0 & 0 & 0//
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.135     0 & 0 & 0 & 0 & 0 &
-                              0 & 0 & 1//
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.137     0 &
-              -G_3 & 0 & -G_4 & G_4+G_3+G_5 & -G_5 & -G_7 & G_7//
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -1614,11 +1601,6 @@ l.140
 l.140 
       
 ? 
-
-Overfull \hbox (44.63687pt too wide) detected at line 140
-[][] [] \OMS/cmsy/m/n/10.95 ^^A
- []
-
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1650,58 +1632,52 @@ l.157   \end{equation}
 ) (./simulation.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
- (../sim/op_tab.tex)
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{table}[H]
+                     
+? 
+(../sim/op_tab.tex)
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 19.
-) (./conclusion.tex [4])
+) (./conclusion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
- [5]
+ [4] [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
-
-(./report.aux)
+ (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 04BDD9B04A57A066F171B7AF79B96FC1;336
-(rerunfilecheck)             After:  39F27444A31F8C85EDE133C6D440F610;386.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 39F27444A31F8C85EDE133C6D440F610;386.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
  19878 strings out of 492982
- 346744 string characters out of 6134897
- 541221 words of memory out of 5000000
- 23202 multiletter control sequences out of 15000+600000
+ 346741 string characters out of 6134897
+ 543456 words of memory out of 5000000
+ 23203 multiletter control sequences out of 15000+600000
  552431 words of font info for 52 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  39i,8n,39p,10395b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on report.pdf (5 pages, 288246 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
+vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on report.pdf (5 pages, 287096 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
