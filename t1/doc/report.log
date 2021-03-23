@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 23:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  23 MAR 2021 01:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1291,84 +1291,84 @@ l.65   \end{equation}
 l.65   \end{equation}
                      
 ? 
-[2 <./t1.pdf>]
+[2 <./t1.pdf>] (../mat/meshes.tex)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.81 
+l.92 
      
 ? 
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.81 
+l.92 
      
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.82   (V_
+l.93   (V_
           B-V_A)G_1+(V_B-V_C)G_2+(V_B-V_E)G_3=0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.83 
+l.94 
      
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.84   (V_
+l.95   (V_
           C-V_B)G_2+(V_E-V_B)K_b-I_d=0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.85 
+l.96 
      
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.86   (V_
+l.97   (V_
           F-V_E)G_5+(V_B-V_E)K_b=0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.87 
+l.98 
      
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.88   (V_
+l.99   (V_
           G-V_D)G_6+(V_G-V_H)G_6=0\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.89 
-     
+l.100 
+      
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
@@ -1379,101 +1379,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 \end{equation}
-                   
-? 
-! You can't use `\eqno' in vertical mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.91 \end{equation}
-                   
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.91 \end{equation}
-                   
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.91 \end{equation}
-                   
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.99 
-     
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.99 
-     
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.100   V_
-          B-V_E=V_a\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.101 
-      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.102   V_
-          E-V_H=K_c(V_D-V_G)G_6\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.103 
-      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105 \end{equation}
+l.102 \end{equation}
                     
 ? 
 ! You can't use `\eqno' in vertical mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.105 \end{equation}
+l.102 \end{equation}
                     
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.105 \end{equation}
+l.102 \end{equation}
                     
 ? 
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.105 \end{equation}
+l.102 \end{equation}
                     
 ? 
+[3]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1490,7 +1417,7 @@ l.110
 <inserted text> 
                 $
 l.111   V_
-          H = 0V\\
+          B-V_E=V_a\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -1503,6 +1430,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.113   V_
+          E-V_H=K_c(V_D-V_G)G_6\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.114 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -1510,28 +1454,27 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 \end{equation}
+l.116 \end{equation}
                     
 ? 
 ! You can't use `\eqno' in vertical mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.114 \end{equation}
+l.116 \end{equation}
                     
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.114 \end{equation}
+l.116 \end{equation}
                     
 ? 
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.114 \end{equation}
+l.116 \end{equation}
                     
 ? 
-[3]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -1547,8 +1490,8 @@ l.121
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.122   I_
-          d+(V_H-V_G)G_7+(V_E-V_F)G_5+(V_E-V_B)G_3+(V_E-V_D)G_4=0\\
+l.122   V_
+          H = 0V\\
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -1592,13 +1535,70 @@ l.125 \end{equation}
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.140 
+l.132 
       
 ? 
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.140 
+l.132 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.133   I_
+          d+(V_H-V_G)G_7+(V_E-V_F)G_5+(V_E-V_B)G_3+(V_E-V_D)G_4=0\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.134 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 \end{equation}
+                    
+? 
+! You can't use `\eqno' in vertical mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.136 \end{equation}
+                    
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.136 \end{equation}
+                    
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.136 \end{equation}
+                    
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.151 
+      
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.151 
       
 ? 
 
@@ -1608,60 +1608,57 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 
+l.153 
       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.143 \cdot
+l.154 \cdot
            
 ? 
 ! You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.157   \end{equation}
+l.176   \end{equation}
                       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.157   \end{equation}
+l.176   \end{equation}
                       
 ? 
-) (./simulation.tex
+[4] (../mat/nodes.tex)) (./simulation.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
-
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \begin{table}[H]
-                     
-? 
-(../sim/op_tab.tex)
+ (../sim/op_tab.tex)
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 19.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./conclusion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
- [4] [5]
+ [5] [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 39F27444A31F8C85EDE133C6D440F610;386.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 19878 strings out of 492982
- 346741 string characters out of 6134897
- 543456 words of memory out of 5000000
- 23203 multiletter control sequences out of 15000+600000
+ 19890 strings out of 492982
+ 346883 string characters out of 6134897
+ 543558 words of memory out of 5000000
+ 23205 multiletter control sequences out of 15000+600000
  552431 words of font info for 52 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  39i,8n,39p,10395b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1674,10 +1671,10 @@ ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
 vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on report.pdf (5 pages, 287096 bytes).
+Output written on report.pdf (6 pages, 289203 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

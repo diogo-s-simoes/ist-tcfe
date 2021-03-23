@@ -50,10 +50,10 @@ R_1+R_2+R_3 & -R_3 & -R_4 & 0 \\
 
 \cdot
 \begin{bmatrix}
-I_MA \\
-I_MB \\
-I_MC \\
-I_MD \\
+I_{MA} \\
+I_{MB} \\
+I_{MC} \\
+I_{MD} \\
     \end{bmatrix}
 =
     \begin{bmatrix}
@@ -64,7 +64,18 @@ V_a \\
     \end{bmatrix}
   \end{equation}
 
+This equation solved using octave yields the following results:
 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Variable} & {\bf Value [A or V]} \\ \hline
+      \input{../mat/meshes.tex}
+    \end{tabular}
+    \caption{Mesh Analysis Results}
+    \label{tab:meshA}
+  \end{table}
 
 \section{Node analysis}
 The Kirchhoff Current Law (KCL) states that,for each node, the current from every branch conected must sum to 0:
@@ -142,13 +153,21 @@ All the previous equations can be compounded into a matrix
 
 \cdot
 \begin{bmatrix}
-I_MA \\
-I_MB \\
-I_MC \\
-I_MD \\
+V_A \\
+V_B \\
+V_C \\
+V_D \\
+V_E \\
+V_F \\
+V_G \\
+V_H \\
     \end{bmatrix}
 =
     \begin{bmatrix}
+0 \\
+0 \\
+I_d \\
+0\\
 V_a \\
 0 \\
 0 \\
@@ -156,4 +175,15 @@ V_a \\
     \end{bmatrix}
   \end{equation}
 
+This equation solved using octave yields the following results:
 
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Variable} & {\bf Value [A or V]} \\ \hline
+      \input{../mat/nodes.tex}
+    \end{tabular}
+    \caption{Node Analysis Results}
+    \label{tab:nodeA}
+  \end{table}
