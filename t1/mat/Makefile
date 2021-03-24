@@ -3,6 +3,6 @@ octave.log: Meshes.m Nodes.m
 	octave Nodes.m > node.log
 
 clean:
-	@rm -f octave.log octave-workspace *.eps *~
+	@rm -f *.log *.tex octave-workspace *.eps *~
 
 .PHONY: clean
