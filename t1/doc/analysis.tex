@@ -22,13 +22,13 @@ Applying Ohm's Law:
 \end{equation}
 
 We get the following equations:
-\begin{equation}
-     V_a = (R_1+R_2+R_3)I_{MA} - R_3I_{MB} - R_4I_{MC}\\
+\begin{flalign}
+    V_a = (R_1+R_2+R_3) I_{MA} - R_3 I_{MB} - R_4 I_{MC}\\
     -K_bR_3I_{MA} + I_b(K_bR_3-1)=0\\
     -I_{MA}R_4 + I_{MC}(R_4-K_c+R_6+R_7)=0\\
     I_{MD}= -I_d
   \label{eq:malhas}
-\end{equation}
+\end{flalign}
 
 In matrix form:
   \begin{equation}\label{eq:matrixeqn}
@@ -78,13 +78,13 @@ The Kirchhoff Current Law (KCL) states that,for each node, the current from ever
 
 Using KCL and Ohm's law (\ref{eq:OhmLaw}) we can obtain an equation for each node that isn't connected to a voltage source.
 
-\begin{equation}
+\begin{align}
   (V_B-V_A)G_1+(V_B-V_C)G_2+(V_B-V_E)G_3=0\\
   (V_C-V_B)G_2+(V_E-V_B)K_b-I_d=0\\
   (V_F-V_E)G_5+(V_B-V_E)K_b=0\\
   (V_G-V_D)G_6+(V_G-V_H)G_6=0
   \label{eq:nodos}
-\end{equation}
+\end{align}
 
 
 In nodes that are conected directly to voltage sources we cannot obtain equations as the ondes above, however, by using supernodes, we can obtain pairs of equations for each pair of nodes connected to a source.
