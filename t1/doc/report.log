@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  23 MAR 2021 01:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  24 MAR 2021 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -683,18 +683,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip50
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 72.
+Package hyperref Info: Option `colorlinks' set `true' on input line 73.
 
 
 Package hyperref Warning: Option `pagecolor' is not available anymore.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 72.
+(hyperref)                setting the option has no effect on input line 73.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 72.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 72.
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 72.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 73.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 73.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -1000,21 +1000,21 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 84.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -1093,7 +1093,7 @@ Package geometry Warning: The marginal notes overrun the paper.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring ON on input line 83.
+Package hyperref Info: Link coloring ON on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1102,9 +1102,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
 
 (./report.out) (./report.out)
 \@outlinefile=\write3
@@ -1125,7 +1125,7 @@ LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 ))
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 122.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 123.
  (./report.toc
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 2.
@@ -1153,25 +1153,33 @@ S.pdf>]
                 $
 l.24 
      
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Display math should end with $$.
 <to be read again> 
                    \par 
 l.24 
      
-? 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.25      V_
             a = (R_1+R_2+R_3)I_{MA} - R_3I_{MB} - R_4I_{MC}\\
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.26 
      
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
@@ -1182,13 +1190,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
                 $
 l.27     -K_
             bR_3I_{MA} + I_b(K_bR_3-1)=0\\
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.28 
      
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
@@ -1199,13 +1211,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
                 $
 l.29     -I_
             {MA}R_4 + I_{MC}(R_4-K_c+R_6+R_7)=0\\
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.30 
      
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
@@ -1216,13 +1232,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
                 $
 l.31     I_
            {MD}= -I_d
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.32 
      
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -1232,90 +1252,118 @@ Type  H <return>  for immediate help.
                                                   
 l.34 \end{equation}
                    
-? 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! You can't use `\eqno' in vertical mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
 l.34 \end{equation}
                    
-? 
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.34 \end{equation}
                    
-? 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
 l.34 \end{equation}
                    
-? 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+(../mat/meshes.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./t1.pdf>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.48 
+l.88 
      
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.48 
+l.88 
      
-? 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 
-     
-? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.51 \cdot
-          
-? 
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.65   \end{equation}
-                     
-? 
+l.89   (V_
+          B-V_A)G_1+(V_B-V_C)G_2+(V_B-V_E)G_3=0\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.65   \end{equation}
-                     
-? 
-[2 <./t1.pdf>] (../mat/meshes.tex)
+l.90 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.91   (V_
+          C-V_B)G_2+(V_E-V_B)K_b-I_d=0\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.92 
      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.92 
-     
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.93   (V_
-          B-V_A)G_1+(V_B-V_C)G_2+(V_B-V_E)G_3=0\\
-? 
+          F-V_E)G_5+(V_B-V_E)K_b=0\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.94 
      
-? 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
@@ -1325,52 +1373,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 <inserted text> 
                 $
 l.95   (V_
-          C-V_B)G_2+(V_E-V_B)K_b-I_d=0\\
-? 
+          G-V_D)G_6+(V_G-V_H)G_6=0
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.96 
      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.97   (V_
-          F-V_E)G_5+(V_B-V_E)K_b=0\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.98 
-     
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.99   (V_
-          G-V_D)G_6+(V_G-V_H)G_6=0\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.100 
-      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
 ! LaTeX Error: Bad math environment delimiter.
@@ -1379,289 +1392,122 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102 \end{equation}
-                    
-? 
+l.98 \end{equation}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! You can't use `\eqno' in vertical mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.102 \end{equation}
-                    
-? 
+l.98 \end{equation}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.102 \end{equation}
-                    
-? 
+l.98 \end{equation}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.102 \end{equation}
-                    
-? 
+l.98 \end{equation}
+                   
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.107 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.107 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
 [3]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.110 
-      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.110 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.111   V_
-          B-V_E=V_a\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.112 
-      
-? 
+l.108   V_
+          E-V_H=K_c(V_D-V_G)G_6
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.113   V_
-          E-V_H=K_c(V_D-V_G)G_6\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.114 
-      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-
- []
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116 \end{equation}
-                    
-? 
-! You can't use `\eqno' in vertical mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.116 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.116 \end{equation}
-                    
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.116 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.121 
-      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.121 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.122   V_
-          H = 0V\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.123 
-      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-
- []
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.125 \end{equation}
-                    
-? 
-! You can't use `\eqno' in vertical mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.125 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.125 \end{equation}
-                    
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.125 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.132 
-      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.132 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.133   I_
-          d+(V_H-V_G)G_7+(V_E-V_F)G_5+(V_E-V_B)G_3+(V_E-V_D)G_4=0\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.134 
-      
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 \end{equation}
-                    
-? 
-! You can't use `\eqno' in vertical mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.136 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.136 \end{equation}
-                    
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.136 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.151 
-      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.151 
-      
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.154 \cdot
-           
-? 
 ! You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.176   \end{equation}
-                      
-? 
+l.110 \end{equation}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.176   \end{equation}
-                      
-? 
-[4] (../mat/nodes.tex)) (./simulation.tex
+l.110 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (17.70863pt too wide) detected at line 162
+[][] [] \OMS/cmsy/m/n/10.95 ^^A [] \OT1/cmr/m/n/10.95 = []
+ []
+
+(../mat/nodes.tex)) (./simulation.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
  (../sim/op_tab.tex)
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 19.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./conclusion.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
- [5] [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
+ [4])
+(./conclusion.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 39F27444A31F8C85EDE133C6D440F610;386.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 19890 strings out of 492982
- 346883 string characters out of 6134897
- 543558 words of memory out of 5000000
+ 19889 strings out of 492982
+ 346877 string characters out of 6134897
+ 547559 words of memory out of 5000000
  23205 multiletter control sequences out of 15000+600000
  552431 words of font info for 52 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,8n,39p,10395b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,8n,39p,10395b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1671,10 +1517,10 @@ ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
 vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on report.pdf (6 pages, 289203 bytes).
+Output written on report.pdf (5 pages, 288611 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

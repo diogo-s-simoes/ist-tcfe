@@ -12,9 +12,15 @@ all: $(FILE).pdf
 	evince $< &
 
 $(FILE).pdf: $(wildcard *.tex) $(LODFIGS)
-	pdflatex  $(FILE).tex
-	pdflatex  $(FILE).tex
-	pdflatex  $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
 
 
 #convert libreoffice draw figures to pdf
