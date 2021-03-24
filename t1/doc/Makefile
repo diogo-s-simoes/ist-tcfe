@@ -15,12 +15,6 @@ $(FILE).pdf: $(wildcard *.tex) $(LODFIGS)
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
-	pdflatex -interaction=nonstopmode $(FILE).tex
-	pdflatex -interaction=nonstopmode $(FILE).tex
-	pdflatex -interaction=nonstopmode $(FILE).tex
-	pdflatex -interaction=nonstopmode $(FILE).tex
-	pdflatex -interaction=nonstopmode $(FILE).tex
-	pdflatex -interaction=nonstopmode $(FILE).tex
 
 
 #convert libreoffice draw figures to pdf
