@@ -1,10 +1,50 @@
 
 Circuit: .options savecurrents
 
-Error on line 11 :
-  gb 6 3 2 5 8.195797gb 6 8 1.032010
- unknown parameter (6) 
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
-ngspice stopped due to error, no simulation run!
 
-ERROR: fatal error in ngspice, exit(1)
+
+No. of Data Rows : 1
+@ca[i] = 0.000000e+00
+@gb[i] = -2.51439e-01
+@r1[i] = 2.412585e-01
+@r2[i] = 2.514392e-01
+@r3[i] = -1.01806e-02
+@r4[i] = -1.19997e+00
+@r5[i] = -2.51439e-01
+@r6[i] = 9.587141e-01
+@r7[i] = 9.587141e-01
+v(1) = 5.136122e+00
+v(2) = 4.884874e+00
+v(3) = 4.365839e+00
+v(5) = 4.915553e+00
+v(6) = 5.680421e+00
+v(8) = -2.94187e+00
+v(71) = -1.96476e+00
+v(72) = -1.96476e+00
+hd#branch = -9.58714e-01
+vaux#branch = 9.587141e-01
+vs#branch = -2.41259e-01
+op_TAB
+@ca[i] = 0.000000e+00
+@gb[i] = -2.51439e-01
+@r1[i] = 2.412585e-01
+@r2[i] = 2.514392e-01
+@r3[i] = -1.01806e-02
+@r4[i] = -1.19997e+00
+@r5[i] = -2.51439e-01
+@r6[i] = 9.587141e-01
+@r7[i] = 9.587141e-01
+v(1) = 5.136122e+00
+v(2) = 4.884874e+00
+v(3) = 4.365839e+00
+v(5) = 4.915553e+00
+v(6) = 5.680421e+00
+v(8) = -2.94187e+00
+v(71) = -1.96476e+00
+v(72) = -1.96476e+00
+hd#branch = -9.58714e-01
+vaux#branch = 9.587141e-01
+vs#branch = -2.41259e-01
+op_END
