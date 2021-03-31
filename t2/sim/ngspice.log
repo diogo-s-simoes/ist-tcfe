@@ -1,0 +1,10 @@
+
+Circuit: .options savecurrents
+
+Error on line 11 :
+  gb 6 3 2 5 8.195797gb 6 8 1.032010
+ unknown parameter (6) 
+
+ngspice stopped due to error, no simulation run!
+
+ERROR: fatal error in ngspice, exit(1)

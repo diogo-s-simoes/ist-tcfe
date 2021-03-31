@@ -22,16 +22,18 @@ C =data(9)
 Kb=data(10)
 Kd=data(11)
 
-fprintf(gid,"R1 1 2 %f", R1)
-fprintf(gid,"R2 2 3 %f", R2)
-fprintf(gid,"R3 2 5 %f", R3)
-fprintf(gid,"R4 gnd 5 %f", R4)
-fprintf(gid,"R5 5 6 %f", R5)
-fprintf(gid,"R6 gnd 7 %f", R6)
-fprintf(gid,"R7 7 8 %f", R7)
-fprintf(gid,"Vs 1 gnd %f", R1)
-
-
+fprintf(gid,"R1 1 2 %f\n", R1)
+fprintf(gid,"R2 2 3 %f\n", R2)
+fprintf(gid,"R3 2 5 %f\n", R3)
+fprintf(gid,"R4 gnd 5 %f\n", R4)
+fprintf(gid,"R5 5 6 %f\n", R5)
+fprintf(gid,"R6 gnd 71 %f\n", R6)
+fprintf(gid,"R7 72 8 %f\n", R7)
+fprintf(gid,"Vs 1 gnd %f AC 1 sin(0 1 100k)\n", Vs)
+fprintf(gid,"Vaux 71 72 DC 0\n")
+fprintf(gid,"Hd 5 8 Vaux %f\n", Kd)
+fprintf(gid,"Gb 6 3 2 5 %f", Kd)
+fprintf(gid,"Gb 6 8 %f", C)
 
 syms t
 syms R
