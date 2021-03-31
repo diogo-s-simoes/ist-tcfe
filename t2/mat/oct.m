@@ -31,14 +31,7 @@ fprintf(gid,"R6 gnd 7 %f", R6)
 fprintf(gid,"R7 7 8 %f", R7)
 fprintf(gid,"Vs 1 gnd %f", R1)
 
-*Voltage Sources
-Vaux G1 G2 DC 0
-Va A D DC 5.1361224873
-Hc E gnd Vaux 8.19579707039k
 
-*Current Sources
-Id gnd F DC 1.03201034448m
-Gb F C B E 7.16043663039m
 
 syms t
 syms R
