@@ -14,20 +14,20 @@ data =
    7.1604
    8.1958
 
-R1 =  1.0414
-R2 =  2.0643
-R3 =  3.0135
-R4 =  4.0964
-R5 =  3.0420
-R6 =  2.0494
-R7 =  1.0192
+R1 =  1041.4
+R2 =  2064.3
+R3 =  3013.5
+R4 =  4096.4
+R5 =  3042.0
+R6 =  2049.4
+R7 =  1019.2
 Vs =  5.1361
-C =  1.0320
-Kb =  7.1604
-Kd =  8.1958
+C =    1.0320e-06
+Kb =  0.0071604
+Kd =  8195.8
 OctSymPy v2.6.0: this is free software without warranty, see source.
 Initializing communication with SymPy using a popen2() pipe.
-Some output from the Python subprocess (pid 23093) might appear next.
+Some output from the Python subprocess (pid 24630) might appear next.
 
 OctSymPy: Communication established.  SymPy v1.1.1.
 i(t) = (symfun)
