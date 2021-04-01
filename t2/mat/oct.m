@@ -61,7 +61,11 @@ fprintf(f3,"R4 gnd 5 %.15f\n", R4)
 fprintf(f3,"R5 5 6 %.15f\n", R5)
 fprintf(f3,"R6 gnd 71 %.15f\n", R6)
 fprintf(f3,"R7 72 8 %.15f\n", R7)
+<<<<<<< HEAD
 fprintf(f3,"Vs 1 gnd DC 0\n")
+=======
+fprintf(f3,"Vs 1 gnd DC %.15f\n", Vs)
+>>>>>>> 4cca4e7ea09dc3bd6cf41d69bb31f7f233466244
 fprintf(f3,"Vaux 71 72 DC 0\n")
 fprintf(f3,"Hd 5 8 Vaux %.15f\n", Kd)
 fprintf(f3,"Gb 6 3 2 5 %.15f\n", Kb)
