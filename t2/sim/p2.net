@@ -1,6 +1,6 @@
 .options savecurrents
 
-.include datang.txt
+.include data2.txt
 
 .control
 
@@ -17,10 +17,10 @@ op
 
 print all
 
-.options savecurrents 
-echo  "op_TAB"
-print all
-echo  "op_END"
+.options savecurrents
+*echo  "op_TAB"
+*print all
+*echo  "op_END"
 
 quit
 .endc

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  31 MAR 2021 19:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  31 MAR 2021 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,7 +1005,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count294
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-No file report.aux.
+(./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -1023,7 +1023,7 @@ LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 86.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1114,65 +1114,49 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
 LaTeX Info: Redefining \nameref on input line 86.
+
+(./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-
-(./frontcover.tex
+ (./frontcover.tex
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex drive
 r on input line 15.
-<../../figlib/IST_A_CMYK_POS.pdf, id=4, 845.0471pt x 597.51233pt>
+<../../figlib/IST_A_CMYK_POS.pdf, id=16, 845.0471pt x 597.51233pt>
 File: ../../figlib/IST_A_CMYK_POS.pdf Graphic file (type pdf)
 <use ../../figlib/IST_A_CMYK_POS.pdf>
 Package pdftex.def Info: ../../figlib/IST_A_CMYK_POS.pdf  used on input line 15
 .
 (pdftex.def)             Requested size: -78.38533pt x -90.76195pt.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 ))
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 125.
+ (./report.toc)
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
 
 (./intro.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 8.
-
-
-LaTeX Warning: Reference `fig:t1' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 10.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 11.
 
 
 LaTeX Warning: Reference `sec:simulation' on page 1 undefined on input line 11.
 
 
 
-LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 13.
-
-
 LaTeX Warning: Reference `sec:conclusion' on page 1 undefined on input line 14.
 
 
-
-LaTeX Warning: File `t1.pdf' not found on input line 17.
-
-
-! Package pdftex.def Error: File `t1.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 \includegraphics[width=1\linewidth]{t1.pdf}
-                                                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<t1.pdf, id=20, 722.67157pt x 541.99657pt>
+File: t1.pdf Graphic file (type pdf)
+<use t1.pdf>
+Package pdftex.def Info: t1.pdf  used on input line 17.
+(pdftex.def)             Requested size: 455.24411pt x 341.43483pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1180,12 +1164,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../figlib/IST_A_CMYK_PO
 S.pdf>]) (./analysis.tex
-
-LaTeX Warning: Reference `fig:t1' on page 2 undefined on input line 4.
-
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 7.
-[2]
+ [2 <./t1.pdf>]
 
 ! LaTeX Error: File `../mat/meshes.tex' not found.
 
@@ -1202,11 +1183,11 @@ l.64       \input{../mat/meshes.tex}
 
  
 Here is how much of TeX's memory you used:
- 19864 strings out of 492982
- 346634 string characters out of 6134897
- 536883 words of memory out of 5000000
- 23220 multiletter control sequences out of 15000+600000
- 550713 words of font info for 51 fonts, out of 8000000 for 9000
+ 19884 strings out of 492982
+ 346888 string characters out of 6134897
+ 539238 words of memory out of 5000000
+ 23229 multiletter control sequences out of 15000+600000
+ 550545 words of font info for 50 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  39i,8n,39p,10395b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
