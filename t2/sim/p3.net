@@ -1,6 +1,4 @@
-Alínea 3
-
-.tran 1n 100n 0 1n uic
+.title Alínea 3
 
 .options savecurrents
 
@@ -19,7 +17,7 @@ set color4=violet
 set color5=rgb:3/8/0
 set color6=rgb:4/0/0
 
-tran
+tran 1ms 20ms 0 1ms uic
 
 print all
 
