@@ -1,28 +1,20 @@
 
 Circuit: .options savecurrents
 
-Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+Warning: TSTEP is invalid, must be greater than zero.
 
+TSTOP is invalid, must be greater than zero.
 
-
-No. of Data Rows : 1
-@gb[i] = -6.24390e-18
-@r1[i] = 5.954528e-18
-@r2[i] = 6.243896e-18
-@r3[i] = -2.89368e-19
-@r4[i] = 1.300919e-18
-@r5[i] = -2.83857e-03
-@r6[i] = -8.67362e-19
-@r7[i] = 1.165891e-21
-v(1) = 0.000000e+00
-v(2) = -6.20107e-15
-v(3) = -1.90901e-14
-v(5) = -5.32907e-15
-v(6) = 8.634810e+00
-v(8) = 1.776357e-15
-v(71) = 1.777545e-15
-v(72) = 1.777545e-15
-hd#branch = 2.838570e-03
-va#branch = -2.83857e-03
-vaux#branch = -8.67362e-19
-vs#branch = -5.95453e-18
+tran simulation(s) aborted
+false = 0.000000e+00
+true = 1.000000e+00
+boltz = 1.380620e-23
+c = 2.997925e+08
+e = 2.718282e+00
+echarge = 1.602190e-19
+i = 0.000000e+00,1.000000e+00
+kelvin = -2.73150e+02
+no = 0.000000e+00
+pi = 3.141593e+00
+planck = 6.626200e-34
+yes = 1.000000e+00
