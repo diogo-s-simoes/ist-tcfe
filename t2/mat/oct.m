@@ -44,20 +44,47 @@ G4=1/R4
 G5=1/R5
 G6=1/R6
 G7=1/R7
+
 A = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
 0,-G2-Kb,G2,0,Kb,0,0,0;
 0,Kb,0,0,-G5-Kb,G5,0,0;
 0,0,0,-G6,0,0,G6+G7,-G7;
 1,0,0,-1,0,0,0,0;
 0,0,0,1,0,0,0,0;
-0,0,0,-KcG6,1,0,KcG6,-1;
+0,0,0,-Kd*G6,1,0,Kd*G6,-1;
 0,-G3,0,-G4,G4+G3+G5,-G5,-G7,G7]
-B=[0;0;0;0;Va;0.0;0;0]V = A\B
+
+B=[0;0;0;0;Vs;0.0;0;0]
+
+V = A\B
+
 %%%%%%%%%%%%%%%%%%%%%%%%%MEXXXXXXXXXXXXAs
-VTESTE=10.
+
+VTESTE=V(6)-V(8)
+
 A = [R7+R6+R4+R5, -R3, -R5;
 R4, R1-R3-R4, R3;
 R5,-R3,-R5+R3+R2]
+
 B = [VTESTE; 0; 0]
+
 D = A\B
 REQUIV = VTESTE/D(1)
+
+fprintf(gid,"%f\n",REQUIV)
+
+
+%%%SOLUÇÂO FORÇADA
+
+
+x=0:.1:20;
+plot(x, (V(6)-V(8))*exp(-x/1000/REQUIV/C))
+
+title("Capacitor natural solution")
+
+xlabel("t(ms)")
+
+ylabel("V_{6n}(V)")
+
+
+
