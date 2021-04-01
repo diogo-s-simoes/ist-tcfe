@@ -61,11 +61,11 @@ fprintf(f3,"R4 gnd 5 %.15f\n", R4)
 fprintf(f3,"R5 5 6 %.15f\n", R5)
 fprintf(f3,"R6 gnd 71 %.15f\n", R6)
 fprintf(f3,"R7 72 8 %.15f\n", R7)
-fprintf(f3,"Vs 1 gnd 0 AC 1 sin(0 1 100k)\n")
+fprintf(f3,"Vs 1 gnd DC 0\n")
 fprintf(f3,"Vaux 71 72 DC 0\n")
 fprintf(f3,"Hd 5 8 Vaux %.15f\n", Kd)
 fprintf(f3,"Gb 6 3 2 5 %.15f\n", Kb)
-fprintf(f3,"Va 6 8 DC %.15f", 8.63481)
+fprintf(f3,"Ca 6 8 %.15f", C)
 
 fprintf(f4,"R1 1 2 %.15f\n", R1)
 fprintf(f4,"R2 2 3 %.15f\n", R2)
@@ -74,11 +74,11 @@ fprintf(f4,"R4 gnd 5 %.15f\n", R4)
 fprintf(f4,"R5 5 6 %.15f\n", R5)
 fprintf(f4,"R6 gnd 71 %.15f\n", R6)
 fprintf(f4,"R7 72 8 %.15f\n", R7)
-fprintf(f4,"Vs 1 gnd 0 AC 1 sin(0 1 100k)\n")
+fprintf(f4,"Vs 1 gnd %.15f AC 1 sin(0 1 1k)\n", Vs)
 fprintf(f4,"Vaux 71 72 DC 0\n")
 fprintf(f4,"Hd 5 8 Vaux %.15f\n", Kd)
 fprintf(f4,"Gb 6 3 2 5 %.15f\n", Kb)
-fprintf(f4,"Va 6 8 DC %.15f", 8.63481)
+fprintf(f4,"Ca 6 8 %.15f", C)
 
 fprintf(f5,"R1 1 2 %.15f\n", R1)
 fprintf(f5,"R2 2 3 %.15f\n", R2)
@@ -87,11 +87,11 @@ fprintf(f5,"R4 gnd 5 %.15f\n", R4)
 fprintf(f5,"R5 5 6 %.15f\n", R5)
 fprintf(f5,"R6 gnd 71 %.15f\n", R6)
 fprintf(f5,"R7 72 8 %.15f\n", R7)
-fprintf(f5,"Vs 1 gnd 0 AC 1 sin(0 1 100k)\n")
+fprintf(f5,"Vs 1 gnd %.15f AC 1 sin(0 1 1k)\n", Vs)
 fprintf(f5,"Vaux 71 72 DC 0\n")
 fprintf(f5,"Hd 5 8 Vaux %.15f\n", Kd)
 fprintf(f5,"Gb 6 3 2 5 %.15f\n", Kb)
-fprintf(f5,"Va 6 8 DC %.15f", 8.63481)
+fprintf(f5,"Ca 6 8 %.15f", C)
 
 %%    Aquela hmhm dos nós
 output_precision(12)
@@ -102,21 +102,71 @@ G4=1/R4
 G5=1/R5
 G6=1/R6
 G7=1/R7
+
 A = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
 0,-G2-Kb,G2,0,Kb,0,0,0;
 0,Kb,0,0,-G5-Kb,G5,0,0;
 0,0,0,-G6,0,0,G6+G7,-G7;
 1,0,0,-1,0,0,0,0;
-0,0,0,1,0,0,0,0; 
+0,0,0,1,0,0,0,0;
 0,0,0,-Kd*G6,1,0,Kd*G6,-1;
 0,-G3,0,-G4,G4+G3+G5,-G5,-G7,G7]
+
 B=[0;0;0;0;Vs;0.0;0;0]
+
 V = A\B
+
 %%%%%%%%%%%%%%%%%%%%%%%%%MEXXXXXXXXXXXXAs
-VTESTE=10.
-A = [R7+R6+R4+R5, -R3, -R5;
-R4, R1-R3-R4, R3;
-R5,-R3,-R5+R3+R2]
-B = [VTESTE; 0; 0]
-D = A\B
-REQUIV = VTESTE/D(1)
+
+VTESTE=V(6)-V(8)
+
+Ae = [R1+R3+R4, -R3, -R4, 0; 
+    -Kb*R3, Kb*R3-1,0,0; 
+    -R4,0,R4+R6+R7-Kd,0;
+    0, -R5, Kd,R5]
+    
+Be = [0; 0; 0; V(6)-V(8)]
+
+De = Ae\Be
+REQUIV = VTESTE/De(4)
+
+
+
+%%%SOLUÇÂO NATURAL
+
+
+x=0:.1:20;
+plot(x, (V(6))*exp(-x/1000/R5/C))
+
+title("Capacitor natural solution")
+
+xlabel("t(ms)")
+
+ylabel("V_{6n}(V)")
+
+
+teste=V(6)*exp(-7.028/1000/R5/C)
+
+%%%SOLUÇÃO FORCADA
+
+OMEGA=2*pi*1000
+
+Af = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
+0,-G2-Kb,G2,0,Kb,0,0,0;
+0,Kb,0,0,-G5-Kb,G5+(C*OMEGA*i),0,-(C*OMEGA*i);
+0,0,0,-G6,0,0,G6+G7,-G7;
+1,0,0,-1,0,0,0,0;
+0,0,0,1,0,0,0,0;
+0,0,0,-Kd*G6,1,0,Kd*G6,-1;
+0,-G3,0,-G4,G4+G3+G5,-G5-(C*OMEGA*i),-G7,G7+(C*OMEGA*i)]
+
+Bf=[0;0;0;0;Vs;0.0;0;0]
+
+Vf = Af\Bf
+
+
+
+%%  T H E   F I N A L   S O L U T I O N
+
+
+
