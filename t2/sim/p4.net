@@ -1,6 +1,10 @@
+.title Alínea 4
+
 .options savecurrents
 
-.include data2.txt
+.include data4.txt
+
+.ic v(6) = 8.634810e+00 v(8) = 1.776357e-15
 
 .control
 
@@ -13,7 +17,10 @@ set color4=violet
 set color5=rgb:3/8/0
 set color6=rgb:4/0/0
 
-op
+tran 1ms 20ms 0 1us
+
+hardcopy trans4.ps v(1) v(6)
+echo trans4_FIG
 
 print all
 
