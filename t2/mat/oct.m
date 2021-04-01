@@ -120,28 +120,53 @@ V = A\B
 
 VTESTE=V(6)-V(8)
 
-A = [R7+R6+R4+R5, -R3, -R5;
-R4, R1-R3-R4, R3;
-R5,-R3,-R5+R3+R2]
+Ae = [R1+R3+R4, -R3, -R4, 0; 
+    -Kb*R3, Kb*R3-1,0,0; 
+    -R4,0,R4+R6+R7-Kd,0;
+    0, -R5, 0,Kd+R5]
+    
+Be = [0; 0; 0; V(6)-V(8)]
 
-B = [VTESTE; 0; 0]
-
-D = A\B
-REQUIV = VTESTE/D(1)
+De = Ae\Be
+REQUIV = VTESTE/De(4)
 
 
 
-%%%SOLUÇÂO FORÇADA
+%%%SOLUÇÂO NATURAL
 
 
 x=0:.1:20;
-plot(x, (V(6)-V(8))*exp(-x/1000/REQUIV/C))
+plot(x, (V(6))*exp(-x/1000/R5/C))
 
 title("Capacitor natural solution")
 
 xlabel("t(ms)")
 
 ylabel("V_{6n}(V)")
+
+
+teste=V(6)*exp(-7.028/1000/R5/C)
+
+%%%SOLUÇÃO FORCADA
+
+OMEGA=2*pi*1000
+
+Af = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
+0,-G2-Kb,G2,0,Kb,0,0,0;
+0,Kb,0,0,-G5-Kb,G5+(C*OMEGA*i),0,-(C*OMEGA*i);
+0,0,0,-G6,0,0,G6+G7,-G7;
+1,0,0,-1,0,0,0,0;
+0,0,0,1,0,0,0,0;
+0,0,0,-Kd*G6,1,0,Kd*G6,-1;
+0,-G3,0,-G4,G4+G3+G5,-G5-(C*OMEGA*i),-G7,G7+(C*OMEGA*i)]
+
+Bf=[0;0;0;0;Vs;0.0;0;0]
+
+Vf = Af\Bf
+
+
+
+%%  T H E   F I N A L   S O L U T I O N
 
 
 
