@@ -1,119 +1,15 @@
 \section{Theoretical Analysis}
 \label{sec:analysis}
 
-In this section, the circuit shown in Figure \ref{fig:t1} is analysed
+In this section, the circuit shown in Figure \ref{fig:t2} is analysed
 theoretically, using both the mesh and node methods.
 
-\subsection{Mesh analysis}
-We considered 4 meshes delimited by the nodes ABDE, BCEF, DEGH and EFH and named them MA,MB,MC and MD respectively
-(it should be noted that all currents $I_{MA}, I_{MB}, I_{MC}, I_{MD}$ run clockwise in their respective meshes).
-Since this is a linear circuit, we can apply to each one of these meshes the Kirchhoff Voltage Law (KVL):
+\subsection{t<0}
+For t<0, vs(t)= Vs(t), it is a DC circuit. We can determine the voltges in all nodes and currents in all branches using the nodal method.
+Since this is a linear circuit, we apply Ohm's Law, $V_i= R_i * I$ and the Kirchoff Current Law (KCL), $\sum I_i = 0$.
 
+We get the following equation, in matrix form:
 
-\begin{equation}
-  \sum V_i = 0
-  \label{eq:KVL}
-\end{equation}
-
-Applying Ohm's Law:
-\begin{equation}
-  V_i= R_i * I
-  \label{eq:OhmLaw}
-\end{equation}
-
-We get the following equations:
-\begin{flalign}
-    V_a = (R_1+R_2+R_3) I_{MA} - R_3 I_{MB} - R_4 I_{MC}\\
-    -K_bR_3I_{MA} + I_b(K_bR_3-1)=0\\
-    -I_{MA}R_4 + I_{MC}(R_4-K_c+R_6+R_7)=0\\
-    I_{MD}= -I_d
-  \label{eq:malhas}
-\end{flalign}
-
-In matrix form:
-  \begin{equation}\label{eq:matrixeqn}
-\begin{bmatrix}
-R_1+R_2+R_3 & -R_3 & -R_4 & 0 \\
--K_b*R_3 & K_b* R_3-1 & 0 & 0 \\
--R_4 & 0 & R_4-K_c+R_6+R_7 & 0 \\
-0 & 0 & 0 & 1 
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-I_{MA} \\
-I_{MB} \\
-I_{MC} \\
-I_{MD} 
-    \end{bmatrix}
-=
-    \begin{bmatrix}
-V_a \\
-0 \\
-0 \\
--I_d
-    \end{bmatrix}
-  \end{equation}
-
-This equation solved using octave yields the following results:
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|l|r|}
-      \hline    
-      {\bf Variable} & {\bf Value [A or V]} \\ \hline
-      \input{../mat/meshes.tex}
-    \end{tabular}
-    \caption{Mesh Analysis Results}
-    \label{tab:meshA}
-  \end{table}
-
-\subsection{Node analysis}
-The Kirchhoff Current Law (KCL) states that,for each node, the current from every branch conected must sum to 0:
-
-\begin{equation}
-  \sum I_i = 0
-  \label{eq:KCL}
-\end{equation}
-
-
-Using KCL and Ohm's law (\ref{eq:OhmLaw}) we can obtain an equation for each node that isn't connected to a voltage source.
-
-\begin{align}
-  (V_B-V_A)G_1+(V_B-V_C)G_2+(V_B-V_E)G_3=0\\
-  (V_C-V_B)G_2+(V_E-V_B)K_b-I_d=0\\
-  (V_F-V_E)G_5+(V_B-V_E)K_b=0\\
-  (V_G-V_D)G_6+(V_G-V_H)G_6=0
-  \label{eq:nodos}
-\end{align}
-
-
-In nodes that are conected directly to voltage sources we cannot obtain equations as the ones above, however, by using supernodes, we can obtain pairs of equations for each pair of nodes connected to a source.
-\par
-The supernodes we'll be using are couplings of two nodes conected by a voltage source. The first two equations come from the fact that we know the voltage of each source, so we obtain
-
- \begin{align}
-  V_B-V_E=V_a\\
-  V_E-V_H=K_c(V_D-V_G)G_6
-  \label{eq:supenodosV}
-\end{align}
-
-We can obtain another equation by fixing one node as ground.
-
- \begin{equation}
-  V_H = 0V
-  \label{eq:supenodosGND}
-\end{equation}
-
-We also know that equation (\ref{eq:KCL}) aplies to supernodes, and from this we can derive the last linearly independent equation
-
-
-
- \begin{equation}
-  I_d+(V_H-V_G)G_7+(V_E-V_F)G_5+(V_E-V_B)G_3+(V_E-V_D)G_4=0
-  \label{eq:supenodosI}
-\end{equation}
-
-All the previous equations can be compounded into a matrix
   \begin{equation}\label{eq:matrixeqn2}
 \begin{bmatrix}
     -G_1 & G_1+G_2+G_3 & -G_2 & 0 & -G_3 & 0 & 0 & 0\\
@@ -127,37 +23,40 @@ All the previous equations can be compounded into a matrix
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-V_A \\
-V_B \\
-V_C \\
-V_D \\
-V_E \\
-V_F \\
-V_G \\
-V_H 
+V_1 \\
+V_2 \\
+V_3 \\
+V_4 \\
+V_5 \\
+V_6 \\
+V_7 \\
+V_8 
     \end{bmatrix}
 =
     \begin{bmatrix}
 0 \\
 0 \\
-I_d \\
+0 \\
 0\\
-V_a \\
+V_s \\
 0 \\
 0 \\
--I_d
+0
     \end{bmatrix}
   \end{equation}
 
+
 This equation solved using octave yields the following results:
 
-  \begin{table}[H]
+\begin{table}[H]
     \centering
     \begin{tabular}{|l|r|}
       \hline    
       {\bf Variable} & {\bf Value [A or V]} \\ \hline
-      \input{../mat/nodes.tex}
+      %\input{../mat/oct.tex}
     \end{tabular}
-    \caption{Node Analysis Results}
-    \label{tab:nodeA}
+    \caption{Node Analysis Results for t<0}
+    \label{tab:nodeanalysist<0}
   \end{table}
+
+
