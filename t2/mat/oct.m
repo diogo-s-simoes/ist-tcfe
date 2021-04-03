@@ -61,11 +61,7 @@ fprintf(f3,"R4 gnd 5 %.15f\n", R4)
 fprintf(f3,"R5 5 6 %.15f\n", R5)
 fprintf(f3,"R6 gnd 71 %.15f\n", R6)
 fprintf(f3,"R7 72 8 %.15f\n", R7)
-<<<<<<< HEAD
 fprintf(f3,"Vs 1 gnd DC 0\n")
-=======
-fprintf(f3,"Vs 1 gnd DC %.15f\n", Vs)
->>>>>>> 4cca4e7ea09dc3bd6cf41d69bb31f7f233466244
 fprintf(f3,"Vaux 71 72 DC 0\n")
 fprintf(f3,"Hd 5 8 Vaux %.15f\n", Kd)
 fprintf(f3,"Gb 6 3 2 5 %.15f\n", Kb)
@@ -140,7 +136,7 @@ REQUIV = VTESTE/De(4)
 
 
 x=0:.1:20;
-plot(x, (V(6))*exp(-x/1000/R5/C))
+plot(x, (V(6)-V(8))*exp(-x/1000/R5/C))
 
 title("Capacitor natural solution")
 
@@ -148,6 +144,9 @@ xlabel("t(ms)")
 
 ylabel("V_{6n}(V)")
 
+print -deps natural.eps
+
+close
 
 teste=V(6)*exp(-7.028/1000/R5/C)
 
@@ -164,7 +163,7 @@ Af = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
 0,0,0,-Kd*G6,1,0,Kd*G6,-1;
 0,-G3,0,-G4,G4+G3+G5,-G5-(C*OMEGA*i),-G7,G7+(C*OMEGA*i)]
 
-Bf=[0;0;0;0;Vs;0.0;0;0]
+Bf=[0;0;0;0;1;0.0;0;0]
 
 Vf = Af\Bf
 
@@ -172,5 +171,97 @@ Vf = Af\Bf
 
 %%  T H E   F I N A L   S O L U T I O N
 
+x1=-5:.1:0;
 
+x2=0:.1:20;
 
+y1=Vs+x1*0
+
+y2=V(6)+x1*0
+
+y3=real(Vf(6)*exp(x2*OMEGA*i/1000))+(V(6)-V(8))*exp(-x/1000/R5/C)
+
+y4=sin(OMEGA*x2/1000)
+
+plot(x2,y3,"color", 'r')
+hold on
+plot(x2,y4,"color",'b')
+hold on
+plot(x1,y1,"color",'b')
+hold on
+plot(x1,y2,"color",'r')
+
+title("Capacitor total forced solution")
+
+xlabel("t(ms)")
+
+ylabel("V_{6n}(V)")
+
+print -deps forced.eps
+
+close
+
+%% Frequency Response
+
+v6mag = ones(1,1000)
+vcmag = ones(1,1000)
+v6phase = ones(1,1000)
+vcphase = ones(1,1000)
+
+logvec=logspace(-1,6,1000)
+
+for f = 1:1000
+
+ofreq = 2*pi*logvec(f)
+
+Afreq = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
+0,-G2-Kb,G2,0,Kb,0,0,0;
+0,Kb,0,0,-G5-Kb,G5+(C*ofreq*i),0,-(C*ofreq*i);
+0,0,0,-G6,0,0,G6+G7,-G7;
+1,0,0,-1,0,0,0,0;
+0,0,0,1,0,0,0,0;
+0,0,0,-Kd*G6,1,0,Kd*G6,-1;
+0,-G3,0,-G4,G4+G3+G5,-G5-(C*ofreq*i),-G7,G7+(C*ofreq*i)]
+
+Bfreq=[0;0;0;0;1;0.0;0;0]
+
+Vfreq = Afreq\Bfreq
+
+v6mag(f)=abs(Vfreq(6))
+vcmag(f)=abs(Vfreq(6)-Vfreq(8))
+v6phase(f)=arg(Vfreq(6))
+vcphase(f)=arg(Vfreq(6)-Vfreq(8))
+endfor
+
+vsfreq=ones(1,1000)
+semilogx(logspace(-1,6,1000), 10*log(v6mag), "color", 'r')
+hold on
+semilogx(logspace(-1,6,1000), 10*log(vcmag), "color", 'g')
+hold on
+semilogx(logspace(-1,6,1000), 10*log(vsfreq), "color", 'b')
+
+title("Frequency Response (magnitude)")
+
+xlabel("f(Hz)")
+
+ylabel("V_{6}(dB)")
+
+print -deps dB.eps
+
+close
+
+semilogx(logspace(-1,6,1000), v6phase*180/pi, "color", 'r')
+hold on
+semilogx(logspace(-1,6,1000), vcphase*180/pi, "color", 'g')
+hold on
+semilogx(logspace(-1,6,1000), vsfreq-1, "color", 'b')
+
+title("Frequency Response (phase)")
+
+xlabel("f(Hz)")
+
+ylabel("Phase (º)")
+
+print -deps degree.eps
+
+close

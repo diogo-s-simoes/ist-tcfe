@@ -20,9 +20,9 @@ op
 print all
 
 .options savecurrents
-*echo  "op_TAB"
-*print all
-*echo  "op_END"
+echo  "p1_TAB"
+print all
+echo  "p1_END"
 
 quit
 .endc

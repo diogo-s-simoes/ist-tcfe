@@ -25,9 +25,9 @@ echo trans3_FIG
 print all
 
 .options savecurrents
-*echo  "op_TAB"
-*print all
-*echo  "op_END"
+echo  "p3_TAB"
+print all
+echo  "p3_END"
 
 quit
 .endc

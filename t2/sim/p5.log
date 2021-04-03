@@ -8,6 +8,11 @@ Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 No. of Data Rows : 91
 
 The file "mag5.ps" may be printed on a postscript printer.
+mag5_FIG
 
 The file "phase5.ps" may be printed on a postscript printer.
+phase5_FIG
 Error(parse.c--checkvalid): @ca[i]: no such vector.
+p5_TAB
+Error(parse.c--checkvalid): @ca[i]: no such vector.
+p5_END
