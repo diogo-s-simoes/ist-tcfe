@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  4 APR 2021 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  4 APR 2021 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,20 +1005,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count294
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(./report.aux
-
-LaTeX Warning: Label `fig:t2' multiply defined.
-
-
-LaTeX Warning: Label `fig:t2' multiply defined.
-
-
-LaTeX Warning: Label `fig:t2' multiply defined.
-
-
-LaTeX Warning: Label `fig:t2' multiply defined.
-
-)
+(./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -1179,65 +1166,71 @@ Overfull \hbox (6.9743pt too wide) detected at line 46
 
 [2 <./t2.pdf>]) (./simulation.tex (../sim/p1_tab.tex)
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 19.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 18.
  (../sim/p2_tab.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<../sim/trans3.pdf, id=131, 597.23125pt x 845.1575pt>
+<../sim/trans3.pdf, id=133, 597.23125pt x 845.1575pt>
 File: ../sim/trans3.pdf Graphic file (type pdf)
 <use ../sim/trans3.pdf>
-Package pdftex.def Info: ../sim/trans3.pdf  used on input line 39.
+Package pdftex.def Info: ../sim/trans3.pdf  used on input line 47.
 (pdftex.def)             Requested size: 455.24411pt x 644.235pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-<../sim/trans4.pdf, id=137, 597.23125pt x 845.1575pt>
+<../sim/trans4.pdf, id=139, 597.23125pt x 845.1575pt>
 File: ../sim/trans4.pdf Graphic file (type pdf)
 <use ../sim/trans4.pdf>
-Package pdftex.def Info: ../sim/trans4.pdf  used on input line 48.
+Package pdftex.def Info: ../sim/trans4.pdf  used on input line 59.
 (pdftex.def)             Requested size: 455.24411pt x 644.235pt.
 
-[5 <../sim/trans3.pdf>]
-<../sim/mag5.pdf, id=146, 597.23125pt x 845.1575pt>
-File: ../sim/mag5.pdf Graphic file (type pdf)
-<use ../sim/mag5.pdf>
-Package pdftex.def Info: ../sim/mag5.pdf  used on input line 56.
-(pdftex.def)             Requested size: 455.24411pt x 644.235pt.
- [6 <../sim/trans4.pdf>]
-<../sim/phase5.pdf, id=155, 597.23125pt x 845.1575pt>
-File: ../sim/phase5.pdf Graphic file (type pdf)
-<use ../sim/phase5.pdf>
-Package pdftex.def Info: ../sim/phase5.pdf  used on input line 62.
-(pdftex.def)             Requested size: 455.24411pt x 644.235pt.
- [7 <../sim/mag5.pdf>])
-(./conclusion.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <../sim/phase5.pdf>])
+ [5 <../sim/trans3.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+<../sim/mag5.pdf, id=152, 597.23125pt x 845.1575pt>
+File: ../sim/mag5.pdf Graphic file (type pdf)
+<use ../sim/mag5.pdf>
+Package pdftex.def Info: ../sim/mag5.pdf  used on input line 70.
+(pdftex.def)             Requested size: 455.24411pt x 644.235pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <../sim/trans4.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+<../sim/phase5.pdf, id=167, 597.23125pt x 845.1575pt>
+File: ../sim/phase5.pdf Graphic file (type pdf)
+<use ../sim/phase5.pdf>
+Package pdftex.def Info: ../sim/phase5.pdf  used on input line 76.
+(pdftex.def)             Requested size: 455.24411pt x 644.235pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <../sim/mag5.pdf>]) (./conclusion.tex [10 <../sim/phase5.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
- [9]
+ [11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: C50252E0B7228BDE142A5FE293079FC0;550.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 19947 strings out of 492982
- 347895 string characters out of 6134897
- 541764 words of memory out of 5000000
- 23258 multiletter control sequences out of 15000+600000
+ 19953 strings out of 492982
+ 347949 string characters out of 6134897
+ 541951 words of memory out of 5000000
+ 23262 multiletter control sequences out of 15000+600000
  552431 words of font info for 52 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,8n,39p,10395b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,8n,39p,10395b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1247,10 +1240,10 @@ ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
 vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on report.pdf (9 pages, 338178 bytes).
+Output written on report.pdf (11 pages, 344269 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
