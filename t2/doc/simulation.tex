@@ -12,13 +12,95 @@ up to the 5 decimal places provided by ngspice.
   \begin{tabular}{|l|r|}
     \hline    
     {\bf Name} & {\bf Value [A or V]} \\ \hline
-    \input{../sim/op_tab}
+    \input{../sim/p1_tab}
   \end{tabular}
   \caption{Operating point. A variable preceded by @ is of type {\em current}
     and expressed in Ampere; other variables are of type {\it voltage} and expressed in
     Volt.}
-  \label{tab:op}
+  \label{tab:p1}
 \end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Name} & {\bf Value [A or V]} \\ \hline
+      \input{../sim/p2_tab}
+    \end{tabular}
+    \caption{Operating point. A variable preceded by @ is of type {\em current}
+      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
+      Volt.}
+    \label{tab:p2}
+  \end{table}
+
+\subsection{Natural response}
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Name} & {\bf Value [A or V]} \\ \hline
+      \input{../sim/p3_tab}
+    \end{tabular}
+    \caption{Operating point. A variable preceded by @ is of type {\em current}
+      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
+      Volt.}
+    \label{tab:p3}
+  \end{table}
+
+  \begin{figure}[H] \centering
+    \includegraphics[width=1\linewidth]{../sim/trans3.pdf}
+    \caption{RC circuit to be analysed}
+    \label{fig:t2}
+    \end{figure}
+
+  \subsection{Forced response}
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Name} & {\bf Value [A or V]} \\ \hline
+      \input{../sim/p4_tab}
+    \end{tabular}
+    \caption{Operating point. A variable preceded by @ is of type {\em current}
+      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
+      Volt.}
+    \label{tab:p4}
+  \end{table}
+
+  \begin{figure}[H] \centering
+    \includegraphics[width=1\linewidth]{../sim/trans4.pdf}
+    \caption{RC circuit to be analysed}
+    \label{fig:t2}
+    \end{figure}
+
+  \subsection{Frequency analysis}
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Name} & {\bf Value [A or V]} \\ \hline
+      \input{../sim/p5_tab}
+    \end{tabular}
+    \caption{Operating point. A variable preceded by @ is of type {\em current}
+      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
+      Volt.}
+    \label{tab:p5}
+  \end{table}
+
+  \begin{figure}[H] \centering
+    \includegraphics[width=1\linewidth]{../sim/mag5.pdf}
+    \caption{RC circuit to be analysed}
+    \label{fig:t2}
+    \end{figure}
+
+    \begin{figure}[H] \centering
+        \includegraphics[width=1\linewidth]{../sim/phase5.pdf}
+        \caption{RC circuit to be analysed}
+        \label{fig:t2}
+        \end{figure}
 
 It should be noted that nodes G1 and G2 represent the same node G, and exist seperatly
 so as to allow the measuring of current $I_c$ in ngspice, for the purpose of defining the
