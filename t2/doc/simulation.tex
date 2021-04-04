@@ -3,7 +3,7 @@
 
 \subsection{Operating Point Analysis}
 
-Table~\ref{tab:op} shows the simulated operating point results for the circuit
+Table~\ref{tab:p1} shows the simulated operating point results for the circuit
 under analysis. When compared to the theoretical analysis results, we see the same values
 up to the 5 decimal places provided by ngspice.
 
@@ -12,7 +12,7 @@ up to the 5 decimal places provided by ngspice.
   \begin{tabular}{|l|r|}
     \hline    
     {\bf Name} & {\bf Value [A or V]} \\ \hline
-    \input{../sim/p1_tab}
+    \input{../sim/p1_tab.tex}
   \end{tabular}
   \caption{Operating point. A variable preceded by @ is of type {\em current}
     and expressed in Ampere; other variables are of type {\it voltage} and expressed in
@@ -25,7 +25,7 @@ up to the 5 decimal places provided by ngspice.
     \begin{tabular}{|l|r|}
       \hline    
       {\bf Name} & {\bf Value [A or V]} \\ \hline
-      \input{../sim/p2_tab}
+      \input{../sim/p2_tab.tex}
     \end{tabular}
     \caption{Operating point. A variable preceded by @ is of type {\em current}
       and expressed in Ampere; other variables are of type {\it voltage} and expressed in
@@ -35,19 +35,6 @@ up to the 5 decimal places provided by ngspice.
 
 \subsection{Natural response}
 
-  \begin{table}[H]
-    \centering
-    \begin{tabular}{|l|r|}
-      \hline    
-      {\bf Name} & {\bf Value [A or V]} \\ \hline
-      \input{../sim/p3_tab}
-    \end{tabular}
-    \caption{Operating point. A variable preceded by @ is of type {\em current}
-      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
-      Volt.}
-    \label{tab:p3}
-  \end{table}
-
   \begin{figure}[H] \centering
     \includegraphics[width=1\linewidth]{../sim/trans3.pdf}
     \caption{RC circuit to be analysed}
@@ -56,18 +43,6 @@ up to the 5 decimal places provided by ngspice.
 
   \subsection{Forced response}
 
-  \begin{table}[H]
-    \centering
-    \begin{tabular}{|l|r|}
-      \hline    
-      {\bf Name} & {\bf Value [A or V]} \\ \hline
-      \input{../sim/p4_tab}
-    \end{tabular}
-    \caption{Operating point. A variable preceded by @ is of type {\em current}
-      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
-      Volt.}
-    \label{tab:p4}
-  \end{table}
 
   \begin{figure}[H] \centering
     \includegraphics[width=1\linewidth]{../sim/trans4.pdf}
@@ -76,19 +51,6 @@ up to the 5 decimal places provided by ngspice.
     \end{figure}
 
   \subsection{Frequency analysis}
-
-  \begin{table}[H]
-    \centering
-    \begin{tabular}{|l|r|}
-      \hline    
-      {\bf Name} & {\bf Value [A or V]} \\ \hline
-      \input{../sim/p5_tab}
-    \end{tabular}
-    \caption{Operating point. A variable preceded by @ is of type {\em current}
-      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
-      Volt.}
-    \label{tab:p5}
-  \end{table}
 
   \begin{figure}[H] \centering
     \includegraphics[width=1\linewidth]{../sim/mag5.pdf}
