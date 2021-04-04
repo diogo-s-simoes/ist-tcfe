@@ -163,7 +163,7 @@ Af = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
 0,0,0,-Kd*G6,1,0,Kd*G6,-1;
 0,-G3,0,-G4,G4+G3+G5,-G5-(C*OMEGA*i),-G7,G7+(C*OMEGA*i)]
 
-Bf=[0;0;0;0;1;0.0;0;0]
+Bf=[0;0;0;0;i;0.0;0;0]
 
 Vf = Af\Bf
 
@@ -171,15 +171,15 @@ Vf = Af\Bf
 
 %%  T H E   F I N A L   S O L U T I O N
 
-x1=-5:.1:0;
+x1=-5:.01:0;
 
-x2=0:.1:20;
+x2=0:.01:20;
 
 y1=Vs+x1*0
 
 y2=V(6)+x1*0
 
-y3=real(Vf(6)*exp(x2*OMEGA*i/1000))+(V(6)-V(8))*exp(-x/1000/R5/C)
+y3=-real(Vf(6)*exp((x2*OMEGA/1000)*i))+(V(6)-V(8))*exp(-x2/1000/R5/C)
 
 y4=sin(OMEGA*x2/1000)
 
@@ -265,3 +265,7 @@ ylabel("Phase (º)")
 print -deps degree.eps
 
 close
+
+
+
+asdfg=abs(Vf(6))
