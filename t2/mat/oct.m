@@ -116,6 +116,12 @@ B=[0;0;0;0;Vs;0.0;0;0]
 
 V = A\B
 
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%MEXXXXXXXXXXXXAs
 
 VTESTE=V(6)-V(8)
@@ -129,6 +135,48 @@ Be = [0; 0; 0; V(6)-V(8)]
 
 De = Ae\Be
 REQUIV = VTESTE/De(4)
+
+filename="Tnegative.tex"
+fid=fopen(filename,"w")
+
+fprintf(fid, "V_1 & %.11fV \\\\ \\hline \n", V(1))
+fprintf(fid, "V_2 & %.11fV \\\\ \\hline \n", V(2))
+fprintf(fid, "V_3 & %.11fV \\\\ \\hline \n", V(3))
+fprintf(fid, "V_4 & %.11fV \\\\ \\hline \n", V(4))
+fprintf(fid, "V_5 & %.11fV \\\\ \\hline \n", V(5))
+fprintf(fid, "V_6 & %.11fV \\\\ \\hline \n", V(6))
+fprintf(fid, "V_7 & %.11fV \\\\ \\hline \n", V(7))
+fprintf(fid, "V_8 & %.11fV \\\\ \\hline \n", V(8))
+
+
+Id=-((V(5)-V(4))/R4+(V(5)-V(2))/R3+(V(5)-V(6))/R5)
+
+fprintf(fid, "I_1 & %.11fV \\\\ \\hline \n", (V(1)-V(2))/R1)
+fprintf(fid, "I_2 & %.11fV \\\\ \\hline \n", (V(2)-V(3))/R2)
+fprintf(fid, "I_3 & %.11fV \\\\ \\hline \n", (V(2)-V(5))/R3)
+fprintf(fid, "I_4 & %.11fV \\\\ \\hline \n", (V(4)-V(5))/R4)
+fprintf(fid, "I_5 & %.11fV \\\\ \\hline \n", (V(5)-V(6))/R5)
+fprintf(fid, "I_6 & %.11fV \\\\ \\hline \n", (V(4)-V(7))/R6)
+fprintf(fid, "I_7 & %.11fV \\\\ \\hline \n", (V(7)-V(8))/R7)
+fprintf(fid, "I_S & %.11fV \\\\ \\hline \n", -(V(1)-V(2))/R1)
+fprintf(fid, "I_b & %.11fV \\\\ \\hline \n", Kb*(V(2)-V(5)))
+fprintf(fid, "I_c & %.11fV \\\\ \\hline \n", -((V(8)-V(7))/R7-Id))
+fprintf(fid, "I_e & %.11fV \\\\ \\hline \n", Id)
+
+
+
+
+
+
+
+filename2="EQUIV.tex"
+fid2=fopen(filename2,"w")
+
+fprintf(fid2, "V_x & %.11fV \\\\ \\hline \n", V(6)-V(8))
+fprintf(fid2, "I_x & %.11fV \\\\ \\hline \n", De(4))
+fprintf(fid2, "R_{equiv} & %.11fV \\\\ \\hline \n", REQUIV)
+
+
 
 
 
@@ -144,7 +192,7 @@ xlabel("t(ms)")
 
 ylabel("V_{6n}(V)")
 
-print -deps natural.eps
+print -color -depsc natural.eps
 
 close
 
@@ -166,6 +214,21 @@ Af = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
 Bf=[0;0;0;0;i;0.0;0;0]
 
 Vf = Af\Bf
+
+
+
+filename1="Phasors.tex"
+fid1=fopen(filename1,"w")
+
+fprintf(fid1, "Z1 & %.11fV \\\\ \\hline \n", Vf(1))
+fprintf(fid1, "Z2 & %.11fV \\\\ \\hline \n", Vf(2))
+fprintf(fid1, "Z3 & %.11fV \\\\ \\hline \n", Vf(3))
+fprintf(fid1, "Z4 & %.11fV \\\\ \\hline \n", Vf(4))
+fprintf(fid1, "Z5 & %.11fV \\\\ \\hline \n", Vf(5))
+fprintf(fid1, "Z6 & %.11fV \\\\ \\hline \n", Vf(6))
+fprintf(fid1, "Z7 & %.11fV \\\\ \\hline \n", Vf(7))
+fprintf(fid1, "Z8 & %.11fV \\\\ \\hline \n", Vf(8))
+
 
 
 
@@ -197,7 +260,7 @@ xlabel("t(ms)")
 
 ylabel("V_{6n}(V)")
 
-print -deps forced.eps
+print -color -depsc forced.eps
 
 close
 
@@ -223,7 +286,7 @@ Afreq = [-G1,G1+G2+G3,-G2,0,-G3,0,0,0;
 0,0,0,-Kd*G6,1,0,Kd*G6,-1;
 0,-G3,0,-G4,G4+G3+G5,-G5-(C*ofreq*i),-G7,G7+(C*ofreq*i)]
 
-Bfreq=[0;0;0;0;1;0.0;0;0]
+Bfreq=[0;0;0;0;i;0.0;0;0]
 
 Vfreq = Afreq\Bfreq
 
@@ -234,11 +297,11 @@ vcphase(f)=arg(Vfreq(6)-Vfreq(8))
 endfor
 
 vsfreq=ones(1,100)
-semilogx(logspace(-1,6,100), 20*log(v6mag), "color", 'r')
+semilogx(logspace(-1,6,100), 20*log(v6mag)/log(10), "color", 'r')
 hold on
-semilogx(logspace(-1,6,100), 20*log(vcmag), "color", 'g')
+semilogx(logspace(-1,6,100), 20*log(vcmag)/log(10), "color", 'g')
 hold on
-semilogx(logspace(-1,6,100), 20*log(vsfreq), "color", 'b')
+semilogx(logspace(-1,6,100), 20*log(vsfreq)/log(10), "color", 'b')
 
 title("Frequency Response (magnitude)")
 
@@ -246,7 +309,7 @@ xlabel("f(Hz)")
 
 ylabel("V_{6}(dB)")
 
-print -deps dB.eps
+print -color -depsc dB.eps
 
 close
 
@@ -262,7 +325,7 @@ xlabel("f(Hz)")
 
 ylabel("Phase (º)")
 
-print -deps degree.eps
+print -color -depsc degree.eps
 
 close
 
