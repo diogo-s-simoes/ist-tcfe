@@ -234,11 +234,11 @@ vcphase(f)=arg(Vfreq(6)-Vfreq(8))
 endfor
 
 vsfreq=ones(1,100)
-semilogx(logspace(-1,6,100), 10*log(v6mag), "color", 'r')
+semilogx(logspace(-1,6,100), 20*log(v6mag), "color", 'r')
 hold on
-semilogx(logspace(-1,6,100), 10*log(vcmag), "color", 'g')
+semilogx(logspace(-1,6,100), 20*log(vcmag), "color", 'g')
 hold on
-semilogx(logspace(-1,6,100), 10*log(vsfreq), "color", 'b')
+semilogx(logspace(-1,6,100), 20*log(vsfreq), "color", 'b')
 
 title("Frequency Response (magnitude)")
 

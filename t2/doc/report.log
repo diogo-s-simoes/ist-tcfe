@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  4 APR 2021 22:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  4 APR 2021 22:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,7 +1174,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../sim/trans3.pdf, id=133, 597.23125pt x 845.1575pt>
 File: ../sim/trans3.pdf Graphic file (type pdf)
 <use ../sim/trans3.pdf>
-Package pdftex.def Info: ../sim/trans3.pdf  used on input line 47.
+Package pdftex.def Info: ../sim/trans3.pdf  used on input line 49.
 (pdftex.def)             Requested size: 455.24411pt x 644.235pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1183,7 +1183,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../sim/trans4.pdf, id=139, 597.23125pt x 845.1575pt>
 File: ../sim/trans4.pdf Graphic file (type pdf)
 <use ../sim/trans4.pdf>
-Package pdftex.def Info: ../sim/trans4.pdf  used on input line 59.
+Package pdftex.def Info: ../sim/trans4.pdf  used on input line 61.
 (pdftex.def)             Requested size: 455.24411pt x 644.235pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1195,7 +1195,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../sim/mag5.pdf, id=152, 597.23125pt x 845.1575pt>
 File: ../sim/mag5.pdf Graphic file (type pdf)
 <use ../sim/mag5.pdf>
-Package pdftex.def Info: ../sim/mag5.pdf  used on input line 70.
+Package pdftex.def Info: ../sim/mag5.pdf  used on input line 72.
 (pdftex.def)             Requested size: 455.24411pt x 644.235pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1207,7 +1207,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../sim/phase5.pdf, id=167, 597.23125pt x 845.1575pt>
 File: ../sim/phase5.pdf Graphic file (type pdf)
 <use ../sim/phase5.pdf>
-Package pdftex.def Info: ../sim/phase5.pdf  used on input line 76.
+Package pdftex.def Info: ../sim/phase5.pdf  used on input line 78.
 (pdftex.def)             Requested size: 455.24411pt x 644.235pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1240,7 +1240,7 @@ ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
 vb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on report.pdf (11 pages, 344269 bytes).
+Output written on report.pdf (11 pages, 345054 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams

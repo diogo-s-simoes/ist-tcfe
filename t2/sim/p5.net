@@ -19,9 +19,9 @@ set color6=rgb:4/0/0
 
 ac dec 10 0.1 100MEG
 
-hardcopy mag5.ps db(v(1)) db(v(6))
+hardcopy mag5.ps db(v(1)) db(v(6)) db(v(6)-v(8))
 echo mag5_FIG
-hardcopy phase5.ps ph(v(1)) ph(v(6))
+hardcopy phase5.ps ph(v(1)) ph(v(6)) ph(v(6)-v(8))
 echo phase5_FIG
 
 print all
