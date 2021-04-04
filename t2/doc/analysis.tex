@@ -2,7 +2,7 @@
 \label{sec:analysis}
 
 In this section, the circuit shown in Figure \ref{fig:t2} is analysed
-theoretically,  using both the mesh and node methods.
+theoretically, analysing the circuit for $t<0$, calculating the equivalent resistance, determining the natural and forced solutions and superimposing them to find the total solution.
 
 \subsection{Nodal analysis}
 For t$<$0,  $v_s(t)= V_s(t)$,  it is a DC circuit. We can determine the voltges in all nodes and currents in all branches using the nodal method.
@@ -54,14 +54,14 @@ This equation solved using octave yields the following results:
     \begin{tabular}{|l|r|}
       \hline    
       {\bf Variable} & {\bf Value [A or V]} \\ \hline
-      %\input{../mat/oct.tex}
+      %\input{../mat/Tnegative.tex}
     \end{tabular}
     \caption{Node Analysis Results for t$<$0}
     \label{tab:nodeanalysis}
   \end{table}
   
   
-\subsection{Nodal analysis}
+\subsection{Equivalent resistance}
 Now,  we have to determine the equivalent resistance $R_eq$ as seen from the capacitor terminals. We take out all the independent voltage sources (make $V_s=0$) and replace the capacitor with a voltage source $Vx= V(6)-V(8)$. The values of$ V(6)$ and $V(8)$ were already obtained via nodal analysis in the previous subsection. To determine the current $I_x$ supplied by $V_x$ we run mesh analysis:
 
 
@@ -90,7 +90,19 @@ V_x \\
     \end{bmatrix}
   \end{equation}
 
+This yields the following results:
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Variable} & {\bf Value [A or V]} \\ \hline
+      %\input{../mat/EQUIV.tex}
+    \end{tabular}
+    \caption{Equivalent resistance}
+    \label{tab:equivalentresistance}
+  \end{table}
+  
 $I_D = I_x = $
     
 $R_{eq} = \frac{V_x}{I_x}= $
@@ -177,11 +189,16 @@ V_{8p}
 
 Solving this system of equation in octave yiels the following results:
 
-POR TABELAAAAAAAAAAAAAAAAA
-A
-A
-A
-A
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+      \hline    
+      {\bf Variable} & {\bf Value [A or V]} \\ \hline
+      %\input{../mat/Phasors.tex}
+    \end{tabular}
+    \caption{Phasor voltages}
+    \label{tab:phasorvoltages}
+  \end{table}
   
   
 
@@ -200,9 +217,14 @@ $y_2=\sin(\omega*x2/1000)$
   \begin{figure}[H] \centering
     \includegraphics[width=1\linewidth]{forced.eps}
     \caption{Final total solution $v_{6}(t)$}
-    \label{fig:forced}
+    \label{fig:total}
     \end{figure}
     
 \subsection{Frequency responses}
       
-  Determine the frequency responses vc(f)=v6(f)-v8(f), and v6(f)  (frequency logscale magnitude in dB, phase in degrees) for frequency range 0.1 Hz to 1 MHz. Plot vs(f),  vc(f)  and v6(f) in the same figure and explain how and why they differ.    
+  For the frequency responses, we get the following plot:
+  
+  
+  EXPLICAR COMO E PORQUE DIFEREMM
+  M
+  M
