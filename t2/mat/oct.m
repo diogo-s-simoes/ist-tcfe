@@ -203,14 +203,14 @@ close
 
 %% Frequency Response
 
-v6mag = ones(1,1000)
-vcmag = ones(1,1000)
-v6phase = ones(1,1000)
-vcphase = ones(1,1000)
+v6mag = ones(1,100)
+vcmag = ones(1,100)
+v6phase = ones(1,100)
+vcphase = ones(1,100)
 
-logvec=logspace(-1,6,1000)
+logvec=logspace(-1,6,100)
 
-for f = 1:1000
+for f = 1:100
 
 ofreq = 2*pi*logvec(f)
 
@@ -233,12 +233,12 @@ v6phase(f)=arg(Vfreq(6))
 vcphase(f)=arg(Vfreq(6)-Vfreq(8))
 endfor
 
-vsfreq=ones(1,1000)
-semilogx(logspace(-1,6,1000), 10*log(v6mag), "color", 'r')
+vsfreq=ones(1,100)
+semilogx(logspace(-1,6,100), 10*log(v6mag), "color", 'r')
 hold on
-semilogx(logspace(-1,6,1000), 10*log(vcmag), "color", 'g')
+semilogx(logspace(-1,6,100), 10*log(vcmag), "color", 'g')
 hold on
-semilogx(logspace(-1,6,1000), 10*log(vsfreq), "color", 'b')
+semilogx(logspace(-1,6,100), 10*log(vsfreq), "color", 'b')
 
 title("Frequency Response (magnitude)")
 
@@ -250,11 +250,11 @@ print -deps dB.eps
 
 close
 
-semilogx(logspace(-1,6,1000), v6phase*180/pi, "color", 'r')
+semilogx(logspace(-1,6,100), v6phase*180/pi, "color", 'r')
 hold on
-semilogx(logspace(-1,6,1000), vcphase*180/pi, "color", 'g')
+semilogx(logspace(-1,6,100), vcphase*180/pi, "color", 'g')
 hold on
-semilogx(logspace(-1,6,1000), vsfreq-1, "color", 'b')
+semilogx(logspace(-1,6,100), vsfreq-1, "color", 'b')
 
 title("Frequency Response (phase)")
 
