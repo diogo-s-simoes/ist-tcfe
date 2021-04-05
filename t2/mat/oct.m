@@ -317,7 +317,7 @@ semilogx(logspace(-1,6,100), v6phase*180/pi, "color", 'r')
 hold on
 semilogx(logspace(-1,6,100), vcphase*180/pi, "color", 'g')
 hold on
-semilogx(logspace(-1,6,100), vsfreq-1, "color", 'b')
+semilogx(logspace(-1,6,100), 90+0*v6phase, "color", 'b')
 
 title("Frequency Response (phase)")
 
