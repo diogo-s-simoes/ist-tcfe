@@ -220,14 +220,14 @@ Vf = Af\Bf
 filename1="Phasors.tex"
 fid1=fopen(filename1,"w")
 
-fprintf(fid1, "$\\~{V}_1$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(1)), imag(Vf(1)))
-fprintf(fid1, "$\\~{V}_2$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(2)), imag(Vf(2)))
-fprintf(fid1, "$\\~{V}_3$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(3)), imag(Vf(3)))
-fprintf(fid1, "$\\~{V}_4$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(4)), imag(Vf(4)))
-fprintf(fid1, "$\\~{V}_5$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(5)), imag(Vf(5)))
-fprintf(fid1, "$\\~{V}_6$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(6)), imag(Vf(6)))
-fprintf(fid1, "$\\~{V}_7$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(7)), imag(Vf(7)))
-fprintf(fid1, "$\\~{V}_8$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline"   , real(Vf(8)), imag(Vf(8)))
+fprintf(fid1, "$\\tilde{V}_1$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(1)), imag(Vf(1)))
+fprintf(fid1, "$\\tilde{V}_2$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(2)), imag(Vf(2)))
+fprintf(fid1, "$\\tilde{V}_3$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(3)), imag(Vf(3)))
+fprintf(fid1, "$\\tilde{V}_4$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(4)), imag(Vf(4)))
+fprintf(fid1, "$\\tilde{V}_5$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(5)), imag(Vf(5)))
+fprintf(fid1, "$\\tilde{V}_6$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(6)), imag(Vf(6)))
+fprintf(fid1, "$\\tilde{V}_7$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(7)), imag(Vf(7)))
+fprintf(fid1, "$\\tilde{V}_8$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline"   , real(Vf(8)), imag(Vf(8)))
 
 
 
