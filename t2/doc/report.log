@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  5 APR 2021 00:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  5 APR 2021 01:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,7 +1005,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count294
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(./report.aux)
+No file report.aux.
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -1023,7 +1023,7 @@ LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 86.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1114,45 +1114,65 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
 LaTeX Info: Redefining \nameref on input line 86.
-
-(./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
- (./frontcover.tex
+
+(./frontcover.tex
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex drive
 r on input line 15.
-<../../figlib/IST_A_CMYK_POS.pdf, id=60, 845.0471pt x 597.51233pt>
+<../../figlib/IST_A_CMYK_POS.pdf, id=4, 845.0471pt x 597.51233pt>
 File: ../../figlib/IST_A_CMYK_POS.pdf Graphic file (type pdf)
 <use ../../figlib/IST_A_CMYK_POS.pdf>
 Package pdftex.def Info: ../../figlib/IST_A_CMYK_POS.pdf  used on input line 15
 .
 (pdftex.def)             Requested size: -78.38533pt x -90.76195pt.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 ))
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 125.
- (./report.toc
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 2.
-)
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
 
 (./intro.tex
-<t2.pdf, id=80, 722.67157pt x 541.99657pt>
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 9.
+
+
+LaTeX Warning: Reference `fig:t2' on page 1 undefined on input line 9.
+
+
+LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Reference `sec:simulation' on page 1 undefined on input line 12.
+
+
+
+LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 1 undefined on input line 15.
+
+
+<t2.pdf, id=5, 722.67157pt x 541.99657pt>
 File: t2.pdf Graphic file (type pdf)
 <use t2.pdf>
 Package pdftex.def Info: t2.pdf  used on input line 18.
 (pdftex.def)             Requested size: 455.24411pt x 341.43483pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../figlib/IST_A_CMYK_PO
 S.pdf>]) (./analysis.tex
+
+LaTeX Warning: Reference `fig:t2' on page 2 undefined on input line 4.
+
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 7.
 
@@ -1160,851 +1180,11 @@ Overfull \hbox (6.9743pt too wide) detected at line 47
 [][] [] \OMS/cmsy/m/n/10.95 ^^A [] \OT1/cmr/m/n/10.95 = []
  []
 
-(../mat/Tnegative.tex
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1 V_
-      1 & 5.13612248730V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.1 V_1 &
-          5.13612248730V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1 V_1 &
-          5.13612248730V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1 V_1 &
-          5.13612248730V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2 V_
-      2 & 4.88464690881V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.2 V_2 &
-          4.88464690881V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2 V_2 &
-          4.88464690881V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.2 V_2 &
-          4.88464690881V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3 V_
-      3 & 4.36195145882V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.3 V_3 &
-          4.36195145882V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3 V_3 &
-          4.36195145882V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.3 V_3 &
-          4.36195145882V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.4 V_
-      4 & -0.00000000000V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.4 V_4 &
-          -0.00000000000V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.4 V_4 &
-          -0.00000000000V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.4 V_4 &
-          -0.00000000000V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.5 V_
-      5 & 4.92000960269V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.5 V_5 &
-          4.92000960269V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.5 V_5 &
-          4.92000960269V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.5 V_5 &
-          4.92000960269V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 V_
-      6 & 5.69027079572V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.6 V_6 &
-          5.69027079572V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.6 V_6 &
-          5.69027079572V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.6 V_6 &
-          5.69027079572V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.7 V_
-      7 & -1.96654083449V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.7 V_7 &
-          -1.96654083449V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.7 V_7 &
-          -1.96654083449V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.7 V_7 &
-          -1.96654083449V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8 V_
-      8 & -2.94453891610V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.8 V_8 &
-          -2.94453891610V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8 V_8 &
-          -2.94453891610V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.8 V_8 &
-          -2.94453891610V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.9 I_
-      1 & 0.00024147744V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.9 I_1 &
-          0.00024147744V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.9 I_1 &
-          0.00024147744V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.9 I_1 &
-          0.00024147744V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.10 I_
-       2 & 0.00025321233V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.10 I_2 &
-           0.00025321233V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.10 I_2 &
-           0.00025321233V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.10 I_2 &
-           0.00025321233V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.11 I_
-       3 & -0.00001173489V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.11 I_3 &
-           -0.00001173489V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.11 I_3 &
-           -0.00001173489V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.11 I_3 &
-           -0.00001173489V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 I_
-       4 & -0.00120106056V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.12 I_4 &
-           -0.00120106056V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 I_4 &
-           -0.00120106056V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.12 I_4 &
-           -0.00120106056V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.13 I_
-       5 & -0.00025321233V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.13 I_5 &
-           -0.00025321233V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.13 I_5 &
-           -0.00025321233V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.13 I_5 &
-           -0.00025321233V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 I_
-       6 & 0.00095958312V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.14 I_6 &
-           0.00095958312V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 I_6 &
-           0.00095958312V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.14 I_6 &
-           0.00095958312V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.15 I_
-       7 & 0.00095958312V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.15 I_7 &
-           0.00095958312V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.15 I_7 &
-           0.00095958312V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.15 I_7 &
-           0.00095958312V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.16 I_
-       S & -0.00024147744V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.16 I_S &
-           -0.00024147744V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.16 I_S &
-           -0.00024147744V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.16 I_S &
-           -0.00024147744V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.17 I_
-       b & -0.00025321233V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.17 I_b &
-           -0.00025321233V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.17 I_b &
-           -0.00025321233V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.17 I_b &
-           -0.00025321233V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 I_
-       c & -0.00000000000V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.18 I_c &
-           -0.00000000000V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 I_c &
-           -0.00000000000V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 I_c &
-           -0.00000000000V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.19 I_
-       e & -0.00095958312V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.19 I_e &
-           -0.00095958312V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.19 I_e &
-           -0.00095958312V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.19 I_e &
-           -0.00095958312V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) [2 <./t2.pdf>] (../mat/EQUIV.tex
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1 V_
-      x & 8.63480971182V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.1 V_x &
-          8.63480971182V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1 V_x &
-          8.63480971182V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1 V_x &
-          8.63480971182V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2 I_
-      x & 0.00283856995V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.2 I_x &
-          0.00283856995V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2 I_x &
-          0.00283856995V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.2 I_x &
-          0.00283856995V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3 R_
-      {equiv} & 3041.95770117000V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.3 R_{equiv} &
-                3041.95770117000V \\ \hline
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3 R_{equiv} &
-                3041.95770117000V \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.3 R_{equiv} &
-                3041.95770117000V \\ \hline
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) [3]
+(../mat/Tnegative.tex) [2 <./t2.pdf>] (../mat/EQUIV.tex) [3]
 Package epstopdf Info: Source file: <natural.eps>
-(epstopdf)                    date: 2021-04-05 00:51:29
+(epstopdf)                    date: 2021-04-05 01:09:03
 (epstopdf)                    size: 10230 bytes
 (epstopdf)             Output file: <natural-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-04-05 00:49:51
-(epstopdf)                    size: 8702 bytes
 (epstopdf)             Command: <repstopdf --outfile=natural-eps-converted-to.p
 df natural.eps>
 (epstopdf)             \includegraphics on input line 138.
@@ -2012,13 +1192,13 @@ runsystem(repstopdf --outfile=natural-eps-converted-to.pdf natural.eps)...execu
 ted safely (allowed).
 
 Package epstopdf Info: Result file: <natural-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-04-05 00:51:30
+(epstopdf)                    date: 2021-04-05 01:09:04
 (epstopdf)                    size: 8702 bytes.
 
 
 pdfTeX warning: pdflatex (file ./natural-eps-converted-to.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<natural-eps-converted-to.pdf, id=156, 578.16pt x 433.62pt>
+<natural-eps-converted-to.pdf, id=89, 578.16pt x 433.62pt>
 File: natural-eps-converted-to.pdf Graphic file (type pdf)
 <use natural-eps-converted-to.pdf>
 Package pdftex.def Info: natural-eps-converted-to.pdf  used on input line 138.
@@ -2031,13 +1211,188 @@ Overfull \hbox (136.50763pt too wide) detected at line 186
 
 Underfull \vbox (badness 1308) has occurred while \output is active []
 
- [4 <./natural-eps-converted-to.pdf>] (../mat/Phasors.tex)
+ [4 <./natural-eps-converted-to.pdf>] (../mat/Phasors.tex
+
+LaTeX Warning: Command \~ invalid in math mode on input line 1.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1 $\~{V}
+          _1$ & $(0.00000000000+i\cdot1.00000000000)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1 $\~{V}
+          _1$ & $(0.00000000000+i\cdot1.00000000000)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 2.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.2 $\~{V}
+          _2$ & $(0.00000000000+i\cdot0.95103785412)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.2 $\~{V}
+          _2$ & $(0.00000000000+i\cdot0.95103785412)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 3.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.3 $\~{V}
+          _3$ & $(0.00000000000+i\cdot0.84926936022)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.3 $\~{V}
+          _3$ & $(0.00000000000+i\cdot0.84926936022)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 4.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.4 $\~{V}
+          _4$ & $(0.00000000000+i\cdot0.00000000000)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.4 $\~{V}
+          _4$ & $(0.00000000000+i\cdot0.00000000000)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 5.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.5 $\~{V}
+          _5$ & $(0.00000000000+i\cdot0.95792294963)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.5 $\~{V}
+          _5$ & $(0.00000000000+i\cdot0.95792294963)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 6.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.6 $\~{V}
+          _6$ & $(0.08501303490+i\cdot-0.56899006711)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.6 $\~{V}
+          _6$ & $(0.08501303490+i\cdot-0.56899006711)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 7.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.7 $\~{V}
+          _7$ & $(-0.00000000000+i\cdot-0.38288433334)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.7 $\~{V}
+          _7$ & $(-0.00000000000+i\cdot-0.38288433334)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 8.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.8 $\~{V}
+          _8$ & $(-0.00000000000+i\cdot-0.57329997939)V$ \\ \hline
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.8 $\~{V}
+          _8$ & $(-0.00000000000+i\cdot-0.57329997939)V$ \\ \hline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+)
 Package epstopdf Info: Source file: <forced.eps>
-(epstopdf)                    date: 2021-04-05 00:51:29
+(epstopdf)                    date: 2021-04-05 01:09:03
 (epstopdf)                    size: 95838 bytes
 (epstopdf)             Output file: <forced-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-04-05 00:49:51
-(epstopdf)                    size: 31121 bytes
 (epstopdf)             Command: <repstopdf --outfile=forced-eps-converted-to.pd
 f forced.eps>
 (epstopdf)             \includegraphics on input line 218.
@@ -2045,13 +1400,13 @@ runsystem(repstopdf --outfile=forced-eps-converted-to.pdf forced.eps)...execute
 d safely (allowed).
 
 Package epstopdf Info: Result file: <forced-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-04-05 00:51:30
+(epstopdf)                    date: 2021-04-05 01:09:05
 (epstopdf)                    size: 31121 bytes.
 
 
 pdfTeX warning: pdflatex (file ./forced-eps-converted-to.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<forced-eps-converted-to.pdf, id=174, 578.16pt x 433.62pt>
+<forced-eps-converted-to.pdf, id=108, 578.16pt x 433.62pt>
 File: forced-eps-converted-to.pdf Graphic file (type pdf)
 <use forced-eps-converted-to.pdf>
 Package pdftex.def Info: forced-eps-converted-to.pdf  used on input line 218.
@@ -2060,14 +1415,25 @@ Package pdftex.def Info: forced-eps-converted-to.pdf  used on input line 218.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5])
-(./simulation.tex (../sim/p1_tab.tex)
+(./simulation.tex
+
+LaTeX Warning: Reference `tab:p1' on page 6 undefined on input line 6.
+
+(../sim/p1_tab.tex)
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 18.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./forced-eps-converted-to.pdf>] (../sim/p2_tab.tex)
-<../sim/trans3.pdf, id=198, 597.23125pt x 845.1575pt>
+ [6 <./forced-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `tab:p2' on page 7 undefined on input line 22.
+
+(../sim/p2_tab.tex)
+
+LaTeX Warning: Reference `fig:t2' on page 7 undefined on input line 46.
+
+<../sim/trans3.pdf, id=132, 597.23125pt x 845.1575pt>
 File: ../sim/trans3.pdf Graphic file (type pdf)
 <use ../sim/trans3.pdf>
 Package pdftex.def Info: ../sim/trans3.pdf  used on input line 49.
@@ -2076,7 +1442,10 @@ Package pdftex.def Info: ../sim/trans3.pdf  used on input line 49.
 Underfull \vbox (badness 2384) has occurred while \output is active []
 
  [7]
-<../sim/trans4.pdf, id=207, 597.23125pt x 845.1575pt>
+
+LaTeX Warning: Reference `fig:t2' on page 8 undefined on input line 58.
+
+<../sim/trans4.pdf, id=141, 597.23125pt x 845.1575pt>
 File: ../sim/trans4.pdf Graphic file (type pdf)
 <use ../sim/trans4.pdf>
 Package pdftex.def Info: ../sim/trans4.pdf  used on input line 61.
@@ -2085,7 +1454,7 @@ Package pdftex.def Info: ../sim/trans4.pdf  used on input line 61.
 Underfull \vbox (badness 2173) has occurred while \output is active []
 
  [8 <../sim/trans3.pdf>]
-<../sim/mag5.pdf, id=216, 597.23125pt x 845.1575pt>
+<../sim/mag5.pdf, id=152, 597.23125pt x 845.1575pt>
 File: ../sim/mag5.pdf Graphic file (type pdf)
 <use ../sim/mag5.pdf>
 Package pdftex.def Info: ../sim/mag5.pdf  used on input line 72.
@@ -2094,7 +1463,7 @@ Package pdftex.def Info: ../sim/mag5.pdf  used on input line 72.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <../sim/trans4.pdf>]
-<../sim/phase5.pdf, id=225, 597.23125pt x 845.1575pt>
+<../sim/phase5.pdf, id=162, 597.23125pt x 845.1575pt>
 File: ../sim/phase5.pdf Graphic file (type pdf)
 <use ../sim/phase5.pdf>
 Package pdftex.def Info: ../sim/phase5.pdf  used on input line 78.
@@ -2109,8 +1478,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0B537986291032DD8CACA7D466756DDF;916.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  0B537986291032DD8CACA7D466756DDF;916.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2118,13 +1496,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 19998 strings out of 492982
- 348781 string characters out of 6134897
- 546308 words of memory out of 5000000
- 23282 multiletter control sequences out of 15000+600000
+ 19975 strings out of 492982
+ 348487 string characters out of 6134897
+ 544883 words of memory out of 5000000
+ 23267 multiletter control sequences out of 15000+600000
  552431 words of font info for 52 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,10n,39p,10395b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,39p,10395b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -2137,10 +1515,10 @@ cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on report.pdf (12 pages, 401554 bytes).
+Output written on report.pdf (12 pages, 413927 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 237 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

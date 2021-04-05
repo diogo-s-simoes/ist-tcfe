@@ -139,29 +139,29 @@ REQUIV = VTESTE/De(4)
 filename="Tnegative.tex"
 fid=fopen(filename,"w")
 
-fprintf(fid, "V_1 & %.11fV \\\\ \\hline \n", V(1))
-fprintf(fid, "V_2 & %.11fV \\\\ \\hline \n", V(2))
-fprintf(fid, "V_3 & %.11fV \\\\ \\hline \n", V(3))
-fprintf(fid, "V_4 & %.11fV \\\\ \\hline \n", V(4))
-fprintf(fid, "V_5 & %.11fV \\\\ \\hline \n", V(5))
-fprintf(fid, "V_6 & %.11fV \\\\ \\hline \n", V(6))
-fprintf(fid, "V_7 & %.11fV \\\\ \\hline \n", V(7))
-fprintf(fid, "V_8 & %.11fV \\\\ \\hline \n", V(8))
+fprintf(fid, "$V_1$ & $%.11fV$ \\\\ \\hline \n", V(1))
+fprintf(fid, "$V_2$ & $%.11fV$ \\\\ \\hline \n", V(2))
+fprintf(fid, "$V_3$ & $%.11fV$ \\\\ \\hline \n", V(3))
+fprintf(fid, "$V_4$ & $%.11fV$ \\\\ \\hline \n", V(4))
+fprintf(fid, "$V_5$ & $%.11fV$ \\\\ \\hline \n", V(5))
+fprintf(fid, "$V_6$ & $%.11fV$ \\\\ \\hline \n", V(6))
+fprintf(fid, "$V_7$ & $%.11fV$ \\\\ \\hline \n", V(7))
+fprintf(fid, "$V_8$ & $%.11fV$ \\\\ \\hline \n", V(8))
 
 
 Id=-((V(5)-V(4))/R4+(V(5)-V(2))/R3+(V(5)-V(6))/R5)
 
-fprintf(fid, "I_1 & %.11fV \\\\ \\hline \n", (V(1)-V(2))/R1)
-fprintf(fid, "I_2 & %.11fV \\\\ \\hline \n", (V(2)-V(3))/R2)
-fprintf(fid, "I_3 & %.11fV \\\\ \\hline \n", (V(2)-V(5))/R3)
-fprintf(fid, "I_4 & %.11fV \\\\ \\hline \n", (V(4)-V(5))/R4)
-fprintf(fid, "I_5 & %.11fV \\\\ \\hline \n", (V(5)-V(6))/R5)
-fprintf(fid, "I_6 & %.11fV \\\\ \\hline \n", (V(4)-V(7))/R6)
-fprintf(fid, "I_7 & %.11fV \\\\ \\hline \n", (V(7)-V(8))/R7)
-fprintf(fid, "I_S & %.11fV \\\\ \\hline \n", -(V(1)-V(2))/R1)
-fprintf(fid, "I_b & %.11fV \\\\ \\hline \n", Kb*(V(2)-V(5)))
-fprintf(fid, "I_c & %.11fV \\\\ \\hline \n", -((V(8)-V(7))/R7-Id))
-fprintf(fid, "I_e & %.11fV \\\\ \\hline \n", Id)
+fprintf(fid, "$I_1$ & $%.11fA$ \\\\ \\hline \n", (V(1)-V(2))/R1)
+fprintf(fid, "$I_2$ & $%.11fA$ \\\\ \\hline \n", (V(2)-V(3))/R2)
+fprintf(fid, "$I_3$ & $%.11fA$ \\\\ \\hline \n", (V(2)-V(5))/R3)
+fprintf(fid, "$I_4$ & $%.11fA$ \\\\ \\hline \n", (V(4)-V(5))/R4)
+fprintf(fid, "$I_5$ & $%.11fA$ \\\\ \\hline \n", (V(5)-V(6))/R5)
+fprintf(fid, "$I_6$ & $%.11fA$ \\\\ \\hline \n", (V(4)-V(7))/R6)
+fprintf(fid, "$I_7$ & $%.11fA$ \\\\ \\hline \n", (V(7)-V(8))/R7)
+fprintf(fid, "$I_S$ & $%.11fA$ \\\\ \\hline \n", -(V(1)-V(2))/R1)
+fprintf(fid, "$I_b$ & $%.11fA$ \\\\ \\hline \n", Kb*(V(2)-V(5)))
+fprintf(fid, "$I_c$ & $%.11fA$ \\\\ \\hline \n", -((V(8)-V(7))/R7-Id))
+fprintf(fid, "$I_e$ & $%.11fA$ \\\\ \\hline", Id)
 
 
 
@@ -172,9 +172,9 @@ fprintf(fid, "I_e & %.11fV \\\\ \\hline \n", Id)
 filename2="EQUIV.tex"
 fid2=fopen(filename2,"w")
 
-fprintf(fid2, "V_x & %.11fV \\\\ \\hline \n", V(6)-V(8))
-fprintf(fid2, "I_x & %.11fV \\\\ \\hline \n", De(4))
-fprintf(fid2, "R_{equiv} & %.11fV \\\\ \\hline \n", REQUIV)
+fprintf(fid2, "$V_x$ & $%.11fV$ \\\\ \\hline \n", V(6)-V(8))
+fprintf(fid2, "$I_x$ & $%.11fA$ \\\\ \\hline \n", De(4))
+fprintf(fid2, "$R_{equiv}$ & $%.11f\\Omega$ \\\\ \\hline", REQUIV)
 
 
 
@@ -220,14 +220,14 @@ Vf = Af\Bf
 filename1="Phasors.tex"
 fid1=fopen(filename1,"w")
 
-fprintf(fid1, "Z1 & %.11fV \\\\ \\hline \n", Vf(1))
-fprintf(fid1, "Z2 & %.11fV \\\\ \\hline \n", Vf(2))
-fprintf(fid1, "Z3 & %.11fV \\\\ \\hline \n", Vf(3))
-fprintf(fid1, "Z4 & %.11fV \\\\ \\hline \n", Vf(4))
-fprintf(fid1, "Z5 & %.11fV \\\\ \\hline \n", Vf(5))
-fprintf(fid1, "Z6 & %.11fV \\\\ \\hline \n", Vf(6))
-fprintf(fid1, "Z7 & %.11fV \\\\ \\hline \n", Vf(7))
-fprintf(fid1, "Z8 & %.11fV \\\\ \\hline \n", Vf(8))
+fprintf(fid1, "$\\~{V}_1$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(1)), imag(Vf(1)))
+fprintf(fid1, "$\\~{V}_2$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(2)), imag(Vf(2)))
+fprintf(fid1, "$\\~{V}_3$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(3)), imag(Vf(3)))
+fprintf(fid1, "$\\~{V}_4$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(4)), imag(Vf(4)))
+fprintf(fid1, "$\\~{V}_5$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(5)), imag(Vf(5)))
+fprintf(fid1, "$\\~{V}_6$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(6)), imag(Vf(6)))
+fprintf(fid1, "$\\~{V}_7$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline \n", real(Vf(7)), imag(Vf(7)))
+fprintf(fid1, "$\\~{V}_8$ & $(%.11f+i\\cdot%.11f)V$ \\\\ \\hline"   , real(Vf(8)), imag(Vf(8)))
 
 
 
