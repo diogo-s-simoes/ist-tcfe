@@ -62,7 +62,7 @@ This equation solved using octave yields the following results:
   
   
 \subsection{Equivalent resistance}
-Now,  we have to determine the equivalent resistance $R_{eq}$ as seen from the capacitor terminals. We take out all the independent voltage sources (make $V_s=0$) and replace the capacitor with a voltage source $Vx= V(6)-V(8)$. The values of$ V(6)$ and $V(8)$ were already obtained via nodal analysis in the previous subsection. To determine the current $I_x$ supplied by $V_x$ we run mesh analysis:
+Now,  we have to determine the equivalent resistance $R_{eq}$ as seen from the capacitor terminals. We take out all the independent voltage sources (make $v_s=0$) and replace the capacitor with a voltage source $Vx= V(6)-V(8)$. The values of$ V(6)$ and $V(8)$ were already obtained via nodal analysis in the previous subsection. To determine the current $I_x$ supplied by $V_x$ we run mesh analysis. This is necessary because the resistors are arranged in such a way that they cannot be simplified into an equivalent resistor by applying the usual equations for resistors in series and in parallel. The mesh method gives us these equations in matriz form:
 
 
 \begin{equation}\label{eq:matrixeq2}
@@ -102,24 +102,15 @@ This yields the following results:
     \caption{Equivalent resistance}
     \label{tab:equivalentresistance}
   \end{table}
-  
-$I_D = I_x = $
-    
-$R_{eq} = \frac{V_x}{I_x}= $
-
-This value is equal to $R_5$, which makes sense: since the current controled voltage source $V_d$ has null internal resistance,  all the current flows through mesh D (which only contains $V_d$ and$R_5$).
 
 
 For the time constant:
 
-$\tau = R_{eq} \cdot C = $
+$\tau = R_{eq} \cdot C = 0.00313933181s$
 
 
-EXPLICAR PORQUE AQUI OU DPS NO FINAL DO REL
-L
-L
-L
-L
+
+
 
 
 
@@ -219,6 +210,10 @@ $v_6(t)=V_xe^{\frac{-t}{R_{eq}C}}-\Re(\tilde{V_6}e^{j\omega t})$
     
 \subsection{Frequency responses}
       
+The system \ref{eq:matrixeq3} was solved for various values of $f$.
+The plots of the magnitude and phase of $V_s$, $V(6)$ and $V_C$, for
+values ranging from $0.1 Hz$ to $1 MHz$ are below:
+
   For the frequency responses, we get the following plot:
     \begin{figure}[H] \centering
     \includegraphics[width=1\linewidth]{degree.eps}
@@ -232,7 +227,3 @@ $v_6(t)=V_xe^{\frac{-t}{R_{eq}C}}-\Re(\tilde{V_6}e^{j\omega t})$
     \label{fig:frequencyresponsemagnitude}
     \end{figure}
   
-  
-  EXPLICAR COMO E PORQUE DIFEREMM
-  M
-  M
