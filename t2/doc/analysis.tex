@@ -206,7 +206,7 @@ Solving this system of equation in octave yiels the following results:
 
 Converting the phasors to real time functions for f=1KHz, we can then superimpose the natural and forced solutions:
 
-$y_1=\Re(V_f(6)*e^(x*\omega*i/1000))+V_x*exp(-x/1000/R5/C)$
+$y_1=\Re(V_f(6)*e^{x*\omega*i/1000)}+V_x*exp(-x/1000/R5/C)$
 
 $y_2=\sin(\omega*x2/1000)$
 
@@ -223,6 +223,17 @@ $y_2=\sin(\omega*x2/1000)$
 \subsection{Frequency responses}
       
   For the frequency responses, we get the following plot:
+    \begin{figure}[H] \centering
+    \includegraphics[width=1\linewidth]{degree.eps}
+    \caption{Frequency response-phase}
+    \label{fig:frequencyresponsephase}
+    \end{figure}
+    
+      \begin{figure}[H] \centering
+    \includegraphics[width=1\linewidth]{dB.eps}
+    \caption{Frequency response-magnitude}
+    \label{fig:frequencyresponsemagnitude}
+    \end{figure}
   
   
   EXPLICAR COMO E PORQUE DIFEREMM
