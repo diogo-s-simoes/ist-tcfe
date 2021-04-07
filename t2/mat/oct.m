@@ -192,6 +192,8 @@ xlabel("t(ms)")
 
 ylabel("V_{6n}(V)")
 
+
+
 print -color -depsc natural.eps
 
 close
@@ -258,9 +260,15 @@ title("Capacitor total forced solution")
 
 xlabel("t(ms)")
 
-ylabel("V_{6n}(V)")
+ylabel("v(V)")
+
+ legend ({"Total solution of V_6(V)", "V_S(V)"}, "location", "east")
+ legend show
+
 
 print -color -depsc forced.eps
+
+system("epstopdf forced.eps")
 
 close
 
@@ -309,6 +317,9 @@ xlabel("f(Hz)")
 
 ylabel("V_{6}(dB)")
 
+legend ({"dB(V(6))","dB(V(6)-V(8))", "dB(V(1))"}, "location", "east")
+
+
 print -color -depsc dB.eps
 
 close
@@ -324,6 +335,9 @@ title("Frequency Response (phase)")
 xlabel("f(Hz)")
 
 ylabel("Phase (º)")
+
+ legend ({"phi(V(6))","phi(V(6)-V(8))", "phi(V(1))"}, "location", "east")
+
 
 print -color -depsc degree.eps
 
