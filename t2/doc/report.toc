@@ -1,0 +1,15 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Theoretical Analysis}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Nodal analysis}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Equivalent resistance}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Natural solution}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Forced solution}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Total solution}{5}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Frequency responses}{5}{subsection.2.6}
+\contentsline {section}{\numberline {3}Simulation Analysis}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Operating Point Analysis}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Natural response}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Forced response}{9}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Frequency analysis}{10}{subsection.3.4}
+\contentsline {section}{\numberline {4}Conclusion}{12}{section.4}
