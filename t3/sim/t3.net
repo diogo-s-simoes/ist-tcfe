@@ -1,0 +1,59 @@
+.title Alínea 4
+
+.options savecurrents
+
+*rectificator
+Vs A C 0 sin(0 240 50)
+D1 A B Default
+D2 C B Default
+D3 gnd A Default
+D4 gnd C Default
+
+*limiter
+Rf B D 1k
+*Cf D gnd 1u
+
+D5 D E1 Default
+D6 E1 E2 Default
+D7 E2 E3 Default
+D8 E3 E4 Default
+D9 E4 gnd Default
+
+*D8 gnd E2 Default
+*D9 E2 E1 Default
+*D10 E1 D Default
+
+*envelope
+De D F Default
+Re F gnd 1k
+Ce F gnd 1u
+
+.model Default D
+.op
+.end
+
+.control
+
+set hcopypscolor=0
+set color0=white
+set color1=black
+set color2=red
+set color3=blue
+set color4=violet
+set color5=rgb:3/8/0
+set color6=rgb:4/0/0
+
+tran 1e-5 50e-3
+
+hardcopy t3.ps v(d)
+
+print all
+
+.options savecurrents
+echo  "p4_TAB"
+print all
+echo  "p4_END"
+
+quit
+.endc
+.end
