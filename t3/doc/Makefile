@@ -12,7 +12,6 @@ all: $(FILE).pdf
 	evince $< &
 
 $(FILE).pdf: $(wildcard *.tex) $(LODFIGS)
-	cp -f ../mat/*.eps .
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
@@ -24,7 +23,7 @@ $(FILE).pdf: $(wildcard *.tex) $(LODFIGS)
 
 clean:
 	@rm -rf *.aux *.bbl *.blg *.glg *.glo *.gls *.ilg *.ist *.lof
-	@rm -rf *.log *.lot *.nlo *.nls *.out *.toc *~ *.*% ./*.eps ./report.pdf
+	@rm -rf *.log *.lot *.nlo *.nls *.out *.toc *~ *.*% ./*.pdf ./*.eps
 
 .PHONY: all clean
 
