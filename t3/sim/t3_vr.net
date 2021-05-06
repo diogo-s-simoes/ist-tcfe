@@ -1,0 +1,127 @@
+*
+* Low-Pass Filter + Limiter
+*
+
+* forces current values to be saved
+.options savecurrents
+
+******************************************
+
+*transformer
+VIN tr1 0 0 sin(0 230 50 0 0)
+RS tr1 tr2 10
+L1 tr2 0 20
+L2 A C 20
+K L1 L2 0.99999
+*RL 3 0 500 
+
+* input voltage source
+*vS 1 0 0 sin(0 5 100)
+*vS 1 0 0 sin(0 5 400)
+
+*Vs A C 0 sin(0 30 50)
+D1 A 1 Default
+D2 C 1 Default
+D3 0 A Default
+D4 0 C Default
+
+* passa-baixo ordem 1 a entrada 
+Ci 2 0 5u
+Ri 1 2 5k
+
+* positive limiter
+Dp1 2 3 Default
+Dp2 3 4 Default 
+Dp3 4 5 Default
+Dp4 5 6 Default
+Dp5 6 7 Default
+Dp6 7 8 Default
+Dp7 8 9 Default
+Dp8 9 10 Default
+Dp9 10 11 Default
+Dp10 11 12 Default
+Dp11 12 13 Default
+Dp12 13 14 Default
+Dp13 14 15 Default
+Dp14 15 16 Default
+Dp15 16 17 Default
+Dp16 17 18 Default
+Dp17 18 19 Default
+Dp18 19 20 Default
+Dp19 20 21 Default
+Dp20 21 0 Default
+*Dp21 22 23 Default
+*Dp22 23 24 Default
+*Dp23 24 25 Default
+*Dp24 25 26 Default
+*Dp25 26 27 Default
+*Dp26 27 28 Default
+*Dp27 28 29 Default
+*Dp28 29 0 Default
+
+
+
+*Envelope
+De 2 F Default
+Re F 0 20k
+Ce F 0 20u
+
+*low-pass
+Rf F Y 15k
+Df1 Y y1 Default
+Df2 y1 y2 Default 
+Df3 y2 y3 Default
+Df4 y3 y4 Default
+Df5 y4 y5 Default
+Df6 y5 y6 Default
+Df7 y6 y7 Default
+Df8 y7 y8 Default
+Df9 y8 y9 Default
+Df10 y9 y10 Default
+Df11 y10 y11 Default
+Df12 y11 y12 Default
+Df13 y12 y13 Default
+Df14 y13 y14 Default
+Df15 y14 y15 Default
+Df16 y15 y16 Default
+Df17 y16 0 Default
+*Df18 y17 y18 Default
+*Df19 y18 y19 Default
+*Df20 y19 0 Default
+
+
+.model Default D
+.op
+.end
+
+.control
+
+set hcopypscolor=0
+set color0=white
+set color1=black
+set color2=red
+set color3=blue
+set color4=violet
+set color5=rgb:3/8/0
+set color6=rgb:4/0/0
+
+******************************************
+* analise no tempo
+tran 1e-5 4.9975
+plot v(y)
+
+meas tran vavg AVG v(y) from=4.7975 to=4.9975
+meas tran vmax MAX v(y) from=4.7975 to=4.9975
+meas tran vmin MIN v(y) from=4.7975 to=4.9975
+
+print vavg-12
+print vmax-vmin
+print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
+
+******************************************
+hardcopy gr1.ps v(y)
+echo gr1_FIG
+hardcopy gr2.ps v(y) xlo=4.7975 xhi=4.9975
+echo gr2_FIG
+
+.endc
