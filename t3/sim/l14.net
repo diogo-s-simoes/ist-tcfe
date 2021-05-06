@@ -17,8 +17,8 @@ D3 0 A Default
 D4 0 C Default
 
 * passa-alto ordem 1 a entrada 
-Ci 2 0 3.5u
-Ri 1 2 3.5k
+Ci 2 0 3.6589u
+Ri 1 2 3.6589k
 
 
 * positive limiter
@@ -63,8 +63,8 @@ Re F 0 15k
 Ce F 0 15u
 
 *low-pass
-Rf F G 58k
-Cf G 0 58u
+Rf F G 10k
+Cf G 0 10u
 
 .model Default D
 .op
@@ -74,8 +74,7 @@ Cf G 0 58u
 
 ******************************************
 * analise no tempo
-tran 1e-5 51 50
-
+tran 1e-4 51 0
 plot v(g)
 
 meas tran vavg AVG v(g) from=50 to=51
@@ -84,7 +83,7 @@ meas tran vmin MIN v(g) from=50 to=51
 
 print vavg-12
 print vmax-vmin
-print 1/(((12-12)+(vmax-vmin)+1u)*(55))
+print 1/(((12-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
 
 ******************************************
 hardcopy vospice100.ps v(1) v(2)
