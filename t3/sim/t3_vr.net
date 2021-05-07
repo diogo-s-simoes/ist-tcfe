@@ -10,7 +10,7 @@
 *transformer
 VIN tr1 0 0 sin(0 230 50 0 0)
 RS tr1 tr2 10
-L1 tr2 0 20
+L1 tr2 0 1155.555555
 L2 A C 20
 K L1 L2 0.99999
 *RL 3 0 500 
@@ -25,9 +25,10 @@ D2 C 1 Default
 D3 0 A Default
 D4 0 C Default
 
-* passa-baixo ordem 1 a entrada 
-Ci 2 0 5u
-Ri 1 2 5k
+* passa-alto ordem 1 a entrada 
+Ci 2 0 3.7224u
+Ri 1 2 3.7224k
+
 
 * positive limiter
 Dp1 2 3 Default
@@ -48,10 +49,10 @@ Dp15 16 17 Default
 Dp16 17 18 Default
 Dp17 18 19 Default
 Dp18 19 20 Default
-Dp19 20 21 Default
-Dp20 21 0 Default
+Dp19 20 0 Default
+*Dp20 21 22 Default
 *Dp21 22 23 Default
-*Dp22 23 24 Default
+*Dp22 23 0 Default
 *Dp23 24 25 Default
 *Dp24 25 26 Default
 *Dp25 26 27 Default
@@ -60,35 +61,19 @@ Dp20 21 0 Default
 *Dp28 29 0 Default
 
 
+* negative limiter
+*Dn1 0 5 Default
+*Dn2 5 6 Default
+*Dn3 6 2 Default
 
 *Envelope
 De 2 F Default
-Re F 0 20k
-Ce F 0 20u
+Re F 0 15k
+Ce F 0 15u
 
 *low-pass
-Rf F Y 15k
-Df1 Y y1 Default
-Df2 y1 y2 Default 
-Df3 y2 y3 Default
-Df4 y3 y4 Default
-Df5 y4 y5 Default
-Df6 y5 y6 Default
-Df7 y6 y7 Default
-Df8 y7 y8 Default
-Df9 y8 y9 Default
-Df10 y9 y10 Default
-Df11 y10 y11 Default
-Df12 y11 y12 Default
-Df13 y12 y13 Default
-Df14 y13 y14 Default
-Df15 y14 y15 Default
-Df16 y15 y16 Default
-Df17 y16 0 Default
-*Df18 y17 y18 Default
-*Df19 y18 y19 Default
-*Df20 y19 0 Default
-
+Rf F G 10k
+Cf G 0 10u
 
 .model Default D
 .op
@@ -107,21 +92,18 @@ set color6=rgb:4/0/0
 
 ******************************************
 * analise no tempo
-tran 1e-5 4.9975
-plot v(y)
+tran 1e-5 1.9975
 
-meas tran vavg AVG v(y) from=4.7975 to=4.9975
-meas tran vmax MAX v(y) from=4.7975 to=4.9975
-meas tran vmin MIN v(y) from=4.7975 to=4.9975
+meas tran vavg AVG v(g) from=1.7975 to=1.9975
+meas tran vmax MAX v(g) from=1.7975 to=1.9975
+meas tran vmin MIN v(g) from=1.7975 to=1.9975
 
 print vavg-12
 print vmax-vmin
 print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
 
 ******************************************
-hardcopy gr1.ps v(y)
-echo gr1_FIG
-hardcopy gr2.ps v(y) xlo=4.7975 xhi=4.9975
-echo gr2_FIG
+hardcopy vinit.ps v(g) v(2) v(f)
+echo vinit_FIG
 
 .endc
