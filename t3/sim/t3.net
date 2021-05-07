@@ -100,7 +100,7 @@ meas tran vmin MIN v(output) from=1.7975 to=1.9975
 
 print vavg-12
 print vmax-vmin
-print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
+print 1/(((vavg-12)+(vmax-vmin)+1u)*(59.9448))
 
 ******************************************
 hardcopy vout.ps v(rectified) v(envelope) v(output)
@@ -109,6 +109,8 @@ hardcopy vrect.ps v(rectified)
 echo vrect_FIG
 hardcopy venv.ps v(rectified) v(envelope)
 echo venv_FIG
+hardcopy v12.ps v(output)-12
+echo v12_FIG
 
 
 .endc

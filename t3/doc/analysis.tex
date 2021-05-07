@@ -1,117 +1,34 @@
 \section{Theoretical Analysis}
 \label{sec:analysis}
 
-In this section, the circuit shown in Figure \ref{fig:t2} is analysed
-theoretically, analysing the circuit for $t<0$, calculating the equivalent resistance, determining the natural and forced solutions and superimposing them to find the total solution.
+For the theoretical simulation, we used the ideal diode model for the full-wave bridge rectifier, obtaining the absolute value of the initial signal.
 
-\subsection{Envelope detector}
-For t$<$0,  $v_s(t)= V_s(t)$,  it is a DC circuit. We can determine the voltges in all nodes and currents in all branches using the nodal method.
-Since this is a linear circuit,  we apply Ohm's Law,  $V_i= R_i * I$ and the Kirchoff Current Law (KCL),  $\sum I_i = 0$.
+For the limiter circuit associated with a first-order low-pass filter, we performed fourier analysis on the previously obtained signal, in order to use phasors to solve for the voltage on the capacitor.
+The vON diode model was used in this stage, such that any voltage above n*vON (n being the number of diodes in this part of the circuit) was limited.
+This is visualised in the below figure:
+\includegraphics[width=1\linewidth]{venvelope.eps}
 
-We get the following equation,  in matrix form:
+The envelope detector was analysed with the tOFF method, with its value being determined by the below equation:
+
+
 
 \begin{equation}
-\label{eq:matrixeq1}
-\begin{bmatrix}
-    -G_1 & G_1+G_2+G_3 & -G_2 & 0 & -G_3 & 0 & 0 & 0\\
-    0 & -G_2-K_b & G_2 & 0 & K_b & 0 & 0 & 0\\
-    0 & K_b & 0 & 0 & -G_5-K_b & G_5 & 0 & 0\\
-    0 & 0 & 0 & -G_6 & 0 & 0 & G_6+G_7 & -G_7\\
-    1 & 0 & 0 & -1 & 0 & 0 & 0 & 0\\
-    0 & 0 & 0 & 0 & 0 & 0 & 0 & 1\\
-    0 & 0 & 0 & -K_c*G_6 & 1 & 0 & K_c*G_6 & -1\\
-    0 & -G_3 & 0 & -G_4 & G_4+G_3+G_5 & -G_5 & -G_7 & G_7
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-V_1 \\
-V_2 \\
-V_3 \\
-V_4 \\
-V_5 \\
-V_6 \\
-V_7 \\
-V_8 
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 \\
-0 \\
-0 \\
-0\\
-V_s\\
-0 \\
-0 \\
-0
-\end{bmatrix}
+	\frac{dVs}{dt}=-\frac{Vs}{RC}
 \end{equation}
 
+After time tOFF the output voltage of this part of the circuit was modeled using an exponecial, until it crossed the input voltage once more.
+We see this effect below:
 
-This equation solved using octave yields the following results:
+\includegraphics[width=1\linewidth]{voutput.eps}
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|l|r|}
-      \hline    
-      {\bf Variable} & {\bf Value [A or V]} \\ \hline
-      %\input{../mat/Tnegative.tex}
-    \end{tabular}
-    \caption{Node Analysis Results for t$<$0}
-    \label{tab:nodeanalysis}
-  \end{table}
-  
-  
+For the low-pass filter at the end, we used the Euler method to solve the differencial equation for an RC circuit, thus obtaining the final output voltage:
+
+\includegraphics[width=1\linewidth]{voutput_init.eps}
+
+
+
+
+\subsection{Envelope detector}
+
 \subsection{Voltage regulator}
-Now,  we have to determine the equivalent resistance $R_{eq}$ as seen from the capacitor terminals. We take out all the independent voltage sources (make $v_s=0$) and replace the capacitor with a voltage source $Vx= V(6)-V(8)$. The values of$ V(6)$ and $V(8)$ were already obtained via nodal analysis in the previous subsection. To determine the current $I_x$ supplied by $V_x$ we run mesh analysis. This is necessary because the resistors are arranged in such a way that they cannot be simplified into an equivalent resistor by applying the usual equations for resistors in series and in parallel. The mesh method gives us these equations in matriz form:
-
-
-\begin{equation}\label{eq:matrixeq2}
-\begin{bmatrix}
- R_1+R_3+R_4 & -R_3 & -R_4 & 0\\
-    -K_bR_3 &  K_bR_3-1 & 0 & 0\\ 
-    -R_4 & 0 & R_4+R_6+R_7-K_d & 0\\
-    0 & -R_5 & K_d & R_5 
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-I_A\\
-I_B \\
-I_C \\
-I_D \\
-
-    \end{bmatrix}
-=
-    \begin{bmatrix}
-0 \\
-0 \\
-0 \\
-V_x \\
-
-    \end{bmatrix}
-  \end{equation}
-
-This yields the following results:
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|l|r|}
-      \hline    
-      {\bf Variable} & {\bf Value [A or V]} \\ \hline
-    %  \input{../mat/EQUIV.tex}
-    \end{tabular}
-    \caption{Equivalent resistance}
-    \label{tab:equivalentresistance}
-  \end{table}
-
-
-For the time constant:
-
-$\tau = R_{eq} \cdot C = 0.00313933181s$
-
-
-
-
-
-  \end{table}
-  
 

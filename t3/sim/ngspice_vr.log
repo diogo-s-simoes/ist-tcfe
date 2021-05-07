@@ -14,7 +14,7 @@ tr2                                          0
 a                                  6.53874e-16
 c                                  6.53874e-16
 1                                  1.30772e-15
-2                                  1.30772e-15
+rectified                          1.30772e-15
 3                                  1.23891e-15
 4                                  1.17007e-15
 5                                  1.10124e-15
@@ -33,8 +33,8 @@ c                                  6.53874e-16
 18                                 2.06483e-16
 19                                 1.37652e-16
 20                                  6.8826e-17
-f                                 -8.38853e-23
-g                                 -8.38853e-23
+envelope                          -8.38853e-23
+output                            -8.38853e-23
 l2#branch                                    0
 l1#branch                                    0
 vin#branch                                   0
@@ -59,8 +59,8 @@ No. of Data Rows : 1
 	Node                                  Voltage
 	----                                  -------
 	----	-------
-	g                                -8.38896e-23
-	f                                -8.38896e-23
+	output                           -8.38896e-23
+	envelope                         -8.38896e-23
 	V(20)                            6.885535e-17
 	V(19)                            1.377107e-16
 	V(18)                            2.065995e-16
@@ -79,7 +79,7 @@ No. of Data Rows : 1
 	V(5)                             1.101938e-15
 	V(4)                             1.170832e-15
 	V(3)                             1.239710e-15
-	V(2)                             1.308573e-15
+	rectified                        1.308573e-15
 	V(1)                             1.308573e-15
 	c                                6.542641e-16
 	a                                6.542890e-16
@@ -382,15 +382,15 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
           i          -1.18767e-28
           p                     0
 
-CPU time since last call: 5.566 seconds.
+CPU time since last call: 5.672 seconds.
 
-Total CPU time: 5.566 seconds.
+Total CPU time: 5.672 seconds.
 
 Total DRAM available = 6917.261719 MB.
-DRAM currently available = 136.050781 MB.
+DRAM currently available = 181.730469 MB.
 Total ngspice program size = 42.359375 MB.
-Resident set size = 27.800781 MB.
-Shared ngspice pages = 1.879883 MB.
+Resident set size = 27.848633 MB.
+Shared ngspice pages = 1.927734 MB.
 Text (code) pages = 1.597656 MB.
 Stack = 0 bytes.
 Library pages = 25.980469 MB.
