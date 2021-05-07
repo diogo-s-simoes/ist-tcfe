@@ -85,6 +85,22 @@ for i=1:(length(t)-1)
   vF(i+1)=vF(i)+h*(vEn(i)/R3/C3-vF(i)/R3/C3)
 endfor
 
+max=0
+min=20
+avg=0
+for i=1:length(t)
+  avg+=vF(i)
+  if(vF(i)>max)
+    max=vF(i)
+  endif
+  if(vF(i)<min)
+    min=vF(i)
+  endif
+endfor
+avg/=length(t)
+
+printf("Ripple=%f\nAverage=%f\n", max-min, avg)
+
 plot(t*1000, vO, "b")
 title("Envelope detector voltage")
 xlabel ("t[ms]")
