@@ -26,12 +26,12 @@ D3 0 A Default
 D4 0 C Default
 
 * passa-alto ordem 1 a entrada 
-Ci 2 0 3.7224u
-Ri 1 2 3.7224k
+Ci rectified 0 3.7224u
+Ri 1 rectified 3.7224k
 
 
 * positive limiter
-Dp1 2 3 Default
+Dp1 rectified 3 Default
 Dp2 3 4 Default 
 Dp3 4 5 Default
 Dp4 5 6 Default
@@ -64,16 +64,16 @@ Dp19 20 0 Default
 * negative limiter
 *Dn1 0 5 Default
 *Dn2 5 6 Default
-*Dn3 6 2 Default
+*Dn3 6 rectified Default
 
 *Envelope
-De 2 F Default
-Re F 0 15k
-Ce F 0 15u
+De rectified envelope Default
+Re envelope 0 15k
+Ce envelope 0 15u
 
 *low-pass
-Rf F G 10k
-Cf G 0 10u
+Rf envelope output 10k
+Cf output 0 10u
 
 .model Default D
 .op
@@ -94,20 +94,20 @@ set color6=rgb:4/0/0
 * analise no tempo
 tran 1e-5 1.9975 1.8975
 
-meas tran vavg AVG v(g) from=1.7975 to=1.9975
-meas tran vmax MAX v(g) from=1.7975 to=1.9975
-meas tran vmin MIN v(g) from=1.7975 to=1.9975
+meas tran vavg AVG v(output) from=1.7975 to=1.9975
+meas tran vmax MAX v(output) from=1.7975 to=1.9975
+meas tran vmin MIN v(output) from=1.7975 to=1.9975
 
 print vavg-12
 print vmax-vmin
 print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
 
 ******************************************
-hardcopy vout.ps v(2) v(f) v(g)
+hardcopy vout.ps v(rectified) v(envelope) v(output)
 echo vout_FIG
-hardcopy vrect.ps v(2)
+hardcopy vrect.ps v(rectified)
 echo vrect_FIG
-hardcopy venv.ps v(2) v(f)
+hardcopy venv.ps v(rectified) v(envelope)
 echo venv_FIG
 
 
