@@ -47,7 +47,7 @@ vmax                =  1.200187e+01 at=  1.979969e+00
 vmin                =  1.199774e+01 at=  1.914869e+00
 vavg-12 = 0.000000e+00
 vmax-vmin = 4.130000e-03
-1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4)) = 4.014463e+00
+1/(((vavg-12)+(vmax-vmin)+1u)*(59.9448)) = 4.038251e+00
 
 The file "vout.ps" may be printed on a postscript printer.
 vout_FIG
@@ -57,6 +57,9 @@ vrect_FIG
 
 The file "venv.ps" may be printed on a postscript printer.
 venv_FIG
+
+The file "v12.ps" may be printed on a postscript printer.
+v12_FIG
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
@@ -388,16 +391,16 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
           i          -1.18767e-28
           p                     0
 
-CPU time since last call: 4.267 seconds.
+CPU time since last call: 4.104 seconds.
 
-Total CPU time: 4.267 seconds.
+Total CPU time: 4.104 seconds.
 
 Total DRAM available = 6917.261719 MB.
-DRAM currently available = 282.699219 MB.
-Total ngspice program size = 18.228516 MB.
-Resident set size = 3.707031 MB.
-Shared ngspice pages = 1.916016 MB.
+DRAM currently available = 488.546875 MB.
+Total ngspice program size = 18.229492 MB.
+Resident set size = 3.708008 MB.
+Shared ngspice pages = 1.915039 MB.
 Text (code) pages = 1.597656 MB.
 Stack = 0 bytes.
-Library pages = 1.849609 MB.
+Library pages = 1.850586 MB.
 

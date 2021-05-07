@@ -4,5 +4,5 @@
 \contentsline {subsection}{\numberline {2.1}Envelope detector}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Voltage regulator}{5}{subsection.2.2}
 \contentsline {section}{\numberline {3}Simulation Analysis}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Envelope detector}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Transient analysis}{5}{subsection.3.1}
 \contentsline {section}{\numberline {4}Conclusion}{6}{section.4}
