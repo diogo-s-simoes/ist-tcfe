@@ -106,4 +106,5 @@ print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
 hardcopy vinit.ps v(rectified) v(envelope) v(output)
 echo vinit_FIG
 
+
 .endc
