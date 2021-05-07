@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  7 MAY 2021 23:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  7 MAY 2021 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1144,10 +1144,10 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 
 
 (./intro.tex
-<t3circuit.pdf, id=34, 845.01837pt x 597.47943pt>
-File: t3circuit.pdf Graphic file (type pdf)
-<use t3circuit.pdf>
-Package pdftex.def Info: t3circuit.pdf  used on input line 14.
+<../t3circuit.pdf, id=34, 845.01837pt x 597.47943pt>
+File: ../t3circuit.pdf Graphic file (type pdf)
+<use ../t3circuit.pdf>
+Package pdftex.def Info: ../t3circuit.pdf  used on input line 14.
 (pdftex.def)             Requested size: 455.24411pt x 321.8865pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1157,10 +1157,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../figlib/IST_A_CMYK_PO
 S.pdf>]) (./analysis.tex
 Package epstopdf Info: Source file: <venvelope.eps>
-(epstopdf)                    date: 2021-05-07 23:32:59
+(epstopdf)                    date: 2021-05-07 23:59:40
 (epstopdf)                    size: 42718 bytes
 (epstopdf)             Output file: <venvelope-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:31:53
+(epstopdf)                    date: 2021-05-07 23:59:13
 (epstopdf)                    size: 14860 bytes
 (epstopdf)             Command: <repstopdf --outfile=venvelope-eps-converted-to
 .pdf venvelope.eps>
@@ -1169,7 +1169,7 @@ runsystem(repstopdf --outfile=venvelope-eps-converted-to.pdf venvelope.eps)...e
 xecuted safely (allowed).
 
 Package epstopdf Info: Result file: <venvelope-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:33:00
+(epstopdf)                    date: 2021-05-07 23:59:40
 (epstopdf)                    size: 14860 bytes.
 
 
@@ -1189,12 +1189,12 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 18--19
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./t3circuit.pdf>]
+ [2 <../t3circuit.pdf>]
 Package epstopdf Info: Source file: <voutput.eps>
-(epstopdf)                    date: 2021-05-07 23:32:59
+(epstopdf)                    date: 2021-05-07 23:59:40
 (epstopdf)                    size: 61177 bytes
 (epstopdf)             Output file: <voutput-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:31:54
+(epstopdf)                    date: 2021-05-07 23:59:13
 (epstopdf)                    size: 20799 bytes
 (epstopdf)             Command: <repstopdf --outfile=voutput-eps-converted-to.p
 df voutput.eps>
@@ -1203,7 +1203,7 @@ runsystem(repstopdf --outfile=voutput-eps-converted-to.pdf voutput.eps)...execu
 ted safely (allowed).
 
 Package epstopdf Info: Result file: <voutput-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:33:00
+(epstopdf)                    date: 2021-05-07 23:59:41
 (epstopdf)                    size: 20799 bytes.
 
 
@@ -1224,10 +1224,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./venvelope-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <voutput_init.eps>
-(epstopdf)                    date: 2021-05-07 23:32:59
+(epstopdf)                    date: 2021-05-07 23:59:40
 (epstopdf)                    size: 61188 bytes
 (epstopdf)             Output file: <voutput_init-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:31:54
+(epstopdf)                    date: 2021-05-07 23:59:13
 (epstopdf)                    size: 21637 bytes
 (epstopdf)             Command: <repstopdf --outfile=voutput_init-eps-converted
 -to.pdf voutput_init.eps>
@@ -1236,7 +1236,7 @@ runsystem(repstopdf --outfile=voutput_init-eps-converted-to.pdf voutput_init.ep
 s)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <voutput_init-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:33:01
+(epstopdf)                    date: 2021-05-07 23:59:41
 (epstopdf)                    size: 21637 bytes.
 
 
@@ -1350,10 +1350,10 @@ File: ../sim/v12.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../sim/v12.pdf  used on input line 14.
 (pdftex.def)             Requested size: 227.62206pt x 322.1175pt.
 Package epstopdf Info: Source file: <v12.eps>
-(epstopdf)                    date: 2021-05-07 23:32:59
+(epstopdf)                    date: 2021-05-07 23:59:40
 (epstopdf)                    size: 24969 bytes
 (epstopdf)             Output file: <v12-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:31:54
+(epstopdf)                    date: 2021-05-07 23:59:14
 (epstopdf)                    size: 15202 bytes
 (epstopdf)             Command: <repstopdf --outfile=v12-eps-converted-to.pdf v
 12.eps>
@@ -1362,8 +1362,8 @@ runsystem(repstopdf --outfile=v12-eps-converted-to.pdf v12.eps)...executed safe
 ly (allowed).
 
 Package epstopdf Info: Result file: <v12-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 23:33:01
-(epstopdf)                    size: 15196 bytes.
+(epstopdf)                    date: 2021-05-07 23:59:41
+(epstopdf)                    size: 15202 bytes.
 
 
 pdfTeX warning: pdflatex (file ./v12-eps-converted-to.pdf): PDF inclusion: foun
@@ -1374,31 +1374,31 @@ File: v12-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: v12-eps-converted-to.pdf  used on input line 18.
 (pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 )
-Overfull \hbox (24.48805pt too wide) in paragraph at lines 13--154
+Overfull \hbox (24.48805pt too wide) in paragraph at lines 13--155
 []$[]$   $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--154
+Underfull \hbox (badness 10000) in paragraph at lines 13--155
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7 <../sim/vout.pdf> <../sim/v12.pdf>] [8 <./v12-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 9CC39243C653A0CE1F9D771AE1D23E81;280.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 19934 strings out of 492982
- 348083 string characters out of 6134897
+ 19935 strings out of 492982
+ 348098 string characters out of 6134897
  535363 words of memory out of 5000000
  23261 multiletter control sequences out of 15000+600000
  550545 words of font info for 50 fonts, out of 8000000 for 9000
@@ -1412,7 +1412,7 @@ ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on report.pdf (8 pages, 393209 bytes).
+Output written on report.pdf (8 pages, 393206 bytes).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
