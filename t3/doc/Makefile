@@ -16,6 +16,13 @@ $(FILE).pdf: $(wildcard *.tex) $(LODFIGS)
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	evince $@ &
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	pdflatex -interaction=nonstopmode $(FILE).tex
+	evince $@ &
 
 
 #convert libreoffice draw figures to pdf
@@ -24,7 +31,7 @@ $(FILE).pdf: $(wildcard *.tex) $(LODFIGS)
 
 clean:
 	@rm -rf *.aux *.bbl *.blg *.glg *.glo *.gls *.ilg *.ist *.lof
-	@rm -rf *.log *.lot *.nlo *.nls *.out *.toc *~ *.*% ./*.pdf ./*.eps
+	@rm -rf *.log *.lot *.nlo *.nls *.out *.toc *~ *.*% ./*.eps
 
 .PHONY: all clean
 

@@ -382,15 +382,15 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
           i          -1.18767e-28
           p                     0
 
-CPU time since last call: 3.793 seconds.
+CPU time since last call: 3.772 seconds.
 
-Total CPU time: 3.793 seconds.
+Total CPU time: 3.772 seconds.
 
 Total DRAM available = 6917.261719 MB.
-DRAM currently available = 613.593750 MB.
+DRAM currently available = 146.437500 MB.
 Total ngspice program size = 42.359375 MB.
-Resident set size = 27.891602 MB.
-Shared ngspice pages = 1.970703 MB.
+Resident set size = 27.855469 MB.
+Shared ngspice pages = 1.934570 MB.
 Text (code) pages = 1.597656 MB.
 Stack = 0 bytes.
 Library pages = 25.980469 MB.
