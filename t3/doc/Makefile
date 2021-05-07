@@ -12,6 +12,7 @@ all: $(FILE).pdf
 	evince $< &
 
 $(FILE).pdf: $(wildcard *.tex) $(LODFIGS)
+	cp -f ../mat/*.eps .
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
 	pdflatex -interaction=nonstopmode $(FILE).tex
