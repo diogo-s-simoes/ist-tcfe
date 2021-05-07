@@ -22,7 +22,7 @@ vEn = zeros(1, length(t));
 vF = zeros(1, length(t));
 vF2 = zeros(1, length(t));
 
-vOFF=12.03;
+vOFF=12.0137;
 vOnexp = A*cos(w*vOFF)*exp(-(t-vOFF)/R1/C1);
 
 figure
@@ -79,7 +79,7 @@ for i=1:(length(t)-1)
 endfor
 vEn(length(t))=vEn(length(t)-1)
 
-vF(1)=12
+vF(1)=12.0005
 h=0.1/1000
 for i=1:(length(t)-1)
   vF(i+1)=vF(i)+h*(vEn(i)/R3/C3-vF(i)/R3/C3)
@@ -109,6 +109,7 @@ hold on;
 plot(t*1000, vEn, "r")
 legend("rectified","envelope")
 print ("venvelope.eps", "-depsc");
+hold off;
 
 plot(t*1000, vO, "b")
 title("Output voltage v_o(t)")
@@ -120,6 +121,15 @@ hold on;
 plot(t*1000, vF, "g")
 legend("rectified","envelope", "output")
 print ("voutput.eps", "-depsc");
+hold off;
+
+plot(t*1000, vF-12, "g")
+title("Output voltage v_o(t)")
+xlabel ("t[ms]")
+ylabel ("V[V]")
+legend("output-12V")
+print ("v12.eps", "-depsc");
+hold off;
 
 vF(1)=0
 h=0.1/1000

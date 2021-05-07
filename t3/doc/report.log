@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  7 MAY 2021 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  7 MAY 2021 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,10 +1157,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../figlib/IST_A_CMYK_PO
 S.pdf>]) (./analysis.tex
 Package epstopdf Info: Source file: <venvelope.eps>
-(epstopdf)                    date: 2021-05-07 20:06:04
+(epstopdf)                    date: 2021-05-07 20:45:00
 (epstopdf)                    size: 42714 bytes
 (epstopdf)             Output file: <venvelope-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 13:31:42
+(epstopdf)                    date: 2021-05-07 20:06:05
 (epstopdf)                    size: 14856 bytes
 (epstopdf)             Command: <repstopdf --outfile=venvelope-eps-converted-to
 .pdf venvelope.eps>
@@ -1169,7 +1169,7 @@ runsystem(repstopdf --outfile=venvelope-eps-converted-to.pdf venvelope.eps)...e
 xecuted safely (allowed).
 
 Package epstopdf Info: Result file: <venvelope-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 20:06:05
+(epstopdf)                    date: 2021-05-07 20:45:01
 (epstopdf)                    size: 14856 bytes.
 
 
@@ -1190,10 +1190,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./t3circuit.pdf>]
 Package epstopdf Info: Source file: <voutput.eps>
-(epstopdf)                    date: 2021-05-07 20:06:04
+(epstopdf)                    date: 2021-05-07 20:45:00
 (epstopdf)                    size: 96399 bytes
 (epstopdf)             Output file: <voutput-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 13:31:42
+(epstopdf)                    date: 2021-05-07 20:06:05
 (epstopdf)                    size: 24263 bytes
 (epstopdf)             Command: <repstopdf --outfile=voutput-eps-converted-to.p
 df voutput.eps>
@@ -1202,7 +1202,7 @@ runsystem(repstopdf --outfile=voutput-eps-converted-to.pdf voutput.eps)...execu
 ted safely (allowed).
 
 Package epstopdf Info: Result file: <voutput-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 20:06:05
+(epstopdf)                    date: 2021-05-07 20:45:01
 (epstopdf)                    size: 24263 bytes.
 
 
@@ -1223,10 +1223,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./venvelope-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <voutput_init.eps>
-(epstopdf)                    date: 2021-05-07 20:06:04
-(epstopdf)                    size: 149942 bytes
+(epstopdf)                    date: 2021-05-07 20:45:00
+(epstopdf)                    size: 167413 bytes
 (epstopdf)             Output file: <voutput_init-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 13:31:43
+(epstopdf)                    date: 2021-05-07 20:06:06
 (epstopdf)                    size: 34419 bytes
 (epstopdf)             Command: <repstopdf --outfile=voutput_init-eps-converted
 -to.pdf voutput_init.eps>
@@ -1235,8 +1235,8 @@ runsystem(repstopdf --outfile=voutput_init-eps-converted-to.pdf voutput_init.ep
 s)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <voutput_init-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-07 20:06:06
-(epstopdf)                    size: 34419 bytes.
+(epstopdf)                    date: 2021-05-07 20:45:02
+(epstopdf)                    size: 38597 bytes.
 
 
 pdfTeX warning: pdflatex (file ./voutput_init-eps-converted-to.pdf): PDF inclus
@@ -1260,7 +1260,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 31.
 ) (./simulation.tex
 ! Undefined control sequence.
-l.16 C1 & $3.7224\miu
+l.14 C1 & $3.7224\miu
                       F$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1269,7 +1269,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.17 R1 & $3.7224k\Ohm
+l.15 R1 & $3.7224k\Ohm
                       $ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1278,7 +1278,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.18 C2 & $15\miu
+l.16 C2 & $15\miu
                   F$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1287,7 +1287,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.19 R2 & $15k\Ohm
+l.17 R2 & $15k\Ohm
                   $ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1296,7 +1296,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.20 C3 & $10\miu
+l.18 C3 & $10\miu
                   F$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1305,7 +1305,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.21 R3 & $10k\Ohm
+l.19 R3 & $10k\Ohm
                   $ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1313,119 +1313,72 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.29 ...ed do we take the average and ripple of V_
-                                                  {out}. Ploting the potenti...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+<../sim/vinit.pdf, id=113, 597.23125pt x 845.1575pt>
+File: ../sim/vinit.pdf Graphic file (type pdf)
+<use ../sim/vinit.pdf>
+Package pdftex.def Info: ../sim/vinit.pdf  used on input line 29.
+(pdftex.def)             Requested size: 455.24411pt x 644.235pt.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.30 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (86.52043pt too wide) in paragraph at lines 29--30
-\OT1/phv/m/n/10.95 the av-er-age and rip-ple of V$[]\OML/cmm/m/it/10.95 :Plotin
-gthepotentialaftertherectifier; theenvelopeandtheV[]forthefirst\OT1/cmr/m/n/10.
-95 2\OML/cmm/m/it/10.95 seconds:$ 
+Overfull \hbox (17.0pt too wide) in paragraph at lines 29--30
+[][] 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.33 ...can observe, the stabilization time for V_
-                                                  {out} is approximatly 0.6 ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.34 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Underfull \vbox (badness 1902) has occurred while \output is active []
 
+ [5 <./voutput_init-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (140.34961pt too wide) in paragraph at lines 33--34
-\OML/cmm/m/it/10.95 upsequencealwayshasalowervoltagethanthedesiredoutput; soitd
-oesn[]tposeathreattodamagethecircuitconnectedtotheoutput:$ 
+ [6 <../sim/vinit.pdf>]
+<../sim/vout.pdf, id=135, 597.23125pt x 845.1575pt>
+File: ../sim/vout.pdf Graphic file (type pdf)
+<use ../sim/vout.pdf>
+Package pdftex.def Info: ../sim/vout.pdf  used on input line 38.
+(pdftex.def)             Requested size: 227.62206pt x 322.1175pt.
+<../sim/v12.pdf, id=136, 597.23125pt x 845.1575pt>
+File: ../sim/v12.pdf Graphic file (type pdf)
+<use ../sim/v12.pdf>
+Package pdftex.def Info: ../sim/v12.pdf  used on input line 42.
+(pdftex.def)             Requested size: 227.62206pt x 322.1175pt.
+
+Overfull \hbox (24.48805pt too wide) in paragraph at lines 37--44
+[]$[]$   $[]$ 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.41 The average of V_
-                      {out} in equilibrium is 12.000000V and the ripple is 4...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-)
-! Missing $ inserted.
-<inserted text> 
-                $
-l.151 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (251.1713pt too wide) in paragraph at lines 41--151
-[]\OT1/phv/m/n/10.95 The av-er-age of V$[]\OML/cmm/m/it/10.95 inequilibriumis\O
-T1/cmr/m/n/10.95 12\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 000000\OML/cmm/m/it/
-10.95 Vandtherippleis\OT1/cmr/m/n/10.95 4\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.9
-5 13\OML/cmm/m/it/10.95 mV:Thecircuitcosts\OT1/cmr/m/n/10.95 59\OML/cmm/m/it/10
-.95 :\OT1/cmr/m/n/10.95 9448\OML/cmm/m/it/10.95 monetaryunits; andthecalculated
-meritis\OT1/cmr/m/n/10.95 4\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 038251\OML/c
-mm/m/it/10.95 :$ 
- []
-
-(./conclusion.tex [5 <./voutput_init-eps-converted-to.pdf>])
+) (./conclusion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
- [6]
+ [7 <../sim/vout.pdf> <../sim/v12.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 2A844BC59CF29D47F535870FAA915B1C;420.
 
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 6E9904DCF50F60BC960EBAAA619AF3A7;419
-(rerunfilecheck)             After:  2A844BC59CF29D47F535870FAA915B1C;420.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 19918 strings out of 492982
- 347664 string characters out of 6134897
- 536627 words of memory out of 5000000
- 23249 multiletter control sequences out of 15000+600000
+ 19933 strings out of 492982
+ 347994 string characters out of 6134897
+ 536334 words of memory out of 5000000
+ 23259 multiletter control sequences out of 15000+600000
  550545 words of font info for 50 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,10n,39p,10395b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,39p,10395b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
-etic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
-pfb>
-Output written on report.pdf (6 pages, 328915 bytes).
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
+uhvr8a.pfb>
+Output written on report.pdf (7 pages, 386884 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
