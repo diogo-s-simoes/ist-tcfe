@@ -13,21 +13,25 @@ RS tr1 tr2 10
 L1 tr2 0 1155.555555
 L2 A C 20
 K L1 L2 0.99999
+*RL 3 0 500 
 
-*full wave bridge rectifier
+* input voltage source
+*vS 1 0 0 sin(0 5 100)
+*vS 1 0 0 sin(0 5 400)
+
+*Vs A C 0 sin(0 30 50)
 D1 A 1 Default
 D2 C 1 Default
 D3 0 A Default
 D4 0 C Default
 
-*Envelope detector
-De 1 2 Default
-Re 2 0 30k
-Ce 2 0 30u
+* passa-alto ordem 1 a entrada 
+Ci 2 0 3.7224u
+Ri 1 2 3.7224k
 
-*voltage regulator
-Rf 2 q 30k
-Dp1 q 3 Default
+
+* positive limiter
+Dp1 2 3 Default
 Dp2 3 4 Default 
 Dp3 4 5 Default
 Dp4 5 6 Default
@@ -56,6 +60,21 @@ Dp19 20 0 Default
 *Dp27 28 29 Default
 *Dp28 29 0 Default
 
+
+* negative limiter
+*Dn1 0 5 Default
+*Dn2 5 6 Default
+*Dn3 6 2 Default
+
+*Envelope
+De 2 F Default
+Re F 0 15k
+Ce F 0 15u
+
+*low-pass
+Rf F G 10k
+Cf G 0 10u
+
 .model Default D
 .op
 .end
@@ -73,21 +92,18 @@ set color6=rgb:4/0/0
 
 ******************************************
 * analise no tempo
-tran 1e-5 4.9975 4.7975
-plot v(q)
+tran 1e-5 1.9975
 
-meas tran vavg AVG v(q) from=4.7975 to=4.9975
-meas tran vmax MAX v(q) from=4.7975 to=4.9975
-meas tran vmin MIN v(q) from=4.7975 to=4.9975
+meas tran vavg AVG v(g) from=1.7975 to=1.9975
+meas tran vmax MAX v(g) from=1.7975 to=1.9975
+meas tran vmin MIN v(g) from=1.7975 to=1.9975
 
 print vavg-12
 print vmax-vmin
-print 1/(((12-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
+print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
 
 ******************************************
-hardcopy gr1.ps v(q)
-echo gr1_FIG
-hardcopy gr2.ps v(q) xlo=4.7975 xhi=4.9975
-echo gr2_FIG
+hardcopy vinit.ps v(g) v(2) v(f)
+echo vinit_FIG
 
 .endc

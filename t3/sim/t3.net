@@ -103,11 +103,12 @@ print vmax-vmin
 print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
 
 ******************************************
-hardcopy vout.ps v(g)
+hardcopy vout.ps v(2) v(f) v(g)
 echo vout_FIG
 hardcopy vrect.ps v(2)
 echo vrect_FIG
-hardcopy venv.ps v(f)
+hardcopy venv.ps v(2) v(f)
 echo venv_FIG
+
 
 .endc
