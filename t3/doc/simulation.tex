@@ -1,42 +1,41 @@
 \section{Simulation Analysis}
 \label{sec:simulation}
 
-\subsection{Envelope detector}
+\subsection{Transient analysis}
 
-Table~\ref{tab:p1} shows the simulated operating point results for the circuit
-at times $t<0$.
+We simulated the circuit using transient analysis, using a non ideal transformer and the following components:
 
 \begin{table}[H]
-  \centering
-  \begin{tabular}{|l|r|}
-    \hline    
-    {\bf Name} & {\bf Value [A or V]} \\ \hline
-   % \input{../sim/p1_tab.tex}
-  \end{tabular}
-  \caption{Operating point. A variable preceded by @ is of type {\em current}
-    and expressed in Ampere; other variables are of type {\it voltage} and expressed in
-    Volt.}
-  \label{tab:p1}
+\addtolength{\tabcolsep}{-4pt}
+\caption{Valores de $I$ e $V$ para cada ensaio}
+\vspace{-3mm}
+\begin{tabular}{|c|c|c|}
+\hline
+$V_{fonte} (V)$&$I (A)$&$V_{detetor} (mV)$ \\
+\hline
+C1 & $3.7224\miu F$ \\
+R1 & $3.7224k\Ohm$ \\
+C2 & $15\miu F$ \\
+R2 & $15k\Ohm$ \\
+C3 & $10\miu F$ \\
+R3 & $10k\Ohm$ \\
+\hline
+\end{tabular}
+\label{tab:Components}
 \end{table}
 
-Table~\ref{tab:p2} shows the simulated operating point results for the circuit
-given that $V_s=0$ and replacing the capacitor with a
-voltage source imposing the voltage on the terminals of said capacitor
-as calculated in the earlier analysis.
+\par
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|l|r|}
-      \hline    
-      {\bf Name} & {\bf Value [A or V]} \\ \hline
-   %   \input{../sim/p2_tab.tex}
-    \end{tabular}
-    \caption{Operating point. A variable preceded by @ is of type {\em current}
-      and expressed in Ampere; other variables are of type {\it voltage} and expressed in
-      Volt.}
-    \label{tab:p2}
-  \end{table}
-This is necessary so as to provide initial conditions for the analyses made below given
-that $V_s$ at time $t=0$ is equal to 0 but the voltage difference in the terminals of the
-capacitor stays constant for very short time intervals.
+Firstly we simulate the initialization of the circuit, and only once it has stabelized do we take the average and ripple of V_{out}. Ploting the potential after the rectifier, the envelope and the V_{out} for the first 2 seconds.
 
+%%insert picture
+
+As we can observe, the stabilization time for V_{out} is approximatly 0.6 seconds, but the start-up sequence always has a lower voltage than the desired output, so it doesn't pose a threat to damage the circuit connected to the output.
+
+\par
+
+By choosing a 10 period section in which the circuit has already stabelized, we can better study it.
+
+%%insert picture
+    
+The average of V_{out} in equilibrium is 12.000000V and the ripple is 4.13 mV. The circuit costs 59.9448 monetary units, and the calculated merit is 4.038251.
