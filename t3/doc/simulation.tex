@@ -1,7 +1,7 @@
 \section{Simulation Analysis}
 \label{sec:simulation}
 
-\subsection{Operating Point Analysis}
+\subsection{Envelope detector}
 
 Table~\ref{tab:p1} shows the simulated operating point results for the circuit
 at times $t<0$.
@@ -11,7 +11,7 @@ at times $t<0$.
   \begin{tabular}{|l|r|}
     \hline    
     {\bf Name} & {\bf Value [A or V]} \\ \hline
-    \input{../sim/p1_tab.tex}
+   % \input{../sim/p1_tab.tex}
   \end{tabular}
   \caption{Operating point. A variable preceded by @ is of type {\em current}
     and expressed in Ampere; other variables are of type {\it voltage} and expressed in
@@ -29,7 +29,7 @@ as calculated in the earlier analysis.
     \begin{tabular}{|l|r|}
       \hline    
       {\bf Name} & {\bf Value [A or V]} \\ \hline
-      \input{../sim/p2_tab.tex}
+   %   \input{../sim/p2_tab.tex}
     \end{tabular}
     \caption{Operating point. A variable preceded by @ is of type {\em current}
       and expressed in Ampere; other variables are of type {\it voltage} and expressed in
@@ -39,49 +39,4 @@ as calculated in the earlier analysis.
 This is necessary so as to provide initial conditions for the analyses made below given
 that $V_s$ at time $t=0$ is equal to 0 but the voltage difference in the terminals of the
 capacitor stays constant for very short time intervals.
-\subsection{Natural response}
-
-We will now use the values of $V(6)$ and $V(8)$ calculated above as initial conditions
-for a transient analyisis of the natural response of the circuit when $V_s=0$.
-This is represented in figure \ref{fig:t2}
-
-  \begin{figure}[H] \centering
-    \includegraphics[width=0.8\linewidth]{../sim/trans3.pdf}
-    \caption{Natural Response}
-    \label{fig:p3}
-    \end{figure}
-
-  \subsection{Forced response}
-
- Utilizing the same initial conditions and the value for $V_s$ given for $t>0$,
- an analysis of the forced response of the circuit over time was performed.
-This is represented in figure \ref{fig:t2}
-
-  \begin{figure}[H] \centering
-    \includegraphics[width=0.8\linewidth]{../sim/trans4.pdf}
-    \caption{Forced Response}
-    \label{fig:p4}
-    \end{figure}
-
-  \subsection{Frequency analysis}
-
-Finally, the frequency response of the circuit was studied and the magnitude and phase
-of both $V_s$ and $V(6)$ was plotted for values of $f$ from $0.1 Hz$ to $1 MHz$.
-
-  \begin{figure}[H] \centering
-    \includegraphics[width=0.8\linewidth]{../sim/mag5.pdf}
-    \caption{Frequency Response - Magnitude}
-    \label{fig:p5mag}
-    \end{figure}
-
-    \begin{figure}[H] \centering
-        \includegraphics[width=0.8\linewidth]{../sim/phase5.pdf}
-        \caption{Frequency Response - Magnitude}
-        \label{fig:p5phase}
-        \end{figure}
-
-The magnitude of the voltage $V_s$ is always 1 (or 0 in dB), and its phase is always 0, by definition.
-As we can see, the magnitude of $V(6)$ drops sharply between the orders of magnitude of $10^1$ to $10^3$,
-stabilizing at a value of around $-4.9 dB$.
-The phase starts off being close to 0, but deviates to negative values, stabilizing at $-\pi$.
 

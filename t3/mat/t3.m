@@ -6,19 +6,23 @@ R1=3.7224e3
 C1=3.7224e-6
 R2=15e3
 C2=15e-6
+R3=10e3
+C3=10e-6
 
 %print("AAAAAAAAA")
 
 %envelope detector
-A=30
+A=20
 t=linspace(0, 0.1, 1000);
 vS = A * cos(w*t);
 vOhr = zeros(1, length(t));
 vO = zeros(1, length(t));
 vLpf = zeros(1, length(t));
 vEn = zeros(1, length(t));
+vF = zeros(1, length(t));
+vF2 = zeros(1, length(t));
 
-vOFF=19;
+vOFF=12.03;
 vOnexp = A*cos(w*vOFF)*exp(-(t-vOFF)/R1/C1);
 
 figure
@@ -73,11 +77,47 @@ for i=1:(length(t)-1)
     boo=1
   endif
 endfor
+vEn(length(t))=vEn(length(t)-1)
 
-plot(t*1000, vO)
-title("Output voltage v_o(t)")
+vF(1)=12
+h=0.1/1000
+for i=1:(length(t)-1)
+  vF(i+1)=vF(i)+h*(vEn(i)/R3/C3-vF(i)/R3/C3)
+endfor
+
+plot(t*1000, vO, "b")
+title("Envelope detector voltage")
 xlabel ("t[ms]")
+ylabel ("V[V]")
 hold on;
 plot(t*1000, vEn, "r")
 legend("rectified","envelope")
-print ("venvlope.eps", "-depsc");
+print ("venvelope.eps", "-depsc");
+
+plot(t*1000, vO, "b")
+title("Output voltage v_o(t)")
+xlabel ("t[ms]")
+ylabel ("V[V]")
+hold on;
+plot(t*1000, vEn, "r")
+hold on;
+plot(t*1000, vF, "g")
+legend("rectified","envelope", "output")
+print ("voutput.eps", "-depsc");
+
+vF(1)=0
+h=0.1/1000
+for i=1:(length(t)-1)
+  vF(i+1)=vF(i)+h*(vEn(i)/R3/C3-vF(i)/R3/C3)
+endfor
+
+plot(t*1000, vO, "b")
+title("Output voltage v_o(t)")
+xlabel ("t[ms]")
+ylabel ("V[V]")
+hold on;
+plot(t*1000, vEn, "r")
+hold on;
+plot(t*1000, vF, "g")
+legend("rectified","envelope", "output")
+print ("voutput_init.eps", "-depsc");

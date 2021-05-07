@@ -92,21 +92,22 @@ set color6=rgb:4/0/0
 
 ******************************************
 * analise no tempo
-tran 1e-5 4.9975 4.7975
-plot v(g)
+tran 1e-5 1.9975 1.8975
 
-meas tran vavg AVG v(g) from=4.7975 to=4.9975
-meas tran vmax MAX v(g) from=4.7975 to=4.9975
-meas tran vmin MIN v(g) from=4.7975 to=4.9975
+meas tran vavg AVG v(g) from=1.7975 to=1.9975
+meas tran vmax MAX v(g) from=1.7975 to=1.9975
+meas tran vmin MIN v(g) from=1.7975 to=1.9975
 
 print vavg-12
 print vmax-vmin
 print 1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4))
 
 ******************************************
-hardcopy gr1.ps v(g)
-echo gr1_FIG
-hardcopy gr2.ps v(g) xlo=4.7975 xhi=4.9975
-echo gr2_FIG
+hardcopy vout.ps v(g)
+echo vout_FIG
+hardcopy vrect.ps v(2)
+echo vrect_FIG
+hardcopy venv.ps v(f)
+echo venv_FIG
 
 .endc
