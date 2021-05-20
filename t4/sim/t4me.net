@@ -55,7 +55,7 @@ hardcopy vo1f.ps vdb(2)
 
 plot vdb(7)
 plot vp(7)
-hardcopy vo2f.ps vdb(2)
+hardcopy vo2f.ps vdb(7)
 
 *input impedance in kohm
 *print all

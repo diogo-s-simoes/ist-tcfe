@@ -10,13 +10,29 @@ Re =100
 Ce = 1e-3
 
 %Q1
-VBEON=0.7
-VT=25e-3
-BFN=178.7
-VAFN=69.7
+Von=0.7
+Vt=25e-3
+Bf=178.7
+Va=69.7
 
 %Q2
 
 Rd = 100
 Co = 1e-6
 Rl = 8
+
+Rb=(Rb1*Rb2)/(Rb1+Rb2)
+Veq=-Rb2/(Rb1+Rb2)
+Ib=(Veq-Von)/(Rb+(1+Bf)*Re)
+Ie=(1+Bf)*Ib
+Ic=Bf*Ib
+Vo=Vc-Rc*Ic
+Ve=Re*Ie
+Vce=Vo-Ve
+
+Gm=Ic/Vt
+Rp=Bf/Gm
+Ro=Va/Ic
+
+Gain1=-Gm*Rc*Rp*Ro/((Ro+Rc)*(Rb+Rp))
+
