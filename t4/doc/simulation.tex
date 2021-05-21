@@ -3,7 +3,7 @@
 
 \subsection{Transient analysis}
 
-We simulated the circuit using transient analysis, using a non ideal transformer and the following components:
+We simulated the circuit using transient analysis, using the supplied model of transistors:
 
 \begin{table}[H]
 \addtolength{\tabcolsep}{-4pt}
@@ -11,12 +11,24 @@ We simulated the circuit using transient analysis, using a non ideal transformer
 \vspace{-3mm}
 \begin{tabular}{|c|c|c|}
 \hline
-C1 & $3.7224\miu F$ \\
-R1 & $3.7224k\Ohm$ \\
-C2 & $15\miu F$ \\
-R2 & $15k\Ohm$ \\
-C3 & $10\miu F$ \\
-R3 & $10k\Ohm$ \\
+Vc = 12.0 V
+f=1e3 Hz
+Vs = 10e-3 V
+Rs = 100 $\Ohm$
+Ci = 1e-3 $F$
+Rb1 = 80e3 $\Ohm$
+Rb2 =20e3 $\Ohm$
+Rc = 1e3 $\Ohm$
+Re =100 $\Ohm$
+Ce = 1e-3 $F$
+Von=0.7 V
+Vt=25e-3 V
+Va1=69.7 V
+Va2=37.2 V
+Rd = 100 $\Ohm$
+Co = 1e-6 $F$
+Rl = 8 $\Ohm$
+
 \hline
 \end{tabular}
 \label{tab:Components}
@@ -24,11 +36,9 @@ R3 & $10k\Ohm$ \\
 
 \par
 
-Firstly we simulate the initialization of the circuit, and only once it has stabelized do we take the average and ripple of $V_{out}$. Ploting the potential of the rectifier circuit, the envelope detector circuit and $V_{out}$ for the first 2 seconds.
+We simulate 
 
 \includegraphics[width=1\linewidth]{../sim/vinit.pdf}
-
-As we can observe, the stabilization time for $V_{out}$ is approximatly 0.6 seconds, but the start-up sequence always has a lower voltage than the desired output, so it doesn't pose a threat to damage the circuit connected to the output.
 
 \par
 
