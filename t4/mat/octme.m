@@ -36,10 +36,10 @@ Gm1=Ic1/Vt
 Rp1=Bf1/Gm1
 Ro1=Va1/Ic1
 
-Gain1=-Gm1*Rc*Rp1*Ro1/((Ro1+Rc)*(Rb+Rp1))
+Gain1=-Gm1*(1/(1/Rc+1/Ro1))*1/(1/Rp1+1/Rb1+1/Rb2)*1/(Rs+1/(1/Rp1+1/Rb1+1/Rb2))*Vs
 
-Zi1=((Ro1+Rc+Re)*(Rb+Rp1+Re)+Gm1*Re*Ro1*Rp1-Re*Re)/(Ro1+Rc+Re)
-Zo1 = 1/(1/(Ro1*((Rb+Rp1)*Re/(Rb+Rp1+Re))/(1/(1/Ro1+1/(Rp1+Rb)+1/Re+Gm1*Rp1/(Rp1+Rb))))+1/Rc)
+Zi1=1/(1/Rp1+1/Rb1+1/Rb2)
+Zo1 = 1/(1/Rc+1/Ro1)
 
 Vi=Vo1
 Ie2=(Vc-Von-Vi)/Rd
@@ -64,28 +64,27 @@ Vix=complex(Vs)
 f=logspace(1,8,70)
 res = zeros(1,length(f))
 
-for i=1:length(f)
-w=2*pi*f(i)
-Z1=Rs+Rb+1/(i*w*Ci)
-
-M=[Z1+Re,-Re,0,0;
-    -Re,Re+1/(i*w*Ce),-1/(i*w*Ce),0;
-    0,-1/(i*w*Ce),1/(i*w*Ce)+Ro1+Rc,-Ro1;
-    Gm1*Rp1,0,0,1]
-
-b=[Vix;0;0;0]
-A=M\B
-
-res(i)=A(3)*Rc
-endfor
-
-semilogx(f, 20*log(res)/log(10), "color", 'b')
-title("Gain in stage 1 (dB)")
-xlabel("f(Hz)")
-ylabel("V(2)(dB)")
-legend ({"dB(V(6))","dB(V(6)-V(8))", "dB(V(1))"}, "location", "east")
-
-
-print -color -depsc vo1.eps
+#for i=1:length(f)
+#w=2*pi*f(i)
+#Z1=Rs+Rb+1/(i*w*Ci)
+#
+#M=[Z1+Re,-Re,0,0;
+#    -Re,Re+1/(i*w*Ce),-1/(i*w*Ce),0;
+#    0,-1/(i*w*Ce),1/(i*w*Ce)+Ro1+Rc,-Ro1;
+#    Gm1*Rp1,0,0,1]
+#
+#b=[Vix;0;0;0]
+#A=M\b
+#
+#res(i)=A(3)*Rc
+#endfor
+#
+#semilogx(f, 20*log(res)/log(10), "color", 'b')
+#title("Gain in stage 1 (dB)")
+#xlabel("f(Hz)")
+#ylabel("V(2)(dB)")
+#
+#
+#print -color -depsc vo1.eps
 
 close
