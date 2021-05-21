@@ -6,12 +6,9 @@
 
 *Power Source
 Vc 1 0 12.0
-*Signal source
-Vs 5 0 0 ac 1.0 sin(0 10m 1k)
-*Input Resistor
-Rs 5 4 100
+
 *Input Capacitor
-Ci 4 3 1m
+Ci 0 3 1m
 *Bias Circuit Resistances
 Rb1 1 3 80k
 Rb2 3 0 20k
@@ -30,8 +27,8 @@ Q2 0 2 6 BC557A
 Rd 6 1 100
 *Output Capacitor
 Co 6 7 1u
-*Load
-Rl 7 0 8
+*Test Source
+Vl 7 0 0 ac 1.0 sin(0 10m 1k)
 
 .op
 .end
@@ -41,40 +38,14 @@ Rl 7 0 8
 
 * time analysis
 tran 1e-5 1e-2
-plot v(2)
-hardcopy vo1.ps vdb(2)
 
 
 * frequency analysis
 ac dec 10 10 100MEG
-plot vdb(2)
-plot vp(2)
-hardcopy vo1f.ps vdb(2)
 
+*output impedance in kohm
 
-
-plot vdb(7)
-plot vp(7)
-hardcopy vo2f.ps vdb(7)
-
-
-let resp=db(v(7))
-settype decibel resp
-let max_gain = vecmax(resp)
-let tpoint = max_gain - 3.0
-meas ac lowerCOP WHEN vdb(7)=tpoint
-meas ac upperCOP WHEN vdb(7)=tpoint CROSS=LAST
-let bdwidth=upperCOP-lowerCOP
-print max_gain
-print bdwidth
-
-*input impedance in kohm
-*print all
-
-plot abs(v(4)[40]/Vs#branch[40]/(-1000))
-let Zin = v(4)[40]/Vs#branch[40]/(-1000)
-print Zin
-
-*need a different setup to measure output impedance
+plot abs(v(7)[40]/Vl#branch[40]/(-1000))
+print v(7)[40]/Vl#branch[40]/(-1000)
 
 .endc 
