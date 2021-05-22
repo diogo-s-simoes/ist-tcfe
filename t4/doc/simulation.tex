@@ -10,24 +10,23 @@ We simulated the circuit using transient and frequency analysis, using the suppl
 \caption{Values of capacitances and resistances for various circuit components}
 \vspace{-3mm}
 \begin{tabular}{|c|c|c|}
-\hline
+\hline\\
 Vc & 12.0 V\\
 Vs & 10e-3 V\\
-Rs & 100 $\Ohm$\\
-Ci & 1e-3 $F$\\
-Rb1& 80e3 $\Ohm$\\
-Rb2&20e3 $\Ohm$\\
-Rc & 1e3 $\Ohm$\\
-Re &100 $\Ohm$\\
-Ce & 1e-3 $F$\\
+Rs & 100 Ohm\\
+Ci & 1e-3 F\\
+Rb1& 80e3 Ohm\\
+Rb2 &20e3 Ohm\\
+Rc & 1e3 Ohm\\
+Re &100 Ohm\\
+Ce & 1e-3 F\\
 Von&0.7 V\\
 Vt&25e-3 V\\
 Va1&69.7 V\\
 Va2&37.2 V\\
-Rd & 100 $\Ohm$\\
-Co & 1e-6 $F$\\
-Rl & 8 $\Ohm$\\
-
+Rd & 100 Ohm\\
+Co & 1e-6 F\\
+Rl & 8 Ohm\\
 \hline
 \end{tabular}
 \label{tab:Components}
@@ -42,15 +41,15 @@ Firstly, we performed an operating point analysis, some of the relevant results 
     \caption{OP simulation}
     \vspace{-3mm}
     \begin{tabular}{|c|c|}
-    \hline
-    I_{e1} & 8.72642e-03\\
-    I_{c1} & 8.675224e-03\\
-    I_{b1} & 5.119304e-05\\  
-    V_{CE1} & 3.0214713\\
-    I_{e2} & 7.29143e-02\\
-    I_{c2} & 7.234499e-02\\
-    I_{b2} & 5.693370e-04\\  
-    V_{CE2} & 4.708568\\
+    \hline\\
+    $I_{e1}$ & $8.72642e-03$\\
+    $I_{c1}$ & $8.675224e-03$\\
+    $I_{b1}$ & $5.119304e-05$\\  
+    $V_{CE1}$ & $3.0214713$\\
+    $I_{e2}$ & $7.29143e-02$\\
+    $I_{c2}$ & $7.234499e-02$\\
+    $I_{b2}$ & $5.693370e-04$\\  
+    $V_{CE2}$ & $4.708568$\\
     \hline
     \end{tabular}
     \label{tab:OP_sim}
@@ -58,15 +57,15 @@ Firstly, we performed an operating point analysis, some of the relevant results 
 
 Using transient analysis, and frequency f=1e3 Hz, we simulate the circuit, which yields the following $v_7(t)$:
 
-\includegraphics[width=1\linewidth]{../sim/vo1.pdf}
+\includegraphics[width=0.8\linewidth]{../sim/vo1.pdf}
 
 We simulate the circuit using frequency analysis and max(vs(t))=1, obtaining the following gain in $v_2$, which is the gain after the gain stage:
 
-\includegraphics[width=1\linewidth]{../sim/vo1f.ps}
+\includegraphics[width=0.8\linewidth]{../sim/vo1f.pdf}
 
 And the gain in $v_7$,which is the gain after the output stage:
 
-\includegraphics[width=1\linewidth]{../sim/vo2f.ps}
+\includegraphics[width=0.8\linewidth]{../sim/vo2f.pdf}
 
 \par
 
