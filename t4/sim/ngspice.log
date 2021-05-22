@@ -27,6 +27,7 @@ ERROR: (internal)  This operation is not defined for display type printf.
 Can't open viewport for graphics.
 
 The file "vo1.ps" may be printed on a postscript printer.
+vo1_FIG
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
@@ -38,12 +39,14 @@ ERROR: (internal)  This operation is not defined for display type printf.
 Can't open viewport for graphics.
 
 The file "vo1f.ps" may be printed on a postscript printer.
+vo1f_FIG
 ERROR: (internal)  This operation is not defined for display type printf.
 Can't open viewport for graphics.
 ERROR: (internal)  This operation is not defined for display type printf.
 Can't open viewport for graphics.
 
 The file "vo2f.ps" may be printed on a postscript printer.
+vo2f_FIG
 lowercop            =  8.880395e+03
 uppercop            =  1.603717e+06
 max_gain = 3.790425e+01
@@ -311,15 +314,15 @@ capacitance                 1e-06                 0.001                 0.001
           i                     0            -0.0811505
           p                    -0              0.973805
 
-CPU time since last call: 0.032 seconds.
+CPU time since last call: 0.033 seconds.
 
-Total CPU time: 0.032 seconds.
+Total CPU time: 0.033 seconds.
 
 Total DRAM available = 6917.210938 MB.
-DRAM currently available = 293.187500 MB.
+DRAM currently available = 2178.964844 MB.
 Total ngspice program size = 16.856445 MB.
-Resident set size = 2.338867 MB.
-Shared ngspice pages = 1.951172 MB.
+Resident set size = 2.389648 MB.
+Shared ngspice pages = 2.000977 MB.
 Text (code) pages = 1.597656 MB.
 Stack = 0 bytes.
 Library pages = 489.000 kB.

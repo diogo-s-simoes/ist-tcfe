@@ -5,7 +5,40 @@ In this laboratory assignment the objective of building an audio amplifier was a
  The cost of the circuit was of $ MU$.
  
 The results from both the theoretical analysis using octave and the circuit
-simulation using ngspice appear to match.
+simulation using ngspice appear to match, as we can see in the following table:
+
+\begin{table}[H]
+\addtolength{\tabcolsep}{-4pt}
+\caption{Values of gain and input and output impedance for theoretical and simulation analysis}
+\vspace{-3mm}
+\begin{tabular}{|c|c|c|}
+\hline
+ &	Mat &	Sim\\
+
+Zi1 &484.43&	563.83\\
+
+Zo1&886.28	&-\\
+
+Zi2&	8598.9	&-\\
+
+Zo2&	0.30217&	10.07\\
+
+Gain1&	262.79	&-\\
+
+Gain2&	0.99195&-\\	-
+
+GainT&	260.67	&37.904 dB\\
+
+LowCOP&	-&	8.88k\\
+
+BdWth	&-	&1.60M\\
+
+Cost	&-&	-\\
+\hline
+\end{tabular}
+\label{tab:Comparison}
+\end{table}
+
 
 The differences of both methods of analysis can be attributed to the various aproximations
 made in the theoretical analysis, where as the simulation uses the comparatively accurate spice model.
