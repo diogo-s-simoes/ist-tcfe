@@ -41,8 +41,8 @@ Rl 7 0 8
 
 * time analysis
 tran 1e-5 1e-2
-plot v(2)
-hardcopy vo1.ps vdb(2)
+plot v(7)
+hardcopy vo1.ps v(7)
 
 
 * frequency analysis
