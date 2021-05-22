@@ -17,6 +17,52 @@ To simplify the bias circuit, we can ignore the capacitors and make a Thevenin e
 
 To calculate the current that passes through the node 8 we know that $I_E= (1+\beta_f)I_B$
 
+For the results of the OP analysis we obtain:
+
+\begin{table}[H]
+    \addtolength{\tabcolsep}{-4pt}
+    \caption{Some values of the operating point analysis}
+    \vspace{-3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    I_{b1} &  5.0044e-05\\
+    I_{e1} &  0.0089929\\
+    I_{c1} &  0.0089429  \\ 
+    V_{CE} &  2.1578\\
+
+    
+    \hline
+    \end{tabular}
+    \label{tab:OP_mat}
+\end{table}
+
+The incremental model of the transistor was used to calculate the input and output impedances, as well as
+the gain on both stages of the circuit. The capacitors were modelled as short circuits in this stage. This yields:
+
+\begin{table}[H]
+    \addtolength{\tabcolsep}{-4pt}
+    \caption{Some values of the operating point analysis}
+    \vspace{-3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    Z_{i1} &  484.43\\
+    Z_{o1} &  886.28\\
+    Z_{i2} &  8598.9\\
+    Z_{o2} &  0.30217\\
+    Gain_1 & -262.79\\
+    Gain_2 &  0.99195\\
+    Gain_{Total} & -260.67\\   
+    \hline
+    \end{tabular}
+    \label{tab:OP_mat}
+\end{table}
+
+Lastly, the capacitors were re-introduced in order to calculate the gain as a function of the frequency after each stage.
+The results are graphed below:
+
 \includegraphics[width=1\linewidth]{vo1.eps}
 
 \includegraphics[width=1\linewidth]{vo2.eps}
+
+The lower 3dB cut-off point is at $f=5484.4 Hz$
+As we can see, the lower cut-off point is accurrate, but this model does not deal well with the higher cut-off point.
