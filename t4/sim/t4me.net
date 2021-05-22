@@ -1,3 +1,4 @@
+Amplifier
 .options savecurrents
 
 * PHILIPS BJT'S
@@ -38,25 +39,20 @@ Rl 7 0 8
 
 .control
 
+op
+print all
 
 * time analysis
 tran 1e-5 1e-2
-plot v(7)
 hardcopy vo1.ps v(7)
 echo vo1_FIG
 
 
 * frequency analysis
 ac dec 10 10 100MEG
-plot vdb(2)
-plot vp(2)
 hardcopy vo1f.ps vdb(2)
 echo vo1f_FIG
 
-
-
-plot vdb(7)
-plot vp(7)
 hardcopy vo2f.ps vdb(7)
 echo vo2f_FIG
 

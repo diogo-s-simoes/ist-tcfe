@@ -35,6 +35,27 @@ Rl & 8 $\Ohm$\\
 
 \par
 
+Firstly, we performed an operating point analysis, some of the relevant results obtained are below:
+
+\begin{table}[H]
+    \addtolength{\tabcolsep}{-4pt}
+    \caption{OP simulation}
+    \vspace{-3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    I_{e1} & 8.72642e-03\\
+    I_{c1} & 8.675224e-03\\
+    I_{b1} & 5.119304e-05\\  
+    V_{CE1} & 3.0214713\\
+    I_{e2} & 7.29143e-02\\
+    I_{c2} & 7.234499e-02\\
+    I_{b2} & 5.693370e-04\\  
+    V_{CE2} & 4.708568\\
+    \hline
+    \end{tabular}
+    \label{tab:OP_sim}
+\end{table}
+
 Using transient analysis, and frequency f=1e3 Hz, we simulate the circuit, which yields the following $v_7(t)$:
 
 \includegraphics[width=1\linewidth]{../sim/vo1.pdf}

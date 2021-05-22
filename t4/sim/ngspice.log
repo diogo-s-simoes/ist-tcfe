@@ -1,6 +1,39 @@
 
-Circuit: .options savecurrents
+Circuit: amplifier
 
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+
+No. of Data Rows : 1
+@ce[i] = 0.000000e+00
+@ci[i] = 0.000000e+00
+@co[i] = 0.000000e+00
+@q1[ib] = 5.119304e-05
+@q1[ic] = 8.675224e-03
+@q1[ie] = -8.72642e-03
+@q1[is] = 3.888467e-12
+@q2[ib] = 5.693370e-04
+@q2[ic] = 7.234499e-02
+@q2[ie] = -7.29143e-02
+@q2[is] = -3.89468e-12
+@rb1[i] = 1.302386e-04
+@rb2[i] = 7.904557e-05
+@rc[i] = 8.105887e-03
+@rd[i] = -7.29143e-02
+@re[i] = 8.726417e-03
+@rl[i] = 0.000000e+00
+@rs[i] = 0.000000e+00
+v(1) = 1.200000e+01
+v(2) = 3.894113e+00
+v(3) = 1.580911e+00
+v(4) = 0.000000e+00
+v(5) = 0.000000e+00
+v(6) = 4.708568e+00
+v(7) = 0.000000e+00
+v(8) = 8.726417e-01
+vc#branch = -8.11505e-02
+vs#branch = 0.000000e+00
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
@@ -23,8 +56,6 @@ vc#branch                           -0.0811505
 
 
 No. of Data Rows : 1008
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
 
 The file "vo1.ps" may be printed on a postscript printer.
 vo1_FIG
@@ -33,17 +64,9 @@ Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
 No. of Data Rows : 71
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
 
 The file "vo1f.ps" may be printed on a postscript printer.
 vo1f_FIG
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
 
 The file "vo2f.ps" may be printed on a postscript printer.
 vo2f_FIG
@@ -74,6 +97,24 @@ No. of Data Rows : 1
 	Source	Current
 	------	-------
 
+	@rl[i]                           0.000000e+00
+	@co[i]                           0.000000e+00
+	@rd[i]                           -7.29143e-02
+	@q2[is]                          -3.89468e-12
+	@q2[ib]                          5.693370e-04
+	@q2[ie]                          -7.29143e-02
+	@q2[ic]                          7.234499e-02
+	@q1[is]                          3.888467e-12
+	@q1[ib]                          5.119304e-05
+	@q1[ie]                          -8.72642e-03
+	@q1[ic]                          8.675224e-03
+	@ce[i]                           0.000000e+00
+	@re[i]                           8.726417e-03
+	@rc[i]                           8.105887e-03
+	@rb2[i]                          7.904557e-05
+	@rb1[i]                          1.302386e-04
+	@ci[i]                           0.000000e+00
+	@rs[i]                           0.000000e+00
 	vc#branch                        -8.11505e-02
 	vs#branch                        0.000000e+00
 
@@ -314,16 +355,16 @@ capacitance                 1e-06                 0.001                 0.001
           i                     0            -0.0811505
           p                    -0              0.973805
 
-CPU time since last call: 0.031 seconds.
+CPU time since last call: 0.041 seconds.
 
-Total CPU time: 0.031 seconds.
+Total CPU time: 0.041 seconds.
 
 Total DRAM available = 6917.210938 MB.
-DRAM currently available = 1988.343750 MB.
-Total ngspice program size = 16.856445 MB.
-Resident set size = 2.401367 MB.
-Shared ngspice pages = 2.013672 MB.
+DRAM currently available = 1760.148438 MB.
+Total ngspice program size = 16.955078 MB.
+Resident set size = 2.488281 MB.
+Shared ngspice pages = 2.021484 MB.
 Text (code) pages = 1.597656 MB.
 Stack = 0 bytes.
-Library pages = 489.000 kB.
+Library pages = 590.000 kB.
 
