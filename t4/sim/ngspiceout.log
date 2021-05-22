@@ -10,23 +10,17 @@ Initial Transient Solution
 Node                                   Voltage
 ----                                   -------
 1                                           12
-5                                            0
-4                                            0
 3                                      1.58091
 2                                      3.89411
 8                                     0.872642
 6                                      4.70857
 7                                            0
-vs#branch                                    0
+vl#branch                                    0
 vc#branch                           -0.0811505
 
 
 
 No. of Data Rows : 1008
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
-
-The file "vo1.ps" may be printed on a postscript printer.
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
@@ -34,23 +28,7 @@ Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 No. of Data Rows : 71
 ERROR: (internal)  This operation is not defined for display type printf.
 Can't open viewport for graphics.
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
-
-The file "vo1f.ps" may be printed on a postscript printer.
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
-
-The file "vo2f.ps" may be printed on a postscript printer.
-lowercop            =  8.880395e+03
-uppercop            =  1.603717e+06
-max_gain = 3.790425e+01
-bdwidth = 1.594837e+06
-ERROR: (internal)  This operation is not defined for display type printf.
-Can't open viewport for graphics.
-zin = 5.638342e-01,-8.44268e-02
+v(7)[40]/vl#branch[40]/(-1000) = 1.007084e-02,-9.69886e-04
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
@@ -64,15 +42,13 @@ No. of Data Rows : 1
 	V(8)                             8.726417e-01
 	V(2)                             3.894113e+00
 	V(3)                             1.580911e+00
-	V(4)                             0.000000e+00
-	V(5)                             0.000000e+00
 	V(1)                             1.200000e+01
 
 	Source	Current
 	------	-------
 
 	vc#branch                        -8.11505e-02
-	vs#branch                        0.000000e+00
+	vl#branch                        0.000000e+00
 
  BJT models (Bipolar Junction Transistor)
       model                bc557a                bc547a
@@ -248,40 +224,29 @@ capacitance                 1e-06                 0.001                 0.001
           p                     0                     0                    -0
 
  Resistor: Simple linear resistor
-     device                    rl                    rd                    re
+     device                    rd                    re                    rc
       model                     R                     R                     R
- resistance                     8                   100                   100
-         ac                     8                   100                   100
+ resistance                   100                   100                  1000
+         ac                   100                   100                  1000
       dtemp                     0                     0                     0
      bv_max                 1e+99                 1e+99                 1e+99
       noisy                     1                     1                     1
-          i                     0            -0.0729143            0.00872642
-          p                     0               0.53165            0.00761504
+          i            -0.0729143            0.00872642            0.00810589
+          p               0.53165            0.00761504             0.0657054
 
  Resistor: Simple linear resistor
-     device                    rc                   rb2                   rb1
-      model                     R                     R                     R
- resistance                  1000                 20000                 80000
-         ac                  1000                 20000                 80000
-      dtemp                     0                     0                     0
-     bv_max                 1e+99                 1e+99                 1e+99
-      noisy                     1                     1                     1
-          i            0.00810589           7.90456e-05           0.000130239
-          p             0.0657054           0.000124964            0.00135697
-
- Resistor: Simple linear resistor
-     device                    rs
-      model                     R
- resistance                   100
-         ac                   100
-      dtemp                     0
-     bv_max                 1e+99
-      noisy                     1
-          i                     0
-          p                     0
+     device                   rb2                   rb1
+      model                     R                     R
+ resistance                 20000                 80000
+         ac                 20000                 80000
+      dtemp                     0                     0
+     bv_max                 1e+99                 1e+99
+      noisy                     1                     1
+          i           7.90456e-05           0.000130239
+          p           0.000124964            0.00135697
 
  Vsource: Independent voltage source
-     device                    vs                    vc
+     device                    vl                    vc
          dc                     0                    12
       acmag                     1                     0
       pulse                     0         -
@@ -311,16 +276,16 @@ capacitance                 1e-06                 0.001                 0.001
           i                     0            -0.0811505
           p                    -0              0.973805
 
-CPU time since last call: 0.032 seconds.
+CPU time since last call: 0.033 seconds.
 
-Total CPU time: 0.032 seconds.
+Total CPU time: 0.033 seconds.
 
 Total DRAM available = 6917.210938 MB.
-DRAM currently available = 293.187500 MB.
-Total ngspice program size = 16.856445 MB.
-Resident set size = 2.338867 MB.
-Shared ngspice pages = 1.951172 MB.
+DRAM currently available = 293.812500 MB.
+Total ngspice program size = 16.824219 MB.
+Resident set size = 2.333984 MB.
+Shared ngspice pages = 1.995117 MB.
 Text (code) pages = 1.597656 MB.
 Stack = 0 bytes.
-Library pages = 489.000 kB.
+Library pages = 456.000 kB.
 

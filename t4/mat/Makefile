@@ -1,5 +1,9 @@
 octave.log: octme.m
+<<<<<<< HEAD
 	octave octme.m > octme.log
+=======
+	octave octme.m > oct.log
+>>>>>>> 8f44973608821bac379a1e64223bf11c5f90946f
 	$(eval NGSFIGS=$(shell grep _FIG oct.log | sed 's/_FIG//g' | sed ':a;N;$!ba;s/\n/ /g'))
 	$(eval NGSFIGPS=$(addsuffix .ps, $(NGSFIGS)))
 	$(foreach i, $(NGSFIGPS), eps2pdf $i;)
