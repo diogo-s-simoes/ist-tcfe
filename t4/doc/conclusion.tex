@@ -2,10 +2,25 @@
 \label{sec:conclusion}
 
 In this laboratory assignment the objective of building an audio amplifier was achieved.
- The cost of the circuit was of $ MU$.
+ The cost of the circuit was of $ 2102.508 MU$ and the merit $3.238$.
  
 The results from both the theoretical analysis using octave and the circuit
-simulation using ngspice appear to match, as we can see in the following table:
+simulation using ngspice appear to roughly match, as we can see in the following figure and table:
+
+
+
+\begin{minipage}[c]{0.50\linewidth}
+\includegraphics[width=1\linewidth]{../sim/vo2f.pdf}
+\end{minipage} % no space if you would like to put them side by side
+\hspace{1mm}
+\begin{minipage}[c]{0.50\linewidth}
+\includegraphics[width=1\linewidth]{vo2.eps}
+\end{minipage}
+
+We can see that the gain for the second stage is fairly different. The simulation has a drop at around $10^6$ Hz, while the theoretical model mantains steadily at around 45dB.
+
+Comparing all of the other values, we get the following table: 
+
 
 \begin{table}[H]
 \addtolength{\tabcolsep}{-4pt}
@@ -17,21 +32,21 @@ simulation using ngspice appear to match, as we can see in the following table:
 
 Zi1 &484.43&	563.83\\
 
-Zo1 &886.28	&-\\
+Zo1&886.28	&-\\
 
 Zi2&	8598.9	&-\\
 
 Zo2&	0.30217&	10.07\\
 
-Gain1 (dB)&	48.39	&-\\
+Gain1&	262.79	&-\\
 
-Gain2 (dB)&	-0.0702&-\\	-
+Gain2&	0.99195&-\\	
 
-GainT (dB)&	48.32	&37.904\\
+GainT&	260.67	&37.904 dB\\
 
-LowCOP (kHz)&	5.48&	8.88k\\
+LowCOP&	-&	8.88k\\
 
-BdWth (Hz)	&-	&1.60M\\
+BdWth	&-	&1.60M\\
 
 Cost	&-&	-\\
 \hline
@@ -39,6 +54,8 @@ Cost	&-&	-\\
 \label{tab:Comparison}
 \end{table}
 
+We can compare directly the input impendance for stage 1, Zi1: The theoretical model gives a lower value, about $86\%$ of the simulated one. Same goes for the output impedance, Zo2, where the theoretical analysis gives $\aprox 0.3$, which is only around $3\%$ of what the simulation gives.
 
-The differences of both methods of analysis can be attributed to the various aproximations
-made in the theoretical analysis, where as the simulation uses the comparatively accurate spice model.
+\par
+We can conclude that there are various differences between the theoretical and simulation analysis. These can be attributed to the various aproximations
+made in the theoretical analysis, in the ideal transistor model for example, while the simulation uses a comparatively accurate spice model. The simulation therefore gives more credible values, closer to reality.

@@ -15,7 +15,26 @@ To simplify the bias circuit, we can ignore the capacitors and make a Thevenin e
 	V_{eq}= \frac{R_{B2}}{R_{B1}+R_{B2}} V_{c}
 \end{equation}
 
-To calculate the current that passes through the node 8 we know that $I_E= (1+\beta_f)I_B$
+To calculate the current that passes through the node 8 we know that $I_E= (1+\beta_f)I_B$.
+
+The mesh equation for the bias circuit is $V_{eq} + R_BI_B + V_{Beon} + R_EI_E =0$
+
+Substituting the equation of $I_E$, we now have an expression for $I_B$:
+\begin{equation}
+	I_{B}= \frac{V_{eq}-V_{ON}}{R_{B}+(1+\beta_F)R_{E}}
+\end{equation}
+
+The equation for $I_C$, which is the current that passes trough node 2, is simply $I_C = \beta_F I_B$.
+
+Then, looking at the other mesh, constituted by $R_E, Q_1, R_C$ and$ V_c$, we have the equation:
+\begin{equation}
+	V_{o}= V_c-R_{C}I_{C}
+\end{equation}
+
+By Ohm's Law we also know that $V_E= R_EI_E$ so the voltage between $R_C$ and $R_E$ is: $V_{CE} = V_o - V_E$
+
+
+We now have all the static voltages and cuurents computed.
 
 For the results of the OP analysis we obtain:
 
@@ -28,9 +47,11 @@ For the results of the OP analysis we obtain:
     I_{b1} &  5.0044e-05\\
     I_{e1} &  0.0089929\\
     I_{c1} &  0.0089429  \\ 
-    V_{CE} &  2.1578\\
-
-    
+    V_{CE1} &  2.1578\\
+    I_{b2} &  3.610556e-04 \\
+    I_{e2} &  0.082429\\
+    I_{c2} &  0.082068\\
+    V_{CE2} & 4.4858\\
     \hline
     \end{tabular}
     \label{tab:OP_mat}
