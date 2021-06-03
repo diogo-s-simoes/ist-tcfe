@@ -34,7 +34,6 @@ B=[Vi*C1*w*i;0;0;0;0]
 
 V=A\B
 
-
 res(i)=V(5)
 
 endfor

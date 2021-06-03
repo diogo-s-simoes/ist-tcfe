@@ -108,9 +108,9 @@ v(52)=88;
 f(53)=50000.;   
 v(53)=38;
 
-printf("%f\n", v(53))
+printf("%f\n", v(1))
 
-semilogx(f, 20*log(v), "color", 'b')
+semilogx(f, 20*log(v/(1000*0.107)), "color", 'b')
 title("Gain (dB)")
 xlabel("f(Hz)")
 ylabel("V(dB)")

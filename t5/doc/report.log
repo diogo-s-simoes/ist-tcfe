@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.31)  3 JUN 2021 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.31)  3 JUN 2021 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -535,7 +535,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count299
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(./report.aux)
+No file report.aux.
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -556,7 +556,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 8
 6.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -650,15 +650,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
 LaTeX Info: Redefining \nameref on input line 86.
-
-(./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
- (./frontcover.tex
+
+(./frontcover.tex
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex drive
 r on input line 15.
-<../../figlib/IST_A_CMYK_POS.pdf, id=24, 845.0471pt x 597.51233pt>
+<../../figlib/IST_A_CMYK_POS.pdf, id=4, 845.0471pt x 597.51233pt>
 File: ../../figlib/IST_A_CMYK_POS.pdf Graphic file (type pdf)
 <use ../../figlib/IST_A_CMYK_POS.pdf>
 Package pdftex.def Info: ../../figlib/IST_A_CMYK_POS.pdf  used on input line 15
@@ -666,28 +665,37 @@ Package pdftex.def Info: ../../figlib/IST_A_CMYK_POS.pdf  used on input line 15
 (pdftex.def)             Requested size: -78.38533pt x -90.76195pt.
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 26
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)) (./report.toc)
+))
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
 
 (./intro.tex
-<../t5circuit.pdf, id=34, 796.67719pt x 448.1309pt>
+
+LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Reference `sec:simulation' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Reference `sec:analysis' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 1 undefined on input line 11.
+
+
+<../t5circuit.pdf, id=5, 796.67719pt x 448.1309pt>
 File: ../t5circuit.pdf Graphic file (type pdf)
 <use ../t5circuit.pdf>
 Package pdftex.def Info: ../t5circuit.pdf  used on input line 14.
 (pdftex.def)             Requested size: 455.24411pt x 256.08002pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+) (./simulation.tex [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../figlib/IST_A_CMYK_PO
-S.pdf>]) (./simulation.tex
-<../sim/vo1f.pdf, id=60, 597.23125pt x 845.1575pt>
+S.pdf> <../t5circuit.pdf>]
+<../sim/vo1f.pdf, id=55, 597.23125pt x 845.1575pt>
 File: ../sim/vo1f.pdf Graphic file (type pdf)
 <use ../sim/vo1f.pdf>
 Package pdftex.def Info: ../sim/vo1f.pdf  used on input line 29.
@@ -695,10 +703,68 @@ Package pdftex.def Info: ../sim/vo1f.pdf  used on input line 29.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <../t5circuit.pdf>]) (./analysis.tex) (./lab.tex
+ [2])
+(./analysis.tex [3 <../sim/vo1f.pdf>]
+Overfull \hbox (13.7556pt too wide) in paragraph at lines 60--62
+[]\OT1/phv/m/n/10.95 The in-cre-men-tal model of the tran-sis-tor was used to c
+al-cu-late the in-put and out-put impedances,
+ []
+
+
+LaTeX Warning: File `vo1.eps' not found on input line 84.
+
+Package epstopdf Info: Source file: <vo1.eps>
+(epstopdf)             Output file: <vo1-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-05-22 22:59:06
+(epstopdf)                    size: 8866 bytes
+(epstopdf)             Command: <repstopdf --outfile=vo1-eps-converted-to.pdf v
+o1.eps>
+(epstopdf)             \includegraphics on input line 84.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./vo1-eps-converted-to.pdf): PDF inclusion: foun
+d PDF version <1.7>, but at most version <1.5> allowed
+<vo1-eps-converted-to.pdf, id=79, 578.16pt x 433.62pt>
+File: vo1-eps-converted-to.pdf Graphic file (type pdf)
+<use vo1-eps-converted-to.pdf>
+Package pdftex.def Info: vo1-eps-converted-to.pdf  used on input line 84.
+(pdftex.def)             Requested size: 455.24411pt x 341.43124pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 84--85
+[][] 
+ []
+
+[4]
+
+LaTeX Warning: File `vo2.eps' not found on input line 86.
+
+Package epstopdf Info: Source file: <vo2.eps>
+(epstopdf)             Output file: <vo2-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-05-22 22:59:06
+(epstopdf)                    size: 8997 bytes
+(epstopdf)             Command: <repstopdf --outfile=vo2-eps-converted-to.pdf v
+o2.eps>
+(epstopdf)             \includegraphics on input line 86.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./vo2-eps-converted-to.pdf): PDF inclusion: foun
+d PDF version <1.7>, but at most version <1.5> allowed
+<vo2-eps-converted-to.pdf, id=90, 578.16pt x 433.62pt>
+File: vo2-eps-converted-to.pdf Graphic file (type pdf)
+<use vo2-eps-converted-to.pdf>
+Package pdftex.def Info: vo2-eps-converted-to.pdf  used on input line 86.
+(pdftex.def)             Requested size: 455.24411pt x 341.43124pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 86--87
+[][] 
+ []
+
+) (./lab.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <../sim/vo1f.pdf>]
+ [5 <./vo1-eps-converted-to.pdf> <./vo2-eps-converted-to.pdf>]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -776,11 +842,11 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 Package epstopdf Info: Source file: <lab.eps>
-(epstopdf)                    date: 2021-06-03 19:34:32
-(epstopdf)                    size: 11064 bytes
+(epstopdf)                    date: 2021-06-03 19:47:52
+(epstopdf)                    size: 11053 bytes
 (epstopdf)             Output file: <lab-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-06-03 19:30:18
-(epstopdf)                    size: 8252 bytes
+(epstopdf)                    date: 2021-06-03 19:42:10
+(epstopdf)                    size: 8248 bytes
 (epstopdf)             Command: <repstopdf --outfile=lab-eps-converted-to.pdf l
 ab.eps>
 (epstopdf)             \includegraphics on input line 51.
@@ -788,9 +854,9 @@ runsystem(repstopdf --outfile=lab-eps-converted-to.pdf lab.eps)...executed safe
 ly (allowed).
 
 Package epstopdf Info: Result file: <lab-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-06-03 19:34:33
-(epstopdf)                    size: 8252 bytes.
-<lab-eps-converted-to.pdf, id=105, 578.16pt x 433.62pt>
+(epstopdf)                    date: 2021-06-03 19:47:53
+(epstopdf)                    size: 8003 bytes.
+<lab-eps-converted-to.pdf, id=111, 578.16pt x 433.62pt>
 File: lab-eps-converted-to.pdf Graphic file (type pdf)
 <use lab-eps-converted-to.pdf>
 Package pdftex.def Info: lab-eps-converted-to.pdf  used on input line 51.
@@ -808,16 +874,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--154
 (./conclusion.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4])
+ [6])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
 
-[5 <./lab-eps-converted-to.pdf>]
+[7 <./lab-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: CE2397E3B7FA0979DC29C9F644A030D5;266.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  CE2397E3B7FA0979DC29C9F644A030D5;266.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -825,13 +900,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 12124 strings out of 481239
- 194504 string characters out of 5920377
- 592724 words of memory out of 5000000
- 27138 multiletter control sequences out of 15000+600000
+ 12173 strings out of 481239
+ 195159 string characters out of 5920377
+ 593219 words of memory out of 5000000
+ 27172 multiletter control sequences out of 15000+600000
  550372 words of font info for 49 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 41i,10n,42p,925b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,42p,925b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
@@ -840,10 +915,10 @@ ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on report.pdf (5 pages, 289792 bytes).
+Output written on report.pdf (7 pages, 309922 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
