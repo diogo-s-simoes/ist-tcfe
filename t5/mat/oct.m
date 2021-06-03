@@ -88,3 +88,34 @@ Vio=D\C
 I2=(Vi-Vio(4))*R2
 
 Zio=Vi/I2
+
+aux=1
+
+[nome,cent]=max(res)
+
+maxim = 20*log(abs(max(res)))
+
+for i=1:length(f)
+  
+if(20*log(abs(res(i)))>maxim-3)
+if(aux<2)
+ aux=20
+ limm=f(i)
+endif
+endif
+
+aux
+20*log(abs(res(i)))
+
+if(20*log(abs(res(i)))<maxim-3)
+if(aux>10)
+ aux=5
+ limM=f(i)
+endif
+endif
+
+endfor
+
+bandwidth=limM-limm
+wo
+f(cent)
