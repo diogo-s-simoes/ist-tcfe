@@ -1,14 +1,34 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%Creator: nutmeg
 %%BoundingBox: 54 54 612 612
+/Re-encode { % inFont outFont encoding | -
+   /MyEncoding exch def
+      exch findfont
+      dup length dict
+      begin
+         {def} forall
+         /Encoding MyEncoding def
+         currentdict
+      end
+      definefont
+} def
+/Helvetica /HelveticaLatin1 ISOLatin1Encoding Re-encode
 1 1 scale
-/Helvetica findfont 10 scalefont setfont
+/HelveticaLatin1 findfont 10 scalefont setfont
 
 [] 0 setdash
 [1 2] 0 setdash
 [] 0 setdash
 243 66 moveto
+0 rotate
 (frequency) show
+-0 rotate
+[1 2] 0 setdash
+[] 0 setdash
+54 596 moveto
+0 rotate
+(ac1: *-----------------------------------------------------------------------------) show
+-0 rotate
 [1 2] 0 setdash
 [] 0 setdash
 newpath
@@ -16,7 +36,9 @@ newpath
 84 549 lineto
 stroke
 78 87 moveto
+0 rotate
 (10) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 132 104 moveto
@@ -36,7 +58,9 @@ newpath
 165 549 lineto
 stroke
 156 87 moveto
+0 rotate
 (100) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 213 104 moveto
@@ -56,7 +80,9 @@ newpath
 246 549 lineto
 stroke
 234 87 moveto
+0 rotate
 (10^3) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 294 104 moveto
@@ -76,7 +102,9 @@ newpath
 327 549 lineto
 stroke
 315 87 moveto
+0 rotate
 (10^4) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 375 104 moveto
@@ -96,7 +124,9 @@ newpath
 408 549 lineto
 stroke
 396 87 moveto
+0 rotate
 (10^5) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 456 104 moveto
@@ -116,7 +146,9 @@ newpath
 489 549 lineto
 stroke
 477 87 moveto
+0 rotate
 (10^6) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 537 104 moveto
@@ -136,9 +168,13 @@ newpath
 570 549 lineto
 stroke
 558 87 moveto
+0 rotate
 (10^7) show
+-0 rotate
 382 66 moveto
+0 rotate
 (Hz) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 84 104 moveto
@@ -146,7 +182,9 @@ newpath
 stroke
 [] 0 setdash
 54 101 moveto
+0 rotate
 (-60.0) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 84 193 moveto
@@ -154,7 +192,9 @@ newpath
 stroke
 [] 0 setdash
 54 190 moveto
+0 rotate
 (-40.0) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 84 282 moveto
@@ -162,7 +202,9 @@ newpath
 stroke
 [] 0 setdash
 54 279 moveto
+0 rotate
 (-20.0) show
+-0 rotate
 [1 2] 0 setdash
 [] 0 setdash
 newpath
@@ -172,7 +214,9 @@ stroke
 [1 2] 0 setdash
 [] 0 setdash
 66 368 moveto
+0 rotate
 (0.0) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 84 460 moveto
@@ -180,7 +224,9 @@ newpath
 stroke
 [] 0 setdash
 60 457 moveto
+0 rotate
 (20.0) show
+-0 rotate
 [1 2] 0 setdash
 newpath
 84 549 moveto
@@ -188,11 +234,15 @@ newpath
 stroke
 [] 0 setdash
 60 546 moveto
+0 rotate
 (40.0) show
+-0 rotate
 [1 2] 0 setdash
 [] 0 setdash
 54 582 moveto
+0 rotate
 (V) show
+-0 rotate
 [1 2] 0 setdash
 [7 7] 0 setdash
 newpath
@@ -201,7 +251,9 @@ newpath
 stroke
 [] 0 setdash
 321 582 moveto
+0 rotate
 (vdb(fin)) show
+-0 rotate
 [7 7] 0 setdash
 newpath
 84 384 moveto
