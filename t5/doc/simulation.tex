@@ -13,10 +13,10 @@ Vcc & $10.0 V$\\
 Vee & $10.0 V$\\
 C1 & $220 nF$\\
 C2 & $220 nF$\\
-R1 & $1000 Ohm$\\
-R2 & $500 Ohm$\\
+R1 & $1000 \Omega$\\
+R2 & $500 \Omega$\\
 R3 & $100 kOhm$\\
-R4 & $1000 Ohm$\\
+R4 & $1000 \Omega$\\
 \hline
 \end{tabular}
 \label{tab:Components}
@@ -24,14 +24,14 @@ R4 & $1000 Ohm$\\
 
 \par
 
-We simulate the circuit using frequency analysis and max(vin(t))=1, obtaining the following gain in $v_fin$, which is the gain at the end of the circuit:
+We simulate the circuit using frequency analysis and max(vin(t))=1, obtaining the following gain in $v_{fin}$, which is the gain at the end of the circuit:
 
 \includegraphics[width=0.8\linewidth]{../sim/vo1f.pdf}
 
 \par
 
-The calculated input impedance is $(990.01+i\cdot 7.32) Ohm$.
-A different setup was used to calculate the output impedance which yielded $(-0.09519+i\cdot 7.234) Ohm$.
+The calculated input impedance is $(990.01+i\cdot 7.32) \Omega$.
+A different setup was used to calculate the output impedance which yielded $(-0.09519+i\cdot 7.234) \Omega$.
 
 This circuit has a cost of $113.44$, a maximum gain of $36.55 dB$, central frequency of $1006.5 Hz$.
 The calculated merit is therefore $3.9375\cdot 10^{-4}$.
