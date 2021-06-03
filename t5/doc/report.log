@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  22 MAY 2021 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.6)  22 MAY 2021 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,7 +1162,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../sim/vo1.pdf, id=83, 597.23125pt x 845.1575pt>
 File: ../sim/vo1.pdf Graphic file (type pdf)
 <use ../sim/vo1.pdf>
-Package pdftex.def Info: ../sim/vo1.pdf  used on input line 58.
+Package pdftex.def Info: ../sim/vo1.pdf  used on input line 59.
 (pdftex.def)             Requested size: 364.19667pt x 515.39058pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1171,12 +1171,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../sim/vo1f.pdf, id=97, 597.23125pt x 845.1575pt>
 File: ../sim/vo1f.pdf Graphic file (type pdf)
 <use ../sim/vo1f.pdf>
-Package pdftex.def Info: ../sim/vo1f.pdf  used on input line 62.
+Package pdftex.def Info: ../sim/vo1f.pdf  used on input line 63.
 (pdftex.def)             Requested size: 364.19667pt x 515.39058pt.
 <../sim/vo2f.pdf, id=98, 597.23125pt x 845.1575pt>
 File: ../sim/vo2f.pdf Graphic file (type pdf)
 <use ../sim/vo2f.pdf>
-Package pdftex.def Info: ../sim/vo2f.pdf  used on input line 66.
+Package pdftex.def Info: ../sim/vo2f.pdf  used on input line 67.
 (pdftex.def)             Requested size: 364.19667pt x 515.39058pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1188,10 +1188,10 @@ al-cu-late the in-put and out-put impedances,
  []
 
 Package epstopdf Info: Source file: <vo1.eps>
-(epstopdf)                    date: 2021-05-22 22:53:54
+(epstopdf)                    date: 2021-05-22 22:59:05
 (epstopdf)                    size: 12719 bytes
 (epstopdf)             Output file: <vo1-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-22 22:53:55
+(epstopdf)                    date: 2021-05-22 22:59:06
 (epstopdf)                    size: 8866 bytes
 (epstopdf)             Command: <repstopdf --outfile=vo1-eps-converted-to.pdf v
 o1.eps>
@@ -1216,10 +1216,10 @@ Underfull \vbox (badness 2617) has occurred while \output is active []
 
  [6]
 Package epstopdf Info: Source file: <vo2.eps>
-(epstopdf)                    date: 2021-05-22 22:53:54
+(epstopdf)                    date: 2021-05-22 22:59:05
 (epstopdf)                    size: 12479 bytes
 (epstopdf)             Output file: <vo2-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-22 22:53:55
+(epstopdf)                    date: 2021-05-22 22:59:06
 (epstopdf)                    size: 8997 bytes
 (epstopdf)             Command: <repstopdf --outfile=vo2-eps-converted-to.pdf v
 o2.eps>
@@ -1248,10 +1248,10 @@ File: ../sim/vo2f.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../sim/vo2f.pdf  used on input line 13.
 (pdftex.def)             Requested size: 227.62206pt x 322.1175pt.
 Package epstopdf Info: Source file: <vo2.eps>
-(epstopdf)                    date: 2021-05-22 22:53:54
+(epstopdf)                    date: 2021-05-22 22:59:05
 (epstopdf)                    size: 12479 bytes
 (epstopdf)             Output file: <vo2-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-22 22:53:55
+(epstopdf)                    date: 2021-05-22 22:59:06
 (epstopdf)                    size: 8997 bytes
 (epstopdf)             Command: <repstopdf --outfile=vo2-eps-converted-to.pdf v
 o2.eps>
@@ -1284,7 +1284,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
 Here is how much of TeX's memory you used:
  19931 strings out of 492982
  347780 string characters out of 6134897
- 539650 words of memory out of 5000000
+ 539649 words of memory out of 5000000
  23253 multiletter control sequences out of 15000+600000
  548306 words of font info for 47 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191

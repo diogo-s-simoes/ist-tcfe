@@ -52,6 +52,9 @@ Gp2=1/Rp2
 Ge2=1/Rd
 Go2=1/Ro2
 
+Ve2=Rd*Ie2
+Vce2=Vo2-Ve2
+
 Zi2=(Gp2+Ge2+Go2+Gm2)/(Gp2*(Gp2+Ge2+Go2))
 Zo2=1/(Gp2+Ge2+Go2+Gm2)
 
@@ -95,7 +98,25 @@ A2=M2\b2
 res2(i)=A2(4)*Rl
 endfor
 
-semilogx(f, 20*log(res)/log(10), "color", 'b')
+max=0
+for i=1:length(f)
+if -res2(i)>max
+max=-res2(i)
+endif
+endfor
+printf("%f\n", max)
+
+LowCOP=0
+bll=0
+for i=1:length(f)
+if (20*log(-res2(i))>20*log(max)-3&&bll==0)
+LowCOP=f(i)
+bll=1
+endif
+endfor
+printf("%f\n", LowCOP)
+
+semilogx(f, 20*log(-res), "color", 'b')
 title("Gain in stage 1 (dB)")
 xlabel("f(Hz)")
 ylabel("V(2)(dB)")
@@ -104,7 +125,7 @@ print -color -depsc vo1.eps
 
 close
 
-semilogx(f, 20*log(res2)/log(10), "color", 'r')
+semilogx(f, 20*log(-res2), "color", 'r')
 title("Gain in stage 2 (dB)")
 xlabel("f(Hz)")
 ylabel("V(7)(dB)")

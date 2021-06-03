@@ -1,0 +1,34 @@
+\section{Simulation Analysis}
+\label{sec:simulation}
+
+We simulated the circuit using frequency analysis, using the supplied model of the OP-AMP:
+
+\begin{table}[H]
+\addtolength{\tabcolsep}{-4pt}
+\caption{Values of capacitances and resistances for various circuit components}
+\vspace{-3mm}
+\begin{tabular}{|c|c|c|}
+\hline
+Vcc & 10.0 V\\
+Vee & 10.0 V\\
+C1 & 220 nF\\
+C2 & 220 nF\\
+R1 & 1000 Ohm\\
+R2 & 500 Ohm\\
+R3 & 100 kOhm\\
+R4 & 1000 Ohm\\
+\hline
+\end{tabular}
+\label{tab:Components}
+\end{table}
+
+\par
+
+We simulate the circuit using frequency analysis and max(vin(t))=1, obtaining the following gain in $v_fin$, which is the gain at the end of the circuit:
+
+\includegraphics[width=0.8\linewidth]{../sim/vo1f.pdf}
+
+\par
+
+
+This circuit has a cost of 2102.508, voltage gain 3.790425e+01, bandwidth 1.594837e+06, minimum voltage cuttoff 8.880395e+03 and the  calculated Merit is 3.238.

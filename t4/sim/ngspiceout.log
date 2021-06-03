@@ -1,5 +1,5 @@
 
-Circuit: .options savecurrents
+Circuit: amplifier-out
 
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
@@ -47,6 +47,22 @@ No. of Data Rows : 1
 	Source	Current
 	------	-------
 
+	@co[i]                           0.000000e+00
+	@rd[i]                           -7.29143e-02
+	@q2[is]                          -3.89468e-12
+	@q2[ib]                          5.693370e-04
+	@q2[ie]                          -7.29143e-02
+	@q2[ic]                          7.234499e-02
+	@q1[is]                          3.888467e-12
+	@q1[ib]                          5.119304e-05
+	@q1[ie]                          -8.72642e-03
+	@q1[ic]                          8.675224e-03
+	@ce[i]                           0.000000e+00
+	@re[i]                           8.726417e-03
+	@rc[i]                           8.105887e-03
+	@rb2[i]                          7.904557e-05
+	@rb1[i]                          1.302386e-04
+	@ci[i]                           0.000000e+00
 	vc#branch                        -8.11505e-02
 	vl#branch                        0.000000e+00
 
@@ -276,16 +292,16 @@ capacitance                 1e-06                 0.001                 0.001
           i                     0            -0.0811505
           p                    -0              0.973805
 
-CPU time since last call: 0.033 seconds.
+CPU time since last call: 0.024 seconds.
 
-Total CPU time: 0.033 seconds.
+Total CPU time: 0.024 seconds.
 
 Total DRAM available = 6917.210938 MB.
-DRAM currently available = 293.812500 MB.
-Total ngspice program size = 16.824219 MB.
-Resident set size = 2.333984 MB.
-Shared ngspice pages = 1.995117 MB.
+DRAM currently available = 604.554688 MB.
+Total ngspice program size = 16.921875 MB.
+Resident set size = 2.422852 MB.
+Shared ngspice pages = 2.019531 MB.
 Text (code) pages = 1.597656 MB.
 Stack = 0 bytes.
-Library pages = 456.000 kB.
+Library pages = 556.000 kB.
 
