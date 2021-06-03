@@ -58,9 +58,9 @@ X1 pos neg vcc vee out uA741
 C1 in pos 220n
 
 R1 pos 0 1k
-R4 neg 0 1k
-R3 neg out 100k
 R2 fin out 500
+R3 neg out 100k
+R4 neg 0 1k
 
 C2 fin 0 220n
 
