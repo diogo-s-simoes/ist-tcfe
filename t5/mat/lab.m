@@ -110,6 +110,7 @@ v(53)=38;
 
 printf("%f\n", v(1))
 
+
 semilogx(f, 20*log(v/(1000*0.107)), "color", 'b')
 title("Gain (dB)")
 xlabel("f(Hz)")

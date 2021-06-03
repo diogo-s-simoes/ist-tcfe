@@ -11,6 +11,7 @@ wl=1/(R1*C1)
 wh=1/(R2*C2)
 wo=sqrt(wh*wl)
 
+
 # 2nd part
 
 w=wo
