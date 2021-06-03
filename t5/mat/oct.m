@@ -21,7 +21,7 @@ Vi=1
 
 f=logspace(1,8,70)
 res = zeros(1,length(f))
-
+teo = zeros(1,length(f))
 
 
 
@@ -39,12 +39,23 @@ V=A\B
 
 res(i)=V(5)
 
+teo(i)=R1*C1*i*w/(1+R1*C1*i*w)*(1+R3/R4)*1/(1+R2*C2*i*w)
+
 endfor
 
 semilogx(f, 20*log(abs(res)), "color", 'b')
 title("Gain (dB)")
 xlabel("f(Hz)")
 ylabel("V(dB)")
+print -color -depsc t5dB.eps
+
+close
+
+semilogx(f, 20*log(abs(teo)), "color", 'r')
+title("Gain (dB)")
+xlabel("f(Hz)")
+ylabel("V(dB)")
+print -color -depsc teodB.eps
 
 w=sqrt(wh*wl)
 E = [C1*w*i+1/R1+1/Zi,0,0,-1/Zi,0;
@@ -77,5 +88,3 @@ Vio=D\C
 I2=(Vi-Vio(4))*R2
 
 Zio=Vi/I2
-
-print -color -depsc t5dB.eps

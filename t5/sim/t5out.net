@@ -77,7 +77,7 @@ print all
 ac dec 10 10 1MEG
 
 *output impedance in kohm
-let zo = v(fin)[40]/Vl#branch[40]/1000
+let zo = v(fin)[40]/Vl#branch[40]
 print zo
 
 .endc 

@@ -21,7 +21,7 @@ No. of Data Rows : 51
 
 The file "vo1f.ps" may be printed on a postscript printer.
 vo1f_FIG
-zi = -9.99001e-01,7.323971e-03
+zi = -9.99001e+02,7.323971e+00
 lowercop            =  4.079554e+02
 uppercop            =  2.483175e+03
 center = 1.006491e+03
@@ -521,15 +521,15 @@ capacitance             8.661e-12
                            -1e+07          
 
 
-Total analysis time (seconds) = 0.002
+Total analysis time (seconds) = 0.005
 
-Total elapsed time (seconds) = 0.008 
+Total elapsed time (seconds) = 0.032 
 
 Total DRAM available = 6917.191 MB.
-DRAM currently available =  209.297 MB.
+DRAM currently available =  441.664 MB.
 Total ngspice program size =   22.941 MB.
-Resident set size =   10.910 MB.
-Shared ngspice pages =    7.977 MB.
+Resident set size =   10.867 MB.
+Shared ngspice pages =    7.984 MB.
 Text (code) pages =    5.789 MB.
 Stack = 0 bytes.
 Library pages =    3.207 MB.

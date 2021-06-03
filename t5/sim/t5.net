@@ -79,7 +79,7 @@ hardcopy vo1f.ps vdb(fin)
 echo vo1f_FIG
 
 *input impedance in kohm
-let zi = v(in)[40]/Vin#branch[40]/1000
+let zi = v(in)[40]/Vin#branch[40]
 print zi
 
 *merit

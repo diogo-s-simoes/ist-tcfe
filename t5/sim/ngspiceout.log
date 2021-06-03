@@ -18,7 +18,7 @@ Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
 No. of Data Rows : 51
-zo = -9.51909e-05,7.233915e-03
+zo = -9.51909e-02,7.233915e+00
 Reducing trtol to 1 for xspice 'A' devices
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
@@ -512,15 +512,15 @@ capacitance             8.661e-12
                            -1e+07          
 
 
-Total analysis time (seconds) = 0.002
+Total analysis time (seconds) = 0.003
 
-Total elapsed time (seconds) = 0.005 
+Total elapsed time (seconds) = 0.009 
 
 Total DRAM available = 6917.191 MB.
-DRAM currently available =  209.719 MB.
+DRAM currently available =  441.445 MB.
 Total ngspice program size =   22.934 MB.
-Resident set size =   11.012 MB.
-Shared ngspice pages =    8.082 MB.
+Resident set size =   10.715 MB.
+Shared ngspice pages =    7.793 MB.
 Text (code) pages =    5.789 MB.
 Stack = 0 bytes.
 Library pages =    3.199 MB.
