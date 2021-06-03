@@ -22,6 +22,9 @@ Vi=1
 f=logspace(1,8,70)
 res = zeros(1,length(f))
 
+
+
+
 for i=1:length(f)
 w=2*pi*f(i)
 A = [C1*w*i+1/R1+1/Zi,0,0,-1/Zi,0;
@@ -43,5 +46,37 @@ semilogx(f, 20*log(abs(res)), "color", 'b')
 title("Gain (dB)")
 xlabel("f(Hz)")
 ylabel("V(dB)")
+
+w=sqrt(wh*wl)
+E = [C1*w*i+1/R1+1/Zi,0,0,-1/Zi,0;
+-Ao,1,0,Ao,0;
+0,-1/Zo,1/R2+1/Zo+1/R3,-1/R3,-1/R2;
+-1/Zi,0,-1/R3,1/R3+1/R4+1/Zi,0;
+0,0,-1/R2,0,1/R2+C2*w*i]
+    
+F=[Vi*C1*w*i;0;0;0;0]
+
+VHELP=E\F
+
+I1=(Vi-VHELP(1))*C1*w*i
+
+Zin=Vi/I1
+
+printf("%d",Zin)
+
+C=[0;0;0;Vi*C2*w*i]
+
+
+
+D = [C1*w*i+1/R1+1/Zi,0,0,-1/Zi;
+-Ao,1,0,Ao;
+0,-1/Zo,1/R2+1/Zo+1/R3,-1/R3;
+-1/Zi,0,-1/R3,1/R3+1/R4+1/Zi]
+
+Vio=D\C
+
+I2=(Vi-Vio(4))*R2
+
+Zio=Vi/I2
 
 print -color -depsc t5dB.eps
