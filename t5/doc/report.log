@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.31)  3 JUN 2021 18:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.31)  3 JUN 2021 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -658,7 +658,7 @@ LaTeX Info: Redefining \nameref on input line 86.
  (./frontcover.tex
 Package pdftex.def Info: Option `bb' equivalent to `viewport' with pdftex drive
 r on input line 15.
-<../../figlib/IST_A_CMYK_POS.pdf, id=16, 845.0471pt x 597.51233pt>
+<../../figlib/IST_A_CMYK_POS.pdf, id=24, 845.0471pt x 597.51233pt>
 File: ../../figlib/IST_A_CMYK_POS.pdf Graphic file (type pdf)
 <use ../../figlib/IST_A_CMYK_POS.pdf>
 Package pdftex.def Info: ../../figlib/IST_A_CMYK_POS.pdf  used on input line 15
@@ -675,11 +675,7 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
 
 (./intro.tex
-
-LaTeX Warning: Reference `sec:conclusion' on page 1 undefined on input line 11.
-
-
-<../t5circuit.pdf, id=23, 796.67719pt x 448.1309pt>
+<../t5circuit.pdf, id=34, 796.67719pt x 448.1309pt>
 File: ../t5circuit.pdf Graphic file (type pdf)
 <use ../t5circuit.pdf>
 Package pdftex.def Info: ../t5circuit.pdf  used on input line 14.
@@ -691,7 +687,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../figlib/IST_A_CMYK_PO
 S.pdf>]) (./simulation.tex
-<../sim/vo1f.pdf, id=49, 597.23125pt x 845.1575pt>
+<../sim/vo1f.pdf, id=60, 597.23125pt x 845.1575pt>
 File: ../sim/vo1f.pdf Graphic file (type pdf)
 <use ../sim/vo1f.pdf>
 Package pdftex.def Info: ../sim/vo1f.pdf  used on input line 29.
@@ -707,15 +703,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <inserted text> 
                 $
 l.14     f(Hz) &  V_
-                    L(mV)\
+                    L(mV) & f(Hz) &  V_L(mV)\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.15     $50.0$  &
-                     $98$\
+l.14     f(Hz) &  V_L(mV) &
+                            f(Hz) &  V_L(mV)\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -725,329 +721,87 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.15     $50.0$  &
-                     $98$\
+l.14     f(Hz) &  V_L(mV) &
+                            f(Hz) &  V_L(mV)\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.15     $50.0$  &
-                     $98$\
+l.14     f(Hz) &  V_L(mV) &
+                            f(Hz) &  V_L(mV)\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.15     $50.0$  &
-                     $98$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14     f(Hz) &  V_L(mV) & f(Hz) &  V_
+                                       L(mV)\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.17     $100.0$ &
-                    $173$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.19     $150.0$ &
-                    $249$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.21     $225.0$ &
-                    $346$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.23     $275.0$ &
-                    $406$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.25     $325.0$ &
-                    $462$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.27     $375.0$ &
-                    $520$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.29     $450.0$ &
-                    $580$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.31     $550.0$ &
-                    $640$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.33     $700.0$ &
-                    $710$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.35     $900.0$ &
-                    $730$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.37     $1100.0$ &
-                     $720$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.39     $1300.0$ &
-                     $710$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.41     $1500.0$ &
-                     $680$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.43     $1700.0$ &
-                     $640$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.45     $1900.0$ &
-                     $610$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.47     $2200.0$ &
-                     $540$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.49     $3000.0$ &
-                     $470$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.51     $3600.0$ &
-                     $400$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.53     $4200.0$ &
-                     $350$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.55     $5000.0$ &
-                     $300$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.57     $6000.0$ &
-                     $257$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.59     $7000.0$ &
-                     $225$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.61     $8000.0$ &
-                     $197$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.63     $10000.0$&
-                     $165$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.65     $15000.0$ &
-                      $117$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.67     $50000.0$ &
-                      $38$\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.69     \hline
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.15     \hline
                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.69     \hline
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15     \hline
                
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.69     \hline
+! Missing } inserted.
+<inserted text> 
+                }
+l.15     \hline
                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.69     \hline
-               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 Package epstopdf Info: Source file: <lab.eps>
-(epstopdf)                    date: 2021-06-03 18:13:51
+(epstopdf)                    date: 2021-06-03 19:34:32
 (epstopdf)                    size: 11064 bytes
 (epstopdf)             Output file: <lab-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-06-03 18:13:02
+(epstopdf)                    date: 2021-06-03 19:30:18
 (epstopdf)                    size: 8252 bytes
 (epstopdf)             Command: <repstopdf --outfile=lab-eps-converted-to.pdf l
 ab.eps>
-(epstopdf)             \includegraphics on input line 76.
+(epstopdf)             \includegraphics on input line 51.
 runsystem(repstopdf --outfile=lab-eps-converted-to.pdf lab.eps)...executed safe
 ly (allowed).
 
 Package epstopdf Info: Result file: <lab-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-06-03 18:13:52
+(epstopdf)                    date: 2021-06-03 19:34:33
 (epstopdf)                    size: 8252 bytes.
-<lab-eps-converted-to.pdf, id=94, 578.16pt x 433.62pt>
+<lab-eps-converted-to.pdf, id=105, 578.16pt x 433.62pt>
 File: lab-eps-converted-to.pdf Graphic file (type pdf)
 <use lab-eps-converted-to.pdf>
-Package pdftex.def Info: lab-eps-converted-to.pdf  used on input line 76.
+Package pdftex.def Info: lab-eps-converted-to.pdf  used on input line 51.
 (pdftex.def)             Requested size: 455.24411pt x 341.43124pt.
 )
-Overfull \hbox (17.0pt too wide) in paragraph at lines 76--154
+Overfull \hbox (17.0pt too wide) in paragraph at lines 51--154
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--154
+Underfull \hbox (badness 10000) in paragraph at lines 51--154
 
  []
 
@@ -1062,17 +816,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: D51E578627247034764FE468FFE84625;162
-(rerunfilecheck)             After:  CE2397E3B7FA0979DC29C9F644A030D5;266.
-
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: CE2397E3B7FA0979DC29C9F644A030D5;266.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1080,13 +825,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 12122 strings out of 481239
- 194482 string characters out of 5920377
- 589587 words of memory out of 5000000
- 27136 multiletter control sequences out of 15000+600000
+ 12124 strings out of 481239
+ 194504 string characters out of 5920377
+ 592724 words of memory out of 5000000
+ 27138 multiletter control sequences out of 15000+600000
  550372 words of font info for 49 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 41i,9n,42p,925b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,42p,925b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
@@ -1095,10 +840,10 @@ ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on report.pdf (5 pages, 289325 bytes).
+Output written on report.pdf (5 pages, 289792 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 157 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  15 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
