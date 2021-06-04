@@ -2,7 +2,7 @@
 %%Title: gl2ps_renderer figure
 %%Creator: GL2PS 1.4.0, (C) 1999-2017 C. Geuzaine
 %%For: Octave
-%%CreationDate: Thu Jun  3 22:58:14 2021
+%%CreationDate: Fri Jun  4 14:28:38 2021
 %%LanguageLevel: 3
 %%DocumentData: Clean7Bit
 %%Pages: 1
@@ -33,6 +33,7 @@
 /STR{ FC moveto SW neg SH neg rmoveto show } BD
 /FCT { FC translate 0 0 } BD
 /SR  { gsave FCT moveto rotate show grestore } BD
+/SRX  { gsave FCT moveto rotate xshow grestore } BD
 /SBCR{ gsave FCT moveto rotate SW -2 div 0 rmoveto show grestore } BD
 /SBRR{ gsave FCT moveto rotate SW neg 0 rmoveto show grestore } BD
 /SCLR{ gsave FCT moveto rotate 0 SH -2 div rmoveto show grestore} BD
@@ -163,14 +164,36 @@ closepath clip
 521.28 51.985 LE
 521.28 399.6 LS
 521.28 395.135 LE
+gsave
 0.14902 0.14902 0.14902 C
-(0) 74.88 42.5189 10 /Helvetica STC
-(20) 164.16 42.5189 10 /Helvetica STC
-(40) 253.44 42.5189 10 /Helvetica STC
-(60) 342.72 42.5189 10 /Helvetica STC
-(80) 432 42.5189 10 /Helvetica STC
-(100) 521.28 42.5189 10 /Helvetica STC
-0.15 0.15 0.15 C
+(0) [10] 0 71.88 32.0183 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(20) [6 10] 0 158.16 32.0183 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(40) [6 10] 0 247.44 32.0183 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(60) [6 10] 0 336.72 32.0183 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(80) [6 10] 0 426 32.0183 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(100) [6 6 10] 0 512.28 32.0183 10 /Helvetica SRX
+grestore
+
 74.88 47.52 LS
 79.348 47.52 LE
 521.28 47.52 LS
@@ -191,14 +214,33 @@ closepath clip
 79.348 399.6 LE
 521.28 399.6 LS
 516.812 399.6 LE
+gsave
 0.14902 0.14902 0.14902 C
-(-0.001) 69.8755 47.52 10 /Helvetica SCR
-(-0.0005) 69.8755 135.54 10 /Helvetica SCR
-(0) 69.8755 223.56 10 /Helvetica SCR
-(0.0005) 69.8755 311.58 10 /Helvetica SCR
-(0.001) 69.8755 399.6 10 /Helvetica SCR
+(-0.001) [3 6 3 6 6 10] 0 39.8755 43.52 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(-0.0005) [3 6 3 6 6 6 10] 0 33.8755 131.54 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(0) [10] 0 63.8755 219.56 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(0.0005) [6 3 6 6 6 10] 0 36.8755 307.58 10 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(0.001) [6 3 6 6 10] 0 42.8755 395.6 10 /Helvetica SRX
+grestore
+
+2 LC
 [16 0] 0 setdash
-0.15 0.15 0.15 C
 74.88 47.52 LS
 521.28 47.52 LE
 74.88 399.6 LS
@@ -207,13 +249,29 @@ closepath clip
 74.88 399.6 LE
 521.28 47.52 LS
 521.28 399.6 LE
+gsave
 0.14902 0.14902 0.14902 C
-(t[ms]) 298.08 29.5188 11 /Helvetica STC
-(V[V]) 90 28.8755 223.56 11 /Helvetica SBCR
+(t[ms]) [3 3 9 5 10] 0 286.58 18.0183 11 /Helvetica SRX
+grestore
+
+gsave
+0.14902 0.14902 0.14902 C
+(V[V]) [7 3 7 10] 90 26.8755 213.56 11 /Helvetica SRX
+grestore
+
+gsave
+0 0 0 C
+(Output voltage v) [9 7 4 7 7 4 3 6 7 3 4 6 7 6 3 10] 0 244.58 415.6 11 /Helvetica-Bold SRX
+(o) [10] 0 333.58 409.6 9 /Helvetica-Bold SRX
+(\(t\)) [4 4 10] 0 339.58 415.6 11 /Helvetica-Bold SRX
+grestore
+
+0 LC
+1 LJ
 [] 0 setdash
 0 1 0 C
 74.88 311.58 LS
-75.3268 313.904 L
+75.3269 313.904 L
 75.7737 316.225 L
 76.2205 318.544 L
 76.6674 320.861 L
@@ -262,7 +320,7 @@ closepath clip
 95.8818 171.116 L
 96.3286 173.58 L
 96.7755 176.042 L
-97.2224 178.501 L
+97.2223 178.501 L
 97.6692 180.958 L
 98.116 183.412 L
 98.5629 185.864 L
@@ -274,7 +332,7 @@ closepath clip
 101.244 200.524 L
 101.691 202.959 L
 102.138 205.391 L
-102.585 207.821 L
+102.584 207.821 L
 103.031 210.248 L
 103.478 212.674 L
 103.925 215.096 L
@@ -476,7 +534,7 @@ closepath clip
 191.507 185.168 L
 191.954 187.619 L
 192.401 190.066 L
-192.848 192.512 L
+192.848 192.511 L
 193.294 194.954 L
 193.741 197.395 L
 194.188 199.833 L
@@ -522,7 +580,7 @@ closepath clip
 212.062 295.376 L
 212.509 297.716 L
 212.956 300.053 L
-213.402 301.448 L
+213.403 301.448 L
 213.849 301.901 L
 214.296 301.413 L
 214.743 299.987 L
@@ -1212,35 +1270,37 @@ closepath clip
 520.386 255.921 L
 520.833 258.3 L
 521.28 260.677 LE
-0 0 0 C
-(Output voltage v) 235.58 417.6 11 /Helvetica-Bold S
-(o) 339.58 411.6 9 /Helvetica-Bold S
-(\(t\)) 345.58 417.6 11 /Helvetica-Bold S
 grestore
 gsave
 1.0 1.0 scale
 newpath 0 0 moveto 576 0 lineto 576 432 lineto 0 432 lineto
 closepath clip
 1 1 1 C
-433.193 396.86 518.54 380.748 433.193 380.748 T
-433.193 396.86 518.54 396.86 518.54 380.748 T
+433.797 388.614 510.294 372.835 433.797 372.835 T
+433.797 388.614 510.294 388.614 510.294 372.835 T
 0.5 W
+2 LC
 [16 0] 0 setdash
 0.15 0.15 0.15 C
-433.193 380.748 LS
-518.54 380.748 LE
-433.193 396.86 LS
-518.54 396.86 LE
-433.193 380.748 LS
-433.193 396.86 LE
-518.54 380.748 LS
-518.54 396.86 LE
+433.797 372.835 LS
+510.294 372.835 LE
+433.797 388.614 LS
+510.294 388.614 LE
+433.797 372.835 LS
+433.797 388.614 LE
+510.294 372.835 LS
+510.294 388.614 LE
+gsave
 0 0 0 C
-(output-12V) 459.228 388.804 10 /Helvetica SCL
+(output-12V) [5 5 3 5 5 3 3 5 5 10] 0 460.804 377.725 9 /Helvetica SRX
+grestore
+
+0 LC
+1 LJ
 [] 0 setdash
 0 1 0 C
-435.934 388.804 LS
-456.487 388.804 LE
+437.001 380.725 LS
+457.6 380.725 LE
 grestore
 grestore
 showpage

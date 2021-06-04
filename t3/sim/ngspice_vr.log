@@ -11,79 +11,77 @@ Node                                   Voltage
 ----                                   -------
 tr1                                          0
 tr2                                          0
-a                                  6.53874e-16
-c                                  6.53874e-16
-1                                  1.30772e-15
-rectified                          1.30772e-15
-3                                  1.23891e-15
-4                                  1.17007e-15
-5                                  1.10124e-15
-6                                  1.03242e-15
-7                                  9.63605e-16
-8                                  8.94766e-16
-9                                  8.25927e-16
-10                                  7.5711e-16
-11                                 6.88272e-16
-12                                 6.19435e-16
-13                                 5.50598e-16
-14                                 4.81761e-16
-15                                 4.12946e-16
-16                                 3.44141e-16
-17                                 2.75314e-16
-18                                 2.06483e-16
-19                                 1.37652e-16
-20                                  6.8826e-17
-envelope                          -8.38853e-23
-output                            -8.38853e-23
+a                                   6.5431e-16
+c                                   6.5431e-16
+1                                  1.30867e-15
+rectified                          1.30867e-15
+3                                  1.23982e-15
+4                                  1.17097e-15
+5                                   1.1021e-15
+6                                  1.03322e-15
+7                                  9.64332e-16
+8                                  8.95467e-16
+9                                  8.26585e-16
+10                                 7.57703e-16
+11                                 6.88821e-16
+12                                  6.1994e-16
+13                                 5.51064e-16
+14                                 4.82172e-16
+15                                  4.1328e-16
+16                                 3.44388e-16
+17                                 2.75507e-16
+18                                 2.06626e-16
+19                                  1.3774e-16
+20                                 6.88755e-17
+envelope                          -8.38974e-23
+output                            -8.38974e-23
 l2#branch                                    0
 l1#branch                                    0
 vin#branch                                   0
 
 
-
-No. of Data Rows : 199777
-vavg                =  1.200000e+01 from=  1.797500e+00 to=  1.997500e+00
-vmax                =  1.200187e+01 at=  1.979969e+00
-vmin                =  1.199774e+01 at=  1.814869e+00
-vavg-12 = 0.000000e+00
-vmax-vmin = 4.130000e-03
-1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4)) = 4.014463e+00
+No. of Data Rows : 199766
+vavg                =  1.200029e+01 from=  1.797500e+00 to=  1.997500e+00
+vmax                =  1.200217e+01 at=  1.979975e+00
+vmin                =  1.199803e+01 at=  1.814865e+00
+vavg-12 = 2.900000e-04
+vmax-vmin = 4.140000e-03
+1/(((vavg-12)+(vmax-vmin)+1u)*(0.1*(19+4)+15+15+10+10+4+4)) = 3.742665e+00
 
 The file "vinit.ps" may be printed on a postscript printer.
 vinit_FIG
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
-
 No. of Data Rows : 1
 	Node                                  Voltage
 	----                                  -------
 	----	-------
-	output                           -8.38896e-23
-	envelope                         -8.38896e-23
-	V(20)                            6.885535e-17
-	V(19)                            1.377107e-16
-	V(18)                            2.065995e-16
-	V(17)                            2.754883e-16
-	V(16)                            3.443663e-16
-	V(15)                            4.132548e-16
-	V(14)                            4.821427e-16
-	V(13)                            5.510086e-16
-	V(12)                            6.198955e-16
-	V(11)                            6.887707e-16
-	V(10)                            7.576617e-16
-	V(9)                             8.265539e-16
-	V(8)                             8.953652e-16
-	V(7)                             9.642596e-16
-	V(6)                             1.033043e-15
-	V(5)                             1.101938e-15
-	V(4)                             1.170832e-15
-	V(3)                             1.239710e-15
-	rectified                        1.308573e-15
-	V(1)                             1.308573e-15
-	c                                6.542641e-16
-	a                                6.542890e-16
-	tr2                              -1.18767e-27
+	output                           -8.38974e-23
+	envelope                         -8.38974e-23
+	V(20)                            6.892565e-17
+	V(19)                            1.378513e-16
+	V(18)                            2.067602e-16
+	V(17)                            2.756747e-16
+	V(16)                            3.445728e-16
+	V(15)                            4.134873e-16
+	V(14)                            4.824024e-16
+	V(13)                            5.513178e-16
+	V(12)                            6.202323e-16
+	V(11)                            6.891530e-16
+	V(10)                            7.580917e-16
+	V(9)                             8.270303e-16
+	V(8)                             8.959510e-16
+	V(7)                             9.648897e-16
+	V(6)                             1.033410e-15
+	V(5)                             1.102332e-15
+	V(4)                             1.171222e-15
+	V(3)                             1.240127e-15
+	rectified                        1.308647e-15
+	V(1)                             1.308647e-15
+	c                                6.542998e-16
+	a                                6.542998e-16
+	tr2                              1.691727e-38
 	tr1                              0.000000e+00
 
 	Source	Current
@@ -92,39 +90,39 @@ No. of Data Rows : 1
 	@cf[i]                           0.000000e+00
 	@rf[i]                           0.000000e+00
 	@ce[i]                           0.000000e+00
-	@re[i]                           -5.59264e-27
-	@de[id]                          1.814835e-27
-	@dp19[id]                        9.550070e-29
-	@dp18[id]                        9.550070e-29
-	@dp17[id]                        9.553416e-29
-	@dp16[id]                        9.553416e-29
-	@dp15[id]                        9.552332e-29
-	@dp14[id]                        9.553385e-29
-	@dp13[id]                        9.553323e-29
-	@dp12[id]                        9.551124e-29
-	@dp11[id]                        9.553230e-29
-	@dp10[id]                        9.552053e-29
-	@dp9[id]                         9.553633e-29
-	@dp8[id]                         9.553757e-29
-	@dp7[id]                         9.545672e-29
-	@dp6[id]                         9.553974e-29
-	@dp5[id]                         9.542914e-29
-	@dp4[id]                         9.553974e-29
-	@dp3[id]                         9.553974e-29
-	@dp2[id]                         9.552332e-29
-	@dp1[id]                         9.550814e-29
-	@ri[i]                           -5.51852e-27
+	@re[i]                           -5.59316e-27
+	@de[id]                          1.814909e-27
+	@dp19[id]                        9.557100e-29
+	@dp18[id]                        9.557100e-29
+	@dp17[id]                        9.555427e-29
+	@dp16[id]                        9.555985e-29
+	@dp15[id]                        9.554343e-29
+	@dp14[id]                        9.555985e-29
+	@dp13[id]                        9.556047e-29
+	@dp12[id]                        9.556078e-29
+	@dp11[id]                        9.555985e-29
+	@dp10[id]                        9.556604e-29
+	@dp9[id]                         9.558401e-29
+	@dp8[id]                         9.558401e-29
+	@dp7[id]                         9.556604e-29
+	@dp6[id]                         9.558401e-29
+	@dp5[id]                         9.516611e-29
+	@dp4[id]                         9.556697e-29
+	@dp3[id]                         9.553537e-29
+	@dp2[id]                         9.555025e-29
+	@dp1[id]                         9.516518e-29
+	@ri[i]                           -5.51851e-27
 	@ci[i]                           0.000000e+00
-	@d4[id]                          -9.07395e-28
-	@d3[id]                          -9.07420e-28
-	@d2[id]                          -9.07440e-28
-	@d1[id]                          -9.07415e-28
-	@l2[i]                           -5.68436e-36
-	@l1[i]                           1.187672e-28
-	@rs[i]                           1.187672e-28
-	vin#branch                       -1.18767e-28
-	l1#branch                        1.187672e-28
-	l2#branch                        -5.68436e-36
+	@d4[id]                          -9.07431e-28
+	@d3[id]                          -9.07431e-28
+	@d2[id]                          -9.07478e-28
+	@d1[id]                          -9.07478e-28
+	@l2[i]                           2.896219e-46
+	@l1[i]                           -1.69173e-39
+	@rs[i]                           -1.69173e-39
+	vin#branch                       1.691727e-39
+	l1#branch                        -1.69173e-39
+	l2#branch                        2.896219e-46
 
  Capacitor models (Fixed capacitor)
       model                     C
@@ -192,6 +190,8 @@ No. of Data Rows : 1
         tcv                     0
      fv_max                 1e+99
      bv_max                 1e+99
+        isr                 1e-14
+         nr                     1
 
  Inductor models (Fixed inductor)
       model                     L
@@ -235,65 +235,65 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
  Diode: Junction Diode model
      device                    de                  dp19                  dp18
       model               default               default               default
-         vd           1.30857e-15           6.88554e-17           6.88554e-17
-         id           1.81483e-27           9.55007e-29           9.55007e-29
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd           1.30865e-15           6.89256e-17           6.89256e-17
+         id           1.81491e-27            9.5571e-29            9.5571e-29
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Diode: Junction Diode model
      device                  dp17                  dp16                  dp15
       model               default               default               default
-         vd           6.88888e-17           6.88888e-17            6.8878e-17
-         id           9.55342e-29           9.55342e-29           9.55233e-29
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd           6.89089e-17           6.89145e-17           6.88981e-17
+         id           9.55543e-29           9.55598e-29           9.55434e-29
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Diode: Junction Diode model
      device                  dp14                  dp13                  dp12
       model               default               default               default
-         vd           6.88885e-17           6.88879e-17           6.88659e-17
-         id           9.55339e-29           9.55332e-29           9.55112e-29
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd           6.89145e-17           6.89151e-17           6.89154e-17
+         id           9.55598e-29           9.55605e-29           9.55608e-29
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Diode: Junction Diode model
      device                  dp11                  dp10                   dp9
       model               default               default               default
-         vd            6.8887e-17           6.88752e-17            6.8891e-17
-         id           9.55323e-29           9.55205e-29           9.55363e-29
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd           6.89145e-17           6.89207e-17           6.89387e-17
+         id           9.55598e-29            9.5566e-29            9.5584e-29
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Diode: Junction Diode model
      device                   dp8                   dp7                   dp6
       model               default               default               default
-         vd           6.88922e-17           6.88114e-17           6.88944e-17
-         id           9.55376e-29           9.54567e-29           9.55397e-29
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd           6.89387e-17           6.89207e-17           6.89387e-17
+         id            9.5584e-29            9.5566e-29            9.5584e-29
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Diode: Junction Diode model
      device                   dp5                   dp4                   dp3
       model               default               default               default
-         vd           6.87838e-17           6.88944e-17           6.88944e-17
-         id           9.54291e-29           9.55397e-29           9.55397e-29
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd           6.85208e-17           6.89216e-17             6.889e-17
+         id           9.51661e-29            9.5567e-29           9.55354e-29
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Diode: Junction Diode model
      device                   dp2                   dp1                    d4
       model               default               default               default
-         vd            6.8878e-17           6.88628e-17          -6.54264e-16
-         id           9.55233e-29           9.55081e-29          -9.07395e-28
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd           6.89049e-17           6.85198e-17            -6.543e-16
+         id           9.55502e-29           9.51652e-29          -9.07431e-28
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Diode: Junction Diode model
      device                    d3                    d2                    d1
       model               default               default               default
-         vd          -6.54289e-16          -6.54309e-16          -6.54284e-16
-         id           -9.0742e-28           -9.0744e-28          -9.07415e-28
-         gd           1.38664e-12           1.38664e-12           1.38664e-12
+         vd            -6.543e-16          -6.54347e-16          -6.54347e-16
+         id          -9.07431e-28          -9.07478e-28          -9.07478e-28
+         gd           1.38662e-12           1.38662e-12           1.38662e-12
          cd                     0                     0                     0
 
  Inductor: Fixed inductor
@@ -304,8 +304,8 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
          nt                     0                     0
        flux                     0                     0
           v                     0                     0
-          i          -5.68436e-36           1.18767e-28
-          p                    -0                     0
+          i           2.89622e-46          -1.69173e-39
+          p                     0                    -0
 
  mutual: Mutual inductors
      device                     k
@@ -321,8 +321,8 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
       dtemp                     0                     0                     0
      bv_max                 1e+99                 1e+99                 1e+99
       noisy                     1                     1                     1
-          i                     0          -5.59264e-27          -5.51852e-27
-          p                     0           4.69164e-49           1.13362e-49
+          i                     0          -5.59316e-27          -5.51851e-27
+          p                     0           4.69252e-49           1.13362e-49
 
  Resistor: Simple linear resistor
      device                    rs
@@ -332,8 +332,8 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
       dtemp                     0
      bv_max                 1e+99
       noisy                     1
-          i           1.18767e-28
-          p           1.41057e-55
+          i          -1.69173e-39
+          p           2.86194e-77
 
  Vsource: Independent voltage source
      device                   vin
@@ -379,19 +379,20 @@ capacitance                 1e-05               1.5e-05            3.7224e-06
                                50
                                 0
                                 0
-          i          -1.18767e-28
-          p                     0
+          i           1.69173e-39
+          p                    -0
 
-CPU time since last call: 3.732 seconds.
 
-Total CPU time: 3.732 seconds.
+Total analysis time (seconds) = 4.14
 
-Total DRAM available = 6917.261719 MB.
-DRAM currently available = 392.800781 MB.
-Total ngspice program size = 42.359375 MB.
-Resident set size = 27.866211 MB.
-Shared ngspice pages = 1.945312 MB.
-Text (code) pages = 1.597656 MB.
+Total elapsed time (seconds) = 4.191 
+
+Total DRAM available = 6917.191 MB.
+DRAM currently available =  945.832 MB.
+Total ngspice program size =  212.473 MB.
+Resident set size =  113.965 MB.
+Shared ngspice pages =    8.031 MB.
+Text (code) pages =    5.789 MB.
 Stack = 0 bytes.
-Library pages = 25.980469 MB.
+Library pages =  192.738 MB.
 
