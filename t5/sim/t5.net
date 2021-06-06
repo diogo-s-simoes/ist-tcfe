@@ -93,7 +93,7 @@ let bdwidth=upperCOP-lowerCOP
 let center = sqrt(lowerCOP*upperCOP)
 print center
 print max_gain
-let merit = 1/(113.44*(40-max_gain)*(center-1000))
+let merit = 1/((13323.3+113.44)*((40-max_gain)+(center-1000)+1u))
 print merit
 
 .endc 
